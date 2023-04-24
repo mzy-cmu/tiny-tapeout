@@ -1,0 +1,68 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "TuringMachine_test": [
+        "TuringMachine_test",
+        "HeszI",
+        "module",
+        15
+    ],
+    "MagComp": [
+        "MagComp",
+        "vaLRj",
+        "module",
+        3
+    ],
+    "Adder": [
+        "Adder",
+        "xUt1z",
+        "module",
+        4
+    ],
+    "Multiplexer": [
+        "Multiplexer",
+        "UxyT3",
+        "module",
+        5
+    ],
+    "Decoder": [
+        "Decoder",
+        "t8TcA",
+        "module",
+        8
+    ],
+    "DFlipFlop": [
+        "DFlipFlop",
+        "NafP4",
+        "module",
+        9
+    ],
+    "Synchronizer": [
+        "Synchronizer",
+        "mLbx7",
+        "module",
+        11
+    ],
+    "ShiftRegister_PIPO": [
+        "ShiftRegister_PIPO",
+        "yK5FF",
+        "module",
+        12
+    ],
+    "BarrelShiftRegister": [
+        "BarrelShiftRegister",
+        "ts568",
+        "module",
+        14
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        17
+    ]
+}
