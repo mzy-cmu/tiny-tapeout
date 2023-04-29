@@ -1,6 +1,6 @@
 #!/bin/csh -f
 
-cd /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/TapeOut
+cd /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine
 
 #This ENV is used to avoid overriding current script in next vcselab run 
 setenv SNPS_VCSELAB_SCRIPT_NO_OVERRIDE  1

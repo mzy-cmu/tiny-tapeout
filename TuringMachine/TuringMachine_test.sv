@@ -310,9 +310,8 @@ direction = %d, data_reg_out = %d",
     @(posedge clock);
     @(posedge clock);
 
-    if ((next_state_out != 1) || (direction != 2) || (data_reg_out != 6'b000001)) {
-      $$display("next state error\n");
-    }
+    if ((next_state_out != 1) || (direction != 2) || (data_reg_out != 6'b000001))
+      $display("error\n");
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
@@ -322,22 +321,8 @@ direction = %d, data_reg_out = %d",
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((next_state_out != 1) || (direction != 2) || (data_reg_out != 6'b000011)) {
-      $$display("next state error\n");
-    }
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    Next <= 1'b1;
-    @(posedge clock);
-    @(posedge clock);
-    Next <= 1'b0;
-    @(posedge clock);
-    if ((next_state_out != 1) || (direction != 2) || (data_reg_out != 6'b000111)) {
-      $$display("next state error\n");
-    }
+    if ((next_state_out != 1) || (direction != 2) || (data_reg_out != 6'b000011))
+      $display("error\n");
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
@@ -348,9 +333,8 @@ direction = %d, data_reg_out = %d",
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((next_state_out != 1) || (direction != 2) || (data_reg_out != 6'b001111)) {
-      $$display("next state error\n");
-    }
+    if ((next_state_out != 1) || (direction != 2) || (data_reg_out != 6'b000111))
+      $display("error\n");
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
@@ -361,9 +345,8 @@ direction = %d, data_reg_out = %d",
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((next_state_out != 2) || (direction != 2) || (data_reg_out != 6'b011110)) {
-      $$display("next state error\n");
-    }
+    if ((next_state_out != 1) || (direction != 2) || (data_reg_out != 6'b001111))
+      $display("error\n");
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
@@ -374,9 +357,8 @@ direction = %d, data_reg_out = %d",
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((next_state_out != 3) || (direction != 1) || (data_reg_out != 6'b111111)) {
-      $$display("next state error\n");
-    }
+    if ((next_state_out != 2) || (direction != 2) || (data_reg_out != 6'b011110))
+      $display("error\n");
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
@@ -387,9 +369,8 @@ direction = %d, data_reg_out = %d",
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((next_state_out != 2) || (direction != 2) || (data_reg_out != 6'b111111)) {
-      $$display("next state error\n");
-    }
+    if ((next_state_out != 3) || (direction != 1) || (data_reg_out != 6'b111111))
+      $display("error\n");
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
@@ -400,9 +381,8 @@ direction = %d, data_reg_out = %d",
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((next_state_out != 2) || (direction != 2) || (data_reg_out != 6'b111111)) {
-      $$display("next state error\n");
-    }
+    if ((next_state_out != 2) || (direction != 2) || (data_reg_out != 6'b111111))
+      $display("error\n");
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
@@ -413,9 +393,8 @@ direction = %d, data_reg_out = %d",
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((next_state_out != 3) || (direction != 1) || (data_reg_out != 6'b111110)) {
-      $$display("next state error\n");
-    }
+    if ((next_state_out != 2) || (direction != 2) || (data_reg_out != 6'b111111))
+      $display("error\n");
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
@@ -426,9 +405,8 @@ direction = %d, data_reg_out = %d",
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((next_state_out != 3) || (direction != 3) || (data_reg_out != 6'b111100)) {
-      $$display("next state error\n");
-    }
+    if ((next_state_out != 3) || (direction != 1) || (data_reg_out != 6'b111110))
+      $display("error\n");
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
@@ -439,9 +417,20 @@ direction = %d, data_reg_out = %d",
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((next_state_out != 3) || (direction != 3) || (data_reg_out != 6'b111100)) {
-      $$display("next state error\n");
-    }
+    if ((next_state_out != 3) || (direction != 3) || (data_reg_out != 6'b111100))
+      $display("error\n");
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    Next <= 1'b1;
+    @(posedge clock);
+    @(posedge clock);
+    Next <= 1'b0;
+    @(posedge clock);
+    if ((next_state_out != 3) || (direction != 3) || (data_reg_out != 6'b111100))
+      $display("error\n");
     @(posedge clock);
     #1 $finish;
   end
