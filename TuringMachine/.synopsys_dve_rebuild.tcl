@@ -1,5 +1,5 @@
 # DVE Simulation Rebuild/Restart Options
-# Saved on Mon Apr 24 16:44:36 2023
+# Saved on Sat Apr 29 20:04:32 2023
 set SIMSETUP::REBUILDOPTION 1
 set SIMSETUP::REBUILDCMD {vcs -sverilog -debug TuringMachine_test.sv TuringMachine.sv library.sv}
 set SIMSETUP::REBUILDDIR {}

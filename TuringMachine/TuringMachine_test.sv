@@ -2,10 +2,8 @@
 
 module TuringMachine_test();
   logic [3:0] input_data;
-  logic clock, Reset, Next, Done;
-  logic [5:0] next_state_out;
-  logic [1:0] direction;
-  logic [5:0] data_reg_out;
+  logic clock, Reset, Next, Done, Compute_done;
+  logic [10:0] display;
 
   TuringMachine #(4, 64) dut (.*);
 
@@ -15,9 +13,8 @@ module TuringMachine_test();
   end
 
   initial begin
-    $monitor($time,, "input_data = %d, next = %b, done = %b, next_state_out = %d \
-direction = %d, data_reg_out = %d",
-             input_data, Next, Done, next_state_out, direction, data_reg_out);
+    $monitor($time,, "input_data = %d, next = %b, done = %b, display = %b, Compute_done = %b\n",
+             input_data, Next, Done, display, Compute_done);
     Reset <= 1'b1;
     Next <= 1'b0; Done <= 1'b0;
     @(posedge clock);
@@ -192,7 +189,7 @@ direction = %d, data_reg_out = %d",
     Next <= 1'b0;
     @(posedge clock);
     @(posedge clock);
-    input_data <= 0;
+    input_data <= 2;
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
@@ -310,7 +307,7 @@ direction = %d, data_reg_out = %d",
     @(posedge clock);
     @(posedge clock);
 
-    if ((next_state_out != 1) || (direction != 2) || (data_reg_out != 6'b000001))
+    if ((display != 11'b00000_1_11101) || Compute_done)
       $display("error\n");
     @(posedge clock);
     @(posedge clock);
@@ -321,19 +318,7 @@ direction = %d, data_reg_out = %d",
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((next_state_out != 1) || (direction != 2) || (data_reg_out != 6'b000011))
-      $display("error\n");
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    Next <= 1'b1;
-    @(posedge clock);
-    @(posedge clock);
-    Next <= 1'b0;
-    @(posedge clock);
-    if ((next_state_out != 1) || (direction != 2) || (data_reg_out != 6'b000111))
+    if ((display != 11'b00001_1_11011) || Compute_done)
       $display("error\n");
     @(posedge clock);
     @(posedge clock);
@@ -345,7 +330,7 @@ direction = %d, data_reg_out = %d",
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((next_state_out != 1) || (direction != 2) || (data_reg_out != 6'b001111))
+    if ((display != 11'b00011_1_10111) || Compute_done)
       $display("error\n");
     @(posedge clock);
     @(posedge clock);
@@ -357,7 +342,7 @@ direction = %d, data_reg_out = %d",
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((next_state_out != 2) || (direction != 2) || (data_reg_out != 6'b011110))
+    if ((display != 11'b00111_1_01110) || Compute_done)
       $display("error\n");
     @(posedge clock);
     @(posedge clock);
@@ -369,7 +354,7 @@ direction = %d, data_reg_out = %d",
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((next_state_out != 3) || (direction != 1) || (data_reg_out != 6'b111111))
+    if ((display != 11'b01111_0_11100) || Compute_done)
       $display("error\n");
     @(posedge clock);
     @(posedge clock);
@@ -381,7 +366,7 @@ direction = %d, data_reg_out = %d",
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((next_state_out != 2) || (direction != 2) || (data_reg_out != 6'b111111))
+    if ((display != 11'b11111_1_11000) || Compute_done)
       $display("error\n");
     @(posedge clock);
     @(posedge clock);
@@ -393,7 +378,7 @@ direction = %d, data_reg_out = %d",
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((next_state_out != 2) || (direction != 2) || (data_reg_out != 6'b111111))
+    if ((display != 11'b11111_1_10000) || Compute_done)
       $display("error\n");
     @(posedge clock);
     @(posedge clock);
@@ -405,7 +390,7 @@ direction = %d, data_reg_out = %d",
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((next_state_out != 3) || (direction != 1) || (data_reg_out != 6'b111110))
+    if ((display != 11'b11111_1_00000) || Compute_done)
       $display("error\n");
     @(posedge clock);
     @(posedge clock);
@@ -417,7 +402,7 @@ direction = %d, data_reg_out = %d",
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((next_state_out != 3) || (direction != 3) || (data_reg_out != 6'b111100))
+    if ((display != 11'b11111_0_00000) || Compute_done)
       $display("error\n");
     @(posedge clock);
     @(posedge clock);
@@ -429,7 +414,19 @@ direction = %d, data_reg_out = %d",
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((next_state_out != 3) || (direction != 3) || (data_reg_out != 6'b111100))
+    if ((display != 11'b11111_1_00000) || Compute_done)
+      $display("error\n");
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    Next <= 1'b1;
+    @(posedge clock);
+    @(posedge clock);
+    Next <= 1'b0;
+    @(posedge clock);
+    if ((display != 11'b11111_0_00000) || (~Compute_done))
       $display("error\n");
     @(posedge clock);
     #1 $finish;
