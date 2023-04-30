@@ -474,3 +474,4 @@ gui_sim_continue
 gui_wv_scroll_hslidermove -id  Wave.1 22266
 gui_wv_scroll_hslidermove -id  Wave.1 16757
 gui_list_select -id Wave.1 -selected  { TuringMachine_test.dut.display_reg.left   }
+gui_close_window -window TopLevel.2

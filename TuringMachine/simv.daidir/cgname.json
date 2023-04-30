@@ -11,6 +11,12 @@
         "module",
         15
     ],
+    "ShiftRegister_SIPO_wRewrite": [
+        "ShiftRegister_SIPO_wRewrite",
+        "i5k2B",
+        "module",
+        10
+    ],
     "MagComp": [
         "MagComp",
         "vaLRj",

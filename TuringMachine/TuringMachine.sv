@@ -23,7 +23,7 @@ module TuringMachine
              w = 64, // number of words
              aw = $clog2(w))
   (input logic [dw-1:0] input_data,
-   input logic clock, Reset, Next, Done,
+   input logic clock, reset, Next, Done,
    output logic [10:0] display,
    output logic Compute_done);
 
@@ -81,7 +81,7 @@ endmodule: TuringMachine
 
 
 module FSM (
-  input logic clock, Reset, Next, Done,
+  input logic clock, reset, Next, Done,
   input logic Data_eq, Halt, Right, Memory_end,
   output logic NextState_en, NextState_init, InputAddr_en, InputAddr_clr, StateAddr_ld, StateAddr_en, TapeAddr_en, TapeAddr_ld,
                Write_en, Read_en, ReadInput, TapeReg_en, TapeReg_clr, DataReg_en, DataReg_clr, Display_en, Display_clr, Display_rewrite, Direction_en, Compute_done,
@@ -218,8 +218,8 @@ module FSM (
   end
 
   // Asynchronous state reset
-  always_ff @(posedge clock, posedge Reset)
-    if (Reset)
+  always_ff @(posedge clock, posedge reset)
+    if (reset)
       currState <= START;
     else
       currState <= nextState;
