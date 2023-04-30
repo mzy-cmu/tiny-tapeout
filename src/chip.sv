@@ -17,6 +17,6 @@ module my_chip (
     assign io_out[11:1] = display;
     assign io_out[0] = Compute_done;
 
-    TuringMachine #(4, 64) (.*);
+    TuringMachine #(4, 64) dut (.*);
 
 endmodule

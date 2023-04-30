@@ -33,8 +33,8 @@ ftp_proxy=http://proximus.ece.cmu.edu:3128/
 XDG_SESSION_ID=10623
 XDG_RUNTIME_DIR=/run/user/2678383
 XDG_DATA_DIRS=/afs/andrew.cmu.edu/usr1/zhiyingm/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
-VSCODE_IPC_HOOK_CLI=/run/user/2678383/vscode-ipc-b94470be-0fa1-40bf-a80e-1c5bbefa5ea9.sock
-VSCODE_GIT_IPC_HANDLE=/run/user/2678383/vscode-git-957a4152a1.sock
+VSCODE_IPC_HOOK_CLI=/run/user/2678383/vscode-ipc-b9fba10b-57a8-45bf-a5c9-7b65d164ad4f.sock
+VSCODE_GIT_IPC_HANDLE=/run/user/2678383/vscode-git-0012ef45e0.sock
 VSCODE_GIT_ASKPASS_NODE=/afs/andrew.cmu.edu/usr1/zhiyingm/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/node
 VSCODE_GIT_ASKPASS_MAIN=/afs/andrew.cmu.edu/usr1/zhiyingm/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/extensions/git/dist/askpass-main.js
 VSCODE_GIT_ASKPASS_EXTRA_ARGS=
@@ -96,11 +96,11 @@ AKLOG=/usr/bin/aklog
 3
 1682897891 library.sv
 1682897716 TuringMachine.sv
-1682897848 chip.sv
+1682898638 chip.sv
 4
 1654054205 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvirsim.so
 1654053585 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
 1654053489 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libsnpsmalloc.so
 1654053565 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvfs.so
-1682897979 simv.daidir
+1682898641 simv.daidir
 -1 partitionlib
