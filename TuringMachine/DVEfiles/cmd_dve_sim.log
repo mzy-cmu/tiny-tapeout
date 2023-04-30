@@ -6,13 +6,13 @@ synopsys::env hasTB
 trigger_hier_stack_context_switch 0
 synUtils::setDVEInitPhase 1
 synopsys::dump -type VPD -file /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/inter.vpd -locking
-synopsys::dump -autoflush on -fid VPD3
-set ::dve_fid VPD3
+synopsys::dump -autoflush on -fid VPD5
+set ::dve_fid VPD5
 synUtils::setDVEInitPhase 0
 ucliCore::getToolPID
-synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpvG9JiN
-synUtils::sendTool -active {_icl_start_rpc -version "T-2022.06_Full64" -sync_file /tmp/vcs_dve_rpc.zhiyingm.104233}
-synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.zhiyingm.104233}
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpIuaRaR
+synUtils::sendTool -active {_icl_start_rpc -version "T-2022.06_Full64" -sync_file /tmp/vcs_dve_rpc.zhiyingm.198780}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.zhiyingm.198780}
 config endofsim noexit
 config onfail enable all
 config syscaddplainmembers
@@ -21,18 +21,17 @@ config syscaddstructtypes
 synopsys::listing -disable
 # Begin_DVE_Session_Save_Info
 # DVE restart session
-# Saved on Sat Apr 29 20:04:32 2023
+# Saved on Sun Apr 30 16:40:18 2023
 # Designs open: 1
 #   Sim: /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/simv
 # Toplevel windows open: 2
 # 	TopLevel.1
 # 	TopLevel.2
 #   Source.1: TuringMachine_test
-#   Wave.1: 56 signals
-#   Group count = 3
-#   Group Group1 signal count = 50
-#   Group Group2 signal count = 5
-#   Group Group3 signal count = 1
+#   Wave.1: 62 signals
+#   Group count = 2
+#   Group Group1 signal count = 54
+#   Group Group2 signal count = 8
 # End_DVE_Session_Save_Info
 # DVE version: T-2022.06_Full64
 # DVE build date: May 31 2022 20:53:03
@@ -67,13 +66,13 @@ set Wave.1 Wave.1
 # Global: Signal Time Shift
 # Global: Signal Compare
 # Global: Signal Groups
-synopsys::dump -add {TuringMachine_test.dut.fsm} -scope "." -depth 1 -fid VPD3
-set _session_group_5 Group1
-set Group1 "$_session_group_5"
-set _session_group_6 Group2
-set Group2 "$_session_group_6"
-set _session_group_7 Group3
-set Group3 "$_session_group_7"
+synopsys::dump -add {TuringMachine_test.dut.fsm} -scope "." -depth 1 -fid VPD5
+synopsys::dump -add {TuringMachine_test.dut.display_reg} -scope "." -depth 1 -fid VPD5
+synopsys::dump -add {TuringMachine_test.dut} -scope "." -depth 1 -fid VPD5
+set _session_group_6 Group1
+set Group1 "$_session_group_6"
+set _session_group_7 Group2
+set Group2 "$_session_group_7"
 # Global: Highlighting
 # Global: Stack
 # Post database loading setting...
@@ -84,23 +83,21 @@ foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_
 # DVE View/pane content session:
 # Hier 'Hier.1'
 catch {gui_list_expand -id ${Hier.1} TuringMachine_test}
-catch {gui_list_select -id ${Hier.1} {TuringMachine_test.dut}}
+catch {gui_list_expand -id ${Hier.1} TuringMachine_test.dut}
+catch {gui_list_select -id ${Hier.1} {TuringMachine_test.dut.display_reg}}
 # Data 'Data.1'
-catch { gui_list_select -id ${Data.1} {TuringMachine_test.dut.display }}
+catch { gui_list_select -id ${Data.1} {TuringMachine_test.dut.display_reg.clock TuringMachine_test.dut.display_reg.serial TuringMachine_test.dut.display_reg.rewrite TuringMachine_test.dut.display_reg.Q TuringMachine_test.dut.display_reg.w TuringMachine_test.dut.display_reg.clear TuringMachine_test.dut.display_reg.left TuringMachine_test.dut.display_reg.en }}
 # Source 'Source.1'
 # View 'Wave.1'
 set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
 set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
 set origGroupCreationState [gui_list_create_group_when_add -wave]
-synopsys::dump -add {TuringMachine_test.dut.Addr_sel TuringMachine_test.dut.Compute_done TuringMachine_test.dut.DataReg_clr TuringMachine_test.dut.DataReg_en TuringMachine_test.dut.Data_eq TuringMachine_test.dut.Data_sel TuringMachine_test.dut.Direction_en TuringMachine_test.dut.Done TuringMachine_test.dut.Halt TuringMachine_test.dut.InputAddr_clr TuringMachine_test.dut.InputAddr_en TuringMachine_test.dut.Memory_end TuringMachine_test.dut.Next TuringMachine_test.dut.NextState_en TuringMachine_test.dut.NextState_init TuringMachine_test.dut.ReadInput TuringMachine_test.dut.Read_en TuringMachine_test.dut.Reset TuringMachine_test.dut.StateAddr_en TuringMachine_test.dut.StateAddr_ld TuringMachine_test.dut.TapeAddr_en TuringMachine_test.dut.TapeAddr_ld TuringMachine_test.dut.TapeReg_clr TuringMachine_test.dut.TapeReg_en TuringMachine_test.dut.Write_en TuringMachine_test.dut.aw TuringMachine_test.dut.clock TuringMachine_test.dut.data_reg_in TuringMachine_test.dut.data_reg_out TuringMachine_test.dut.direction_in TuringMachine_test.dut.direction_out TuringMachine_test.dut.dw TuringMachine_test.dut.input_addr_out TuringMachine_test.dut.input_data TuringMachine_test.dut.memory_addr TuringMachine_test.dut.memory_data TuringMachine_test.dut.next_state_in TuringMachine_test.dut.next_state_out TuringMachine_test.dut.next_state_prep TuringMachine_test.dut.read_data TuringMachine_test.dut.right TuringMachine_test.dut.state_addr_in TuringMachine_test.dut.state_addr_out TuringMachine_test.dut.tape_addr_in TuringMachine_test.dut.tape_addr_out TuringMachine_test.dut.tape_reg_in TuringMachine_test.dut.tape_reg_out TuringMachine_test.dut.w TuringMachine_test.dut.write_data } -aggregates  -fid VPD3
-synopsys::dump -add {TuringMachine_test.dut.data_reg.Q TuringMachine_test.dut.data_reg.clear TuringMachine_test.dut.data_reg.clock TuringMachine_test.dut.data_reg.en TuringMachine_test.dut.data_reg.w } -aggregates  -fid VPD3
-synopsys::dump -add {TuringMachine_test.dut.display } -aggregates  -fid VPD3
 if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
 if { $groupExD } {  gui_msg_report -code DVWW028 }
 # Restore toplevel window zorder
 # The toplevel window could be closed if it has no view/pane
-if {[gui_exist_window -window ${TopLevel.2}]} { 	gui_set_active_window -window ${TopLevel.2} 	gui_set_active_window -window ${Wave.1} }
 if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${Source.1} 	gui_set_active_window -window ${DLPane.1} }
+if {[gui_exist_window -window ${TopLevel.2}]} { 	gui_set_active_window -window ${TopLevel.2} 	gui_set_active_window -window ${Wave.1} }
 #</Session>
 synopsys::run
 set ucliGUI::state

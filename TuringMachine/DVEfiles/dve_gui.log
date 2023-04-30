@@ -1,1077 +1,6 @@
 Chronologic VCS simulator copyright 1991-2022
 Contains Synopsys proprietary information.
-Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Apr 29 19:54 2023
-VCD+ Writer T-2022.06_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
-The file '/afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/inter.vpd' was opened successfully.
-                   0 input_data =  x, next = 0, done = 0, data_reg_out = xxxxxxxxxxx, Compute_done = 0
-
-                   5 input_data =  3, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                  35 input_data =  3, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                  55 input_data =  3, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                  75 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 105 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 125 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 175 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 195 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 215 input_data =  2, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 245 input_data =  2, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 265 input_data =  2, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 285 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 315 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 335 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 385 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 405 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 455 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 475 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 495 input_data =  0, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 525 input_data =  0, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 545 input_data =  0, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 595 input_data =  0, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 615 input_data =  0, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 635 input_data =  3, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 665 input_data =  3, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 685 input_data =  3, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 705 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 735 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 755 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 805 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 825 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 845 input_data =  2, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 875 input_data =  2, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 895 input_data =  2, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 915 input_data =  0, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 945 input_data =  0, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 965 input_data =  0, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 985 input_data =  2, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1015 input_data =  2, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1035 input_data =  2, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1055 input_data =  3, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1085 input_data =  3, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1105 input_data =  3, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1125 input_data =  0, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1155 input_data =  0, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1175 input_data =  0, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1195 input_data =  2, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1225 input_data =  2, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1245 input_data =  2, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1265 input_data =  3, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1295 input_data =  3, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1315 input_data =  3, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1335 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1365 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1385 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1435 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1455 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1505 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1525 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1575 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1595 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1615 input_data =  0, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1645 input_data =  0, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1665 input_data =  0, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1685 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1715 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1735 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1785 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1805 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1855 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1875 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1895 input_data =  0, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1925 input_data =  0, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1945 input_data =  0, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1965 input_data =  0, next = 0, done = 1, data_reg_out = 00000000000, Compute_done = 0
-
-                1985 input_data =  0, next = 0, done = 0, data_reg_out = 00000000001, Compute_done = 0
-
-error
-
-                2045 input_data =  0, next = 1, done = 0, data_reg_out = 00000000001, Compute_done = 0
-
-                2065 input_data =  0, next = 0, done = 0, data_reg_out = 00000000001, Compute_done = 0
-
-error
-
-                2085 input_data =  0, next = 0, done = 0, data_reg_out = 00000000011, Compute_done = 0
-
-                2125 input_data =  0, next = 1, done = 0, data_reg_out = 00000000011, Compute_done = 0
-
-                2145 input_data =  0, next = 0, done = 0, data_reg_out = 00000000011, Compute_done = 0
-
-error
-
-                2165 input_data =  0, next = 0, done = 0, data_reg_out = 00000000111, Compute_done = 0
-
-                2205 input_data =  0, next = 1, done = 0, data_reg_out = 00000000111, Compute_done = 0
-
-                2225 input_data =  0, next = 0, done = 0, data_reg_out = 00000000111, Compute_done = 0
-
-error
-
-                2245 input_data =  0, next = 0, done = 0, data_reg_out = 00000001111, Compute_done = 0
-
-                2285 input_data =  0, next = 1, done = 0, data_reg_out = 00000001111, Compute_done = 0
-
-                2305 input_data =  0, next = 0, done = 0, data_reg_out = 00000001111, Compute_done = 0
-
-error
-
-                2325 input_data =  0, next = 0, done = 0, data_reg_out = 00000011111, Compute_done = 0
-
-                2365 input_data =  0, next = 1, done = 0, data_reg_out = 00000011111, Compute_done = 0
-
-                2385 input_data =  0, next = 0, done = 0, data_reg_out = 00000011111, Compute_done = 0
-
-error
-
-                2405 input_data =  0, next = 0, done = 0, data_reg_out = 00000111111, Compute_done = 0
-
-                2445 input_data =  0, next = 1, done = 0, data_reg_out = 00000111111, Compute_done = 0
-
-                2465 input_data =  0, next = 0, done = 0, data_reg_out = 00000111111, Compute_done = 0
-
-error
-
-                2485 input_data =  0, next = 0, done = 0, data_reg_out = 00001111111, Compute_done = 0
-
-                2525 input_data =  0, next = 1, done = 0, data_reg_out = 00001111111, Compute_done = 0
-
-                2545 input_data =  0, next = 0, done = 0, data_reg_out = 00001111111, Compute_done = 0
-
-error
-
-                2565 input_data =  0, next = 0, done = 0, data_reg_out = 00011111111, Compute_done = 0
-
-                2605 input_data =  0, next = 1, done = 0, data_reg_out = 00011111111, Compute_done = 0
-
-                2625 input_data =  0, next = 0, done = 0, data_reg_out = 00011111111, Compute_done = 0
-
-error
-
-                2645 input_data =  0, next = 0, done = 0, data_reg_out = 00111111110, Compute_done = 0
-
-                2685 input_data =  0, next = 1, done = 0, data_reg_out = 00111111110, Compute_done = 0
-
-                2705 input_data =  0, next = 0, done = 0, data_reg_out = 00111111110, Compute_done = 0
-
-error
-
-                2725 input_data =  0, next = 0, done = 0, data_reg_out = 01111111100, Compute_done = 0
-
-                2765 input_data =  0, next = 1, done = 0, data_reg_out = 01111111100, Compute_done = 0
-
-                2775 input_data =  0, next = 1, done = 0, data_reg_out = 01111111100, Compute_done = 1
-
-                2785 input_data =  0, next = 0, done = 0, data_reg_out = 01111111100, Compute_done = 1
-
-error
-
-$finish called from file "TuringMachine_test.sv", line 432.
-$finish at simulation time                 2806
-Simulation complete, time is 2806.
-0
-Chronologic VCS simulator copyright 1991-2022
-Contains Synopsys proprietary information.
-Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Apr 29 19:56 2023
-VCD+ Writer T-2022.06_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
-The file '/afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/inter.vpd' was opened successfully.
-                   0 input_data =  x, next = 0, done = 0, data_reg_out = xxxxxxxxxxx, Compute_done = 0
-
-                   5 input_data =  3, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                  35 input_data =  3, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                  55 input_data =  3, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                  75 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 105 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 125 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 175 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 195 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 215 input_data =  2, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 245 input_data =  2, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 265 input_data =  2, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 285 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 315 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 335 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 385 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 405 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 455 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 475 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 495 input_data =  0, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 525 input_data =  0, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 545 input_data =  0, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 595 input_data =  0, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 615 input_data =  0, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 635 input_data =  3, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 665 input_data =  3, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 685 input_data =  3, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 705 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 735 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 755 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 805 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 825 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 845 input_data =  2, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 875 input_data =  2, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 895 input_data =  2, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 915 input_data =  0, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 945 input_data =  0, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 965 input_data =  0, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                 985 input_data =  2, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1015 input_data =  2, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1035 input_data =  2, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1055 input_data =  3, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1085 input_data =  3, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1105 input_data =  3, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1125 input_data =  0, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1155 input_data =  0, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1175 input_data =  0, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1195 input_data =  2, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1225 input_data =  2, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1245 input_data =  2, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1265 input_data =  3, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1295 input_data =  3, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1315 input_data =  3, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1335 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1365 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1385 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1435 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1455 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1505 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1525 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1575 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1595 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1615 input_data =  0, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1645 input_data =  0, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1665 input_data =  0, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1685 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1715 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1735 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1785 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1805 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1855 input_data =  1, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1875 input_data =  1, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1895 input_data =  0, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1925 input_data =  0, next = 1, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1945 input_data =  0, next = 0, done = 0, data_reg_out = 00000000000, Compute_done = 0
-
-                1965 input_data =  0, next = 0, done = 1, data_reg_out = 00000000000, Compute_done = 0
-
-                1985 input_data =  0, next = 0, done = 0, data_reg_out = 00000000001, Compute_done = 0
-
-error
-
-                2045 input_data =  0, next = 1, done = 0, data_reg_out = 00000000001, Compute_done = 0
-
-                2065 input_data =  0, next = 0, done = 0, data_reg_out = 00000000001, Compute_done = 0
-
-error
-
-                2085 input_data =  0, next = 0, done = 0, data_reg_out = 00000000011, Compute_done = 0
-
-                2125 input_data =  0, next = 1, done = 0, data_reg_out = 00000000011, Compute_done = 0
-
-                2145 input_data =  0, next = 0, done = 0, data_reg_out = 00000000011, Compute_done = 0
-
-error
-
-                2165 input_data =  0, next = 0, done = 0, data_reg_out = 00000000111, Compute_done = 0
-
-                2205 input_data =  0, next = 1, done = 0, data_reg_out = 00000000111, Compute_done = 0
-
-                2225 input_data =  0, next = 0, done = 0, data_reg_out = 00000000111, Compute_done = 0
-
-error
-
-                2245 input_data =  0, next = 0, done = 0, data_reg_out = 00000001111, Compute_done = 0
-
-                2285 input_data =  0, next = 1, done = 0, data_reg_out = 00000001111, Compute_done = 0
-
-                2305 input_data =  0, next = 0, done = 0, data_reg_out = 00000001111, Compute_done = 0
-
-error
-
-                2325 input_data =  0, next = 0, done = 0, data_reg_out = 00000011111, Compute_done = 0
-
-                2365 input_data =  0, next = 1, done = 0, data_reg_out = 00000011111, Compute_done = 0
-
-                2385 input_data =  0, next = 0, done = 0, data_reg_out = 00000011111, Compute_done = 0
-
-error
-
-                2405 input_data =  0, next = 0, done = 0, data_reg_out = 00000111111, Compute_done = 0
-
-                2445 input_data =  0, next = 1, done = 0, data_reg_out = 00000111111, Compute_done = 0
-
-                2465 input_data =  0, next = 0, done = 0, data_reg_out = 00000111111, Compute_done = 0
-
-error
-
-                2485 input_data =  0, next = 0, done = 0, data_reg_out = 00001111111, Compute_done = 0
-
-                2525 input_data =  0, next = 1, done = 0, data_reg_out = 00001111111, Compute_done = 0
-
-                2545 input_data =  0, next = 0, done = 0, data_reg_out = 00001111111, Compute_done = 0
-
-error
-
-                2565 input_data =  0, next = 0, done = 0, data_reg_out = 00011111111, Compute_done = 0
-
-                2605 input_data =  0, next = 1, done = 0, data_reg_out = 00011111111, Compute_done = 0
-
-                2625 input_data =  0, next = 0, done = 0, data_reg_out = 00011111111, Compute_done = 0
-
-error
-
-                2645 input_data =  0, next = 0, done = 0, data_reg_out = 00111111110, Compute_done = 0
-
-                2685 input_data =  0, next = 1, done = 0, data_reg_out = 00111111110, Compute_done = 0
-
-                2705 input_data =  0, next = 0, done = 0, data_reg_out = 00111111110, Compute_done = 0
-
-error
-
-                2725 input_data =  0, next = 0, done = 0, data_reg_out = 01111111100, Compute_done = 0
-
-                2765 input_data =  0, next = 1, done = 0, data_reg_out = 01111111100, Compute_done = 0
-
-                2775 input_data =  0, next = 1, done = 0, data_reg_out = 01111111100, Compute_done = 1
-
-                2785 input_data =  0, next = 0, done = 0, data_reg_out = 01111111100, Compute_done = 1
-
-error
-
-$finish called from file "TuringMachine_test.sv", line 432.
-$finish at simulation time                 2806
-Simulation complete, time is 2806.
-           V C S   S i m u l a t i o n   R e p o r t 
-Time: 2806
-CPU Time:      0.140 seconds;       Data structure size:   0.0Mb
-Sat Apr 29 20:03:12 2023
-
-Warning-[DEBUG_DEP] Option will be deprecated
-  The option '-debug' will be deprecated in a future release.  Please use 
-  '-debug_acc+pp+f+dmptf -debug_region+cell+encrypt' instead.
-
-                         Chronologic VCS (TM)
-         Version T-2022.06_Full64 -- Sat Apr 29 20:03:13 2023
-
-                    Copyright (c) 1991 - 2022 Synopsys, Inc.
-   This software and the associated documentation are proprietary to Synopsys,
- Inc. This software may only be used in accordance with the terms and conditions
- of a written license agreement with Synopsys, Inc. All other use, reproduction,
-   or distribution of this software is strictly prohibited.  Licensed Products
-     communicate with Synopsys servers for the purpose of providing software
-    updates, detecting software piracy and verifying that customers are using
-    Licensed Products in conformity with the applicable License Key for such
-  Licensed Products. Synopsys will use information gathered in connection with
-    this process to deliver software updates and pursue software pirates and
-                                   infringers.
-
- Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
-            Inclusivity and Diversity" (Refer to article 000036315 at
-                        https://solvnetplus.synopsys.com)
-
-Parsing design file 'TuringMachine_test.sv'
-Parsing design file 'TuringMachine.sv'
-
-Warning-[IPDW] Identifier previously declared
-TuringMachine.sv, 14
-  Second declaration for identifier 'Compute_done' ignored
-  Identifier 'Compute_done' previously declared as output port. 
-  [TuringMachine.sv, 10]
-
-Parsing design file 'library.sv'
-Top Level Modules:
-       TuringMachine_test
-       MagComp
-       Adder
-       Multiplexer
-       Decoder
-       DFlipFlop
-       Synchronizer
-       ShiftRegister_PIPO
-       BarrelShiftRegister
-No TimeScale specified
-
-Warning-[TFIPC] Too few instance port connections
-TuringMachine.sv, 30
-TuringMachine, "Mux4to1 #(aw) mux_state_tape_addr( .I0 (state_addr_out),  .I1 (tape_addr_out),  .I2 (input_addr_out),  .S (Addr_sel),  .Y (memory_addr));"
-  The above instance has fewer port connections than the module definition.
-  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
-  ports.
-
-
-Warning-[INAV] Index into non-array variable
-TuringMachine.sv, 57
-TuringMachine, "data_reg_out[0]"
-  Bit/Part-select specified for non array variable.
-  Base object: data_reg_out
-  Of type: logic
-  Declared at:
-  "TuringMachine.sv", 25.
-
-
-Warning-[INAV] Index into non-array variable
-TuringMachine.sv, 28
-TuringMachine, "data_reg_out[0]"
-  Bit/Part-select specified for non array variable.
-  Base object: data_reg_out
-  Of type: logic
-  Declared at:
-  "TuringMachine.sv", 25.
-
-
-Warning-[PCWM-W] Port connection width mismatch
-TuringMachine.sv, 29
-"Mux2to1 #(aw) mux_next_state( .I0 (next_state_prep),  .I1 (1'b1),  .S (NextState_init),  .Y (next_state_in));"
-  The following 1-bit expression is connected to 6-bit port "I1" of module 
-  "Mux2to1", instance "mux_next_state".
-  Expression: 1'b1
-  Instantiated module defined at: "library.sv", 61
-  Use +lint=PCWM for more details.
-
-
-Warning-[PCWM-W] Port connection width mismatch
-TuringMachine.sv, 45
-"Demux1to4 #(dw) demux( .I (read_data),  .S (Data_sel),  .Y0 (data_reg_in),  .Y1 (direction_in),  .Y2 (next_state_prep),  .Y3 (tape_reg_in));"
-  The following 1-bit expression is connected to 4-bit port "Y0" of module 
-  "Demux1to4", instance "demux".
-  Expression: data_reg_in
-  Instantiated module defined at: "library.sv", 42
-  Use +lint=PCWM for more details.
-
-
-Warning-[PCWM-W] Port connection width mismatch
-TuringMachine.sv, 45
-"Demux1to4 #(dw) demux( .I (read_data),  .S (Data_sel),  .Y0 (data_reg_in),  .Y1 (direction_in),  .Y2 (next_state_prep),  .Y3 (tape_reg_in));"
-  The following 2-bit expression is connected to 4-bit port "Y1" of module 
-  "Demux1to4", instance "demux".
-  Expression: direction_in
-  Instantiated module defined at: "library.sv", 42
-  Use +lint=PCWM for more details.
-
-
-Warning-[PCWM-W] Port connection width mismatch
-TuringMachine.sv, 45
-"Demux1to4 #(dw) demux( .I (read_data),  .S (Data_sel),  .Y0 (data_reg_in),  .Y1 (direction_in),  .Y2 (next_state_prep),  .Y3 (tape_reg_in));"
-  The following 6-bit expression is connected to 4-bit port "Y2" of module 
-  "Demux1to4", instance "demux".
-  Expression: next_state_prep
-  Instantiated module defined at: "library.sv", 42
-  Use +lint=PCWM for more details.
-
-
-Warning-[PCWM-W] Port connection width mismatch
-TuringMachine.sv, 45
-"Demux1to4 #(dw) demux( .I (read_data),  .S (Data_sel),  .Y0 (data_reg_in),  .Y1 (direction_in),  .Y2 (next_state_prep),  .Y3 (tape_reg_in));"
-  The following 1-bit expression is connected to 4-bit port "Y3" of module 
-  "Demux1to4", instance "demux".
-  Expression: tape_reg_in
-  Instantiated module defined at: "library.sv", 42
-  Use +lint=PCWM for more details.
-
-
-Warning-[PCWM-W] Port connection width mismatch
-TuringMachine.sv, 50
-"ShiftRegister_SIPO #(12) display_reg( .en (DataStore_en),  .clear (DataReg_clr),  .left ((~right)),  .serial (data_reg_out),  .Q (display),  .clock (clock));"
-  The following 11-bit expression is connected to 12-bit port "Q" of module 
-  "ShiftRegister_SIPO", instance "display_reg".
-  Expression: display
-  Instantiated module defined at: "library.sv", 189
-  Use +lint=PCWM for more details.
-
-
-Warning-[PCWM-W] Port connection width mismatch
-TuringMachine.sv, 55
-"Register #(aw) direction_reg( .en (Direction_en),  .clear (1'b0),  .D (direction_in),  .Q (direction_out),  .clock (clock));"
-  The following 2-bit expression is connected to 6-bit port "D" of module 
-  "Register", instance "direction_reg".
-  Expression: direction_in
-  Instantiated module defined at: "library.sv", 115
-  Use +lint=PCWM for more details.
-
-
-Warning-[PCWM-W] Port connection width mismatch
-TuringMachine.sv, 55
-"Register #(aw) direction_reg( .en (Direction_en),  .clear (1'b0),  .D (direction_in),  .Q (direction_out),  .clock (clock));"
-  The following 2-bit expression is connected to 6-bit port "Q" of module 
-  "Register", instance "direction_reg".
-  Expression: direction_out
-  Instantiated module defined at: "library.sv", 115
-  Use +lint=PCWM for more details.
-
-Starting vcs inline pass...
-
-9 modules and 0 UDP read.
-	However, due to incremental compilation, no re-compilation is necessary.
-rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
-ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
-rm -f _cuarc0.so
-if [ -x ../simv ]; then chmod a-x ../simv; fi
-g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib -L/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib  -Wl,-rpath-link=./     _103218_archive_1.so _prev_archive_1.so _cuarc0.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lnuma -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive          /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/vcs_save_restore_new.o -ldl  -lc -lm -lpthread -ldl 
-../simv up to date
-CPU time: .363 seconds to compile + .389 seconds to elab + .246 seconds to link
-Finished rebuilding the design.
-Chronologic VCS simulator copyright 1991-2022
-Contains Synopsys proprietary information.
-Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Apr 29 20:03 2023
-VCD+ Writer T-2022.06_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
-The file '/afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/inter.vpd' was opened successfully.
-Error: [DVAP037] 
-Errors while sourcing the file '/afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/.restartSimSession.tcl':
-
- Line 113: [DVSG007] 
-Signal ' "TuringMachine_test.dut.data_reg.serial" "TuringMachine_test.dut.data_reg.left"' cannot be found..
-                   0 input_data =  x, next = 0, done = 0, display = xxxxxxxxxxx, Compute_done = 0
-
-                   5 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                  35 input_data =  3, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                  55 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                  75 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                 105 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                 125 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                 175 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                 195 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                 215 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                 245 input_data =  2, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                 265 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                 285 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                 315 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                 335 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                 385 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                 405 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                 455 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                 475 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                 495 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                 525 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                 545 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                 595 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                 615 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                 635 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                 665 input_data =  3, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                 685 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                 705 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                 735 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                 755 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                 805 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                 825 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                 845 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                 875 input_data =  2, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                 895 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                 915 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                 945 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                 965 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                 985 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                1015 input_data =  2, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                1035 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                1055 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                1085 input_data =  3, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                1105 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                1125 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                1155 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                1175 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                1195 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                1225 input_data =  2, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                1245 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                1265 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                1295 input_data =  3, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                1315 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                1335 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                1365 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                1385 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                1435 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                1455 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                1505 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                1525 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                1575 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                1595 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                1615 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                1645 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                1665 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                1685 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                1715 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                1735 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                1785 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                1805 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                1855 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                1875 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                1895 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                1925 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                1945 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-                1965 input_data =  0, next = 0, done = 1, display = 00000000000, Compute_done = 0
-
-                1985 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-error
-
-                2045 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
-
-                2065 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
-
-error
-
-                2095 input_data =  0, next = 0, done = 0, display = 10000000000, Compute_done = 0
-
-                2125 input_data =  0, next = 1, done = 0, display = 10000000000, Compute_done = 0
-
-                2145 input_data =  0, next = 0, done = 0, display = 10000000000, Compute_done = 0
-
-error
-
-                2175 input_data =  0, next = 0, done = 0, display = 11000000000, Compute_done = 0
-
-                2205 input_data =  0, next = 1, done = 0, display = 11000000000, Compute_done = 0
-
-                2225 input_data =  0, next = 0, done = 0, display = 11000000000, Compute_done = 0
-
-error
-
-                2255 input_data =  0, next = 0, done = 0, display = 11100000000, Compute_done = 0
-
-                2285 input_data =  0, next = 1, done = 0, display = 11100000000, Compute_done = 0
-
-                2305 input_data =  0, next = 0, done = 0, display = 11100000000, Compute_done = 0
-
-error
-
-                2345 input_data =  0, next = 0, done = 0, display = 11110000000, Compute_done = 0
-
-                2365 input_data =  0, next = 1, done = 0, display = 11110000000, Compute_done = 0
-
-                2385 input_data =  0, next = 0, done = 0, display = 11110000000, Compute_done = 0
-
-error
-
-                2415 input_data =  0, next = 0, done = 0, display = 11111000000, Compute_done = 0
-
-                2445 input_data =  0, next = 1, done = 0, display = 11111000000, Compute_done = 0
-
-                2465 input_data =  0, next = 0, done = 0, display = 11111000000, Compute_done = 0
-
-error
-
-                2495 input_data =  0, next = 0, done = 0, display = 11111100000, Compute_done = 0
-
-                2525 input_data =  0, next = 1, done = 0, display = 11111100000, Compute_done = 0
-
-                2545 input_data =  0, next = 0, done = 0, display = 11111100000, Compute_done = 0
-
-                2575 input_data =  0, next = 0, done = 0, display = 11111110000, Compute_done = 0
-
-                2605 input_data =  0, next = 1, done = 0, display = 11111110000, Compute_done = 0
-
-                2625 input_data =  0, next = 0, done = 0, display = 11111110000, Compute_done = 0
-
-error
-
-                2655 input_data =  0, next = 0, done = 0, display = 11111100000, Compute_done = 0
-
-                2685 input_data =  0, next = 1, done = 0, display = 11111100000, Compute_done = 0
-
-                2705 input_data =  0, next = 0, done = 0, display = 11111100000, Compute_done = 0
-
-                2745 input_data =  0, next = 0, done = 0, display = 11111000000, Compute_done = 0
-
-                2765 input_data =  0, next = 1, done = 0, display = 11111000000, Compute_done = 0
-
-                2775 input_data =  0, next = 1, done = 0, display = 11111000000, Compute_done = 1
-
-                2785 input_data =  0, next = 0, done = 0, display = 11111000000, Compute_done = 1
-
-$finish called from file "TuringMachine_test.sv", line 432.
-$finish at simulation time                 2806
-Simulation complete, time is 2806.
-           V C S   S i m u l a t i o n   R e p o r t 
-Time: 2806
-CPU Time:      0.140 seconds;       Data structure size:   0.0Mb
-Sat Apr 29 20:04:32 2023
-
-Warning-[DEBUG_DEP] Option will be deprecated
-  The option '-debug' will be deprecated in a future release.  Please use 
-  '-debug_acc+pp+f+dmptf -debug_region+cell+encrypt' instead.
-
-                         Chronologic VCS (TM)
-         Version T-2022.06_Full64 -- Sat Apr 29 20:04:34 2023
-
-                    Copyright (c) 1991 - 2022 Synopsys, Inc.
-   This software and the associated documentation are proprietary to Synopsys,
- Inc. This software may only be used in accordance with the terms and conditions
- of a written license agreement with Synopsys, Inc. All other use, reproduction,
-   or distribution of this software is strictly prohibited.  Licensed Products
-     communicate with Synopsys servers for the purpose of providing software
-    updates, detecting software piracy and verifying that customers are using
-    Licensed Products in conformity with the applicable License Key for such
-  Licensed Products. Synopsys will use information gathered in connection with
-    this process to deliver software updates and pursue software pirates and
-                                   infringers.
-
- Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
-            Inclusivity and Diversity" (Refer to article 000036315 at
-                        https://solvnetplus.synopsys.com)
-
-Parsing design file 'TuringMachine_test.sv'
-Parsing design file 'TuringMachine.sv'
-
-Warning-[IPDW] Identifier previously declared
-TuringMachine.sv, 14
-  Second declaration for identifier 'Compute_done' ignored
-  Identifier 'Compute_done' previously declared as output port. 
-  [TuringMachine.sv, 10]
-
-Parsing design file 'library.sv'
-Top Level Modules:
-       TuringMachine_test
-       MagComp
-       Adder
-       Multiplexer
-       Decoder
-       DFlipFlop
-       Synchronizer
-       ShiftRegister_PIPO
-       BarrelShiftRegister
-No TimeScale specified
-
-Warning-[TFIPC] Too few instance port connections
-TuringMachine.sv, 30
-TuringMachine, "Mux4to1 #(aw) mux_state_tape_addr( .I0 (state_addr_out),  .I1 (tape_addr_out),  .I2 (input_addr_out),  .S (Addr_sel),  .Y (memory_addr));"
-  The above instance has fewer port connections than the module definition.
-  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
-  ports.
-
-
-Warning-[INAV] Index into non-array variable
-TuringMachine.sv, 57
-TuringMachine, "data_reg_out[0]"
-  Bit/Part-select specified for non array variable.
-  Base object: data_reg_out
-  Of type: logic
-  Declared at:
-  "TuringMachine.sv", 25.
-
-
-Warning-[INAV] Index into non-array variable
-TuringMachine.sv, 28
-TuringMachine, "data_reg_out[0]"
-  Bit/Part-select specified for non array variable.
-  Base object: data_reg_out
-  Of type: logic
-  Declared at:
-  "TuringMachine.sv", 25.
-
-
-Warning-[PCWM-W] Port connection width mismatch
-TuringMachine.sv, 29
-"Mux2to1 #(aw) mux_next_state( .I0 (next_state_prep),  .I1 (1'b1),  .S (NextState_init),  .Y (next_state_in));"
-  The following 1-bit expression is connected to 6-bit port "I1" of module 
-  "Mux2to1", instance "mux_next_state".
-  Expression: 1'b1
-  Instantiated module defined at: "library.sv", 61
-  Use +lint=PCWM for more details.
-
-
-Warning-[PCWM-W] Port connection width mismatch
-TuringMachine.sv, 45
-"Demux1to4 #(dw) demux( .I (read_data),  .S (Data_sel),  .Y0 (data_reg_in),  .Y1 (direction_in),  .Y2 (next_state_prep),  .Y3 (tape_reg_in));"
-  The following 1-bit expression is connected to 4-bit port "Y0" of module 
-  "Demux1to4", instance "demux".
-  Expression: data_reg_in
-  Instantiated module defined at: "library.sv", 42
-  Use +lint=PCWM for more details.
-
-
-Warning-[PCWM-W] Port connection width mismatch
-TuringMachine.sv, 45
-"Demux1to4 #(dw) demux( .I (read_data),  .S (Data_sel),  .Y0 (data_reg_in),  .Y1 (direction_in),  .Y2 (next_state_prep),  .Y3 (tape_reg_in));"
-  The following 2-bit expression is connected to 4-bit port "Y1" of module 
-  "Demux1to4", instance "demux".
-  Expression: direction_in
-  Instantiated module defined at: "library.sv", 42
-  Use +lint=PCWM for more details.
-
-
-Warning-[PCWM-W] Port connection width mismatch
-TuringMachine.sv, 45
-"Demux1to4 #(dw) demux( .I (read_data),  .S (Data_sel),  .Y0 (data_reg_in),  .Y1 (direction_in),  .Y2 (next_state_prep),  .Y3 (tape_reg_in));"
-  The following 6-bit expression is connected to 4-bit port "Y2" of module 
-  "Demux1to4", instance "demux".
-  Expression: next_state_prep
-  Instantiated module defined at: "library.sv", 42
-  Use +lint=PCWM for more details.
-
-
-Warning-[PCWM-W] Port connection width mismatch
-TuringMachine.sv, 45
-"Demux1to4 #(dw) demux( .I (read_data),  .S (Data_sel),  .Y0 (data_reg_in),  .Y1 (direction_in),  .Y2 (next_state_prep),  .Y3 (tape_reg_in));"
-  The following 1-bit expression is connected to 4-bit port "Y3" of module 
-  "Demux1to4", instance "demux".
-  Expression: tape_reg_in
-  Instantiated module defined at: "library.sv", 42
-  Use +lint=PCWM for more details.
-
-
-Warning-[PCWM-W] Port connection width mismatch
-TuringMachine.sv, 50
-"ShiftRegister_SIPO #(12) display_reg( .en (DataStore_en),  .clear (DataReg_clr),  .left (right),  .serial (data_reg_out),  .Q (display),  .clock (clock));"
-  The following 11-bit expression is connected to 12-bit port "Q" of module 
-  "ShiftRegister_SIPO", instance "display_reg".
-  Expression: display
-  Instantiated module defined at: "library.sv", 189
-  Use +lint=PCWM for more details.
-
-
-Warning-[PCWM-W] Port connection width mismatch
-TuringMachine.sv, 55
-"Register #(aw) direction_reg( .en (Direction_en),  .clear (1'b0),  .D (direction_in),  .Q (direction_out),  .clock (clock));"
-  The following 2-bit expression is connected to 6-bit port "D" of module 
-  "Register", instance "direction_reg".
-  Expression: direction_in
-  Instantiated module defined at: "library.sv", 115
-  Use +lint=PCWM for more details.
-
-
-Warning-[PCWM-W] Port connection width mismatch
-TuringMachine.sv, 55
-"Register #(aw) direction_reg( .en (Direction_en),  .clear (1'b0),  .D (direction_in),  .Q (direction_out),  .clock (clock));"
-  The following 2-bit expression is connected to 6-bit port "Q" of module 
-  "Register", instance "direction_reg".
-  Expression: direction_out
-  Instantiated module defined at: "library.sv", 115
-  Use +lint=PCWM for more details.
-
-Starting vcs inline pass...
-
-9 modules and 0 UDP read.
-recompiling module TuringMachine_test
-	However, due to incremental compilation, only 1 module needs to be compiled. 
-rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
-ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
-rm -f _cuarc0.so
-if [ -x ../simv ]; then chmod a-x ../simv; fi
-g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib -L/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib  -Wl,-rpath-link=./     _104021_archive_1.so _prev_archive_1.so _cuarc0.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lnuma -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive          /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/vcs_save_restore_new.o -ldl  -lc -lm -lpthread -ldl 
-../simv up to date
-CPU time: .408 seconds to compile + .352 seconds to elab + .228 seconds to link
-Finished rebuilding the design.
-Chronologic VCS simulator copyright 1991-2022
-Contains Synopsys proprietary information.
-Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Apr 29 20:04 2023
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Apr 30 15:49 2023
 VCD+ Writer T-2022.06_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
 The file '/afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/inter.vpd' was opened successfully.
                    0 input_data =  x, next = 0, done = 0, display = xxxxxxxxxxx, Compute_done = 0
@@ -1238,77 +167,57 @@ error
 
 error
 
-                2095 input_data =  0, next = 0, done = 0, display = 00000000011, Compute_done = 0
+                2125 input_data =  0, next = 1, done = 0, display = 00000000001, Compute_done = 0
 
-                2125 input_data =  0, next = 1, done = 0, display = 00000000011, Compute_done = 0
-
-                2145 input_data =  0, next = 0, done = 0, display = 00000000011, Compute_done = 0
+                2145 input_data =  0, next = 0, done = 0, display = 00000000001, Compute_done = 0
 
 error
 
-                2175 input_data =  0, next = 0, done = 0, display = 00000000111, Compute_done = 0
+                2205 input_data =  0, next = 1, done = 0, display = 00000000001, Compute_done = 0
 
-                2205 input_data =  0, next = 1, done = 0, display = 00000000111, Compute_done = 0
-
-                2225 input_data =  0, next = 0, done = 0, display = 00000000111, Compute_done = 0
+                2225 input_data =  0, next = 0, done = 0, display = 00000000001, Compute_done = 0
 
 error
 
-                2255 input_data =  0, next = 0, done = 0, display = 00000001111, Compute_done = 0
+                2285 input_data =  0, next = 1, done = 0, display = 00000000001, Compute_done = 0
 
-                2285 input_data =  0, next = 1, done = 0, display = 00000001111, Compute_done = 0
-
-                2305 input_data =  0, next = 0, done = 0, display = 00000001111, Compute_done = 0
+                2305 input_data =  0, next = 0, done = 0, display = 00000000001, Compute_done = 0
 
 error
 
-                2345 input_data =  0, next = 0, done = 0, display = 00000011111, Compute_done = 0
+                2365 input_data =  0, next = 1, done = 0, display = 00000000001, Compute_done = 0
 
-                2365 input_data =  0, next = 1, done = 0, display = 00000011111, Compute_done = 0
-
-                2385 input_data =  0, next = 0, done = 0, display = 00000011111, Compute_done = 0
+                2385 input_data =  0, next = 0, done = 0, display = 00000000001, Compute_done = 0
 
 error
 
-                2415 input_data =  0, next = 0, done = 0, display = 00000111111, Compute_done = 0
+                2445 input_data =  0, next = 1, done = 0, display = 00000000001, Compute_done = 0
 
-                2445 input_data =  0, next = 1, done = 0, display = 00000111111, Compute_done = 0
-
-                2465 input_data =  0, next = 0, done = 0, display = 00000111111, Compute_done = 0
+                2465 input_data =  0, next = 0, done = 0, display = 00000000001, Compute_done = 0
 
 error
 
-                2495 input_data =  0, next = 0, done = 0, display = 00001111111, Compute_done = 0
+                2525 input_data =  0, next = 1, done = 0, display = 00000000001, Compute_done = 0
 
-                2525 input_data =  0, next = 1, done = 0, display = 00001111111, Compute_done = 0
-
-                2545 input_data =  0, next = 0, done = 0, display = 00001111111, Compute_done = 0
+                2545 input_data =  0, next = 0, done = 0, display = 00000000001, Compute_done = 0
 
 error
 
-                2575 input_data =  0, next = 0, done = 0, display = 00011111111, Compute_done = 0
+                2605 input_data =  0, next = 1, done = 0, display = 00000000001, Compute_done = 0
 
-                2605 input_data =  0, next = 1, done = 0, display = 00011111111, Compute_done = 0
-
-                2625 input_data =  0, next = 0, done = 0, display = 00011111111, Compute_done = 0
+                2625 input_data =  0, next = 0, done = 0, display = 00000000001, Compute_done = 0
 
 error
 
-                2655 input_data =  0, next = 0, done = 0, display = 00001111111, Compute_done = 0
+                2685 input_data =  0, next = 1, done = 0, display = 00000000001, Compute_done = 0
 
-                2685 input_data =  0, next = 1, done = 0, display = 00001111111, Compute_done = 0
-
-                2705 input_data =  0, next = 0, done = 0, display = 00001111111, Compute_done = 0
+                2705 input_data =  0, next = 0, done = 0, display = 00000000001, Compute_done = 0
 
 error
 
-                2745 input_data =  0, next = 0, done = 0, display = 00000111111, Compute_done = 0
+                2765 input_data =  0, next = 1, done = 0, display = 00000000001, Compute_done = 0
 
-                2765 input_data =  0, next = 1, done = 0, display = 00000111111, Compute_done = 0
-
-                2775 input_data =  0, next = 1, done = 0, display = 00000111111, Compute_done = 1
-
-                2785 input_data =  0, next = 0, done = 0, display = 00000111111, Compute_done = 1
+                2785 input_data =  0, next = 0, done = 0, display = 00000000001, Compute_done = 0
 
 error
 
@@ -1316,3 +225,1864 @@ $finish called from file "TuringMachine_test.sv", line 432.
 $finish at simulation time                 2806
 Simulation complete, time is 2806.
 0
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2806
+CPU Time:      0.430 seconds;       Data structure size:   0.0Mb
+Sun Apr 30 15:56:14 2023
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug' will be deprecated in a future release.  Please use 
+  '-debug_acc+pp+f+dmptf -debug_region+cell+encrypt' instead.
+
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Sun Apr 30 15:56:14 2023
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'TuringMachine_test.sv'
+Parsing design file 'TuringMachine.sv'
+
+Warning-[IPDW] Identifier previously declared
+TuringMachine.sv, 32
+  Second declaration for identifier 'Compute_done' ignored
+  Identifier 'Compute_done' previously declared as output port. 
+  [TuringMachine.sv, 28]
+
+Parsing design file 'library.sv'
+Top Level Modules:
+       TuringMachine_test
+       MagComp
+       Adder
+       Multiplexer
+       Decoder
+       DFlipFlop
+       Synchronizer
+       ShiftRegister_PIPO
+       ShiftRegister_SIPO
+       BarrelShiftRegister
+No TimeScale specified
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 46
+"Mux2to1 #(dw) mux_input_calculate( .I0 (data_reg_out),  .I1 (input_data),  .S (ReadInput),  .Y (write_data));"
+  The following 1-bit expression is connected to 4-bit port "I0" of module 
+  "Mux2to1", instance "mux_input_calculate".
+  Expression: data_reg_out
+  Instantiated module defined at: "library.sv", 61
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 47
+"Mux2to1 #(aw) mux_next_state( .I0 (next_state_prep),  .I1 (1'b1),  .S (NextState_init),  .Y (next_state_in));"
+  The following 1-bit expression is connected to 6-bit port "I1" of module 
+  "Mux2to1", instance "mux_next_state".
+  Expression: 1'b1
+  Instantiated module defined at: "library.sv", 61
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 48
+"Mux4to1 #(aw) mux_state_tape_addr( .I0 (state_addr_out),  .I1 (tape_addr_out),  .I2 ((tape_addr_out - 'd6)),  .I3 (input_addr_out),  .S (Addr_sel),  .Y (memory_addr));"
+  The following 32-bit expression is connected to 6-bit port "I2" of module 
+  "Mux4to1", instance "mux_state_tape_addr".
+  Expression: (tape_addr_out - 'd6)
+  Instantiated module defined at: "library.sv", 72
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 63
+"Demux1to4 #(dw) demux( .I (read_data),  .S (Data_sel),  .Y0 (data_reg_in),  .Y1 (direction_in),  .Y2 (next_state_prep),  .Y3 (tape_reg_in));"
+  The following 1-bit expression is connected to 4-bit port "Y0" of module 
+  "Demux1to4", instance "demux".
+  Expression: data_reg_in
+  Instantiated module defined at: "library.sv", 42
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 63
+"Demux1to4 #(dw) demux( .I (read_data),  .S (Data_sel),  .Y0 (data_reg_in),  .Y1 (direction_in),  .Y2 (next_state_prep),  .Y3 (tape_reg_in));"
+  The following 2-bit expression is connected to 4-bit port "Y1" of module 
+  "Demux1to4", instance "demux".
+  Expression: direction_in
+  Instantiated module defined at: "library.sv", 42
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 63
+"Demux1to4 #(dw) demux( .I (read_data),  .S (Data_sel),  .Y0 (data_reg_in),  .Y1 (direction_in),  .Y2 (next_state_prep),  .Y3 (tape_reg_in));"
+  The following 6-bit expression is connected to 4-bit port "Y2" of module 
+  "Demux1to4", instance "demux".
+  Expression: next_state_prep
+  Instantiated module defined at: "library.sv", 42
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 63
+"Demux1to4 #(dw) demux( .I (read_data),  .S (Data_sel),  .Y0 (data_reg_in),  .Y1 (direction_in),  .Y2 (next_state_prep),  .Y3 (tape_reg_in));"
+  The following 1-bit expression is connected to 4-bit port "Y3" of module 
+  "Demux1to4", instance "demux".
+  Expression: tape_reg_in
+  Instantiated module defined at: "library.sv", 42
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 73
+"Register #(aw) direction_reg( .en (Direction_en),  .clear (1'b0),  .D (direction_in),  .Q (direction_out),  .clock (clock));"
+  The following 2-bit expression is connected to 6-bit port "D" of module 
+  "Register", instance "direction_reg".
+  Expression: direction_in
+  Instantiated module defined at: "library.sv", 115
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 73
+"Register #(aw) direction_reg( .en (Direction_en),  .clear (1'b0),  .D (direction_in),  .Q (direction_out),  .clock (clock));"
+  The following 2-bit expression is connected to 6-bit port "Q" of module 
+  "Register", instance "direction_reg".
+  Expression: direction_out
+  Instantiated module defined at: "library.sv", 115
+  Use +lint=PCWM for more details.
+
+Starting vcs inline pass...
+
+10 modules and 0 UDP read.
+	However, due to incremental compilation, no re-compilation is necessary.
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib -L/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib  -Wl,-rpath-link=./     _180153_archive_1.so _prev_archive_1.so _cuarc0.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lnuma -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive          /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/vcs_save_restore_new.o -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .360 seconds to compile + .374 seconds to elab + .228 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Apr 30 15:56 2023
+VCD+ Writer T-2022.06_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
+The file '/afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/inter.vpd' was opened successfully.
+                   0 input_data =  x, next = 0, done = 0, display = xxxxxxxxxxx, Compute_done = 0
+
+                   5 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                  35 input_data =  3, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                  55 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                  75 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 105 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 125 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 175 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 195 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 215 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 245 input_data =  2, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 265 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 285 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 315 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 335 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 385 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 405 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 455 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 475 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 495 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 525 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 545 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 595 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 615 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 635 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 665 input_data =  3, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 685 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 705 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 735 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 755 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 805 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 825 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 845 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 875 input_data =  2, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 895 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 915 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 945 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 965 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 985 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1015 input_data =  2, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1035 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1055 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1085 input_data =  3, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1105 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1125 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1155 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1175 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1195 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1225 input_data =  2, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1245 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1265 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1295 input_data =  3, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1315 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1335 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1365 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1385 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1435 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1455 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1505 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1525 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1575 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1595 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1615 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1645 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1665 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1685 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1715 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1735 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1785 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1805 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1855 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1875 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1895 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1925 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1945 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1965 input_data =  0, next = 0, done = 1, display = 00000000000, Compute_done = 0
+
+                1985 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1995 input_data =  0, next = 0, done = 0, display = 00000000001, Compute_done = 0
+
+error
+
+                2045 input_data =  0, next = 1, done = 0, display = 00000000001, Compute_done = 0
+
+                2055 input_data =  0, next = 1, done = 0, display = 00000000011, Compute_done = 0
+
+                2065 input_data =  0, next = 0, done = 0, display = 00000000011, Compute_done = 0
+
+error
+
+                2095 input_data =  0, next = 0, done = 0, display = 00000000010, Compute_done = 0
+
+                2125 input_data =  0, next = 1, done = 0, display = 00000000010, Compute_done = 0
+
+                2135 input_data =  0, next = 1, done = 0, display = 00000000101, Compute_done = 0
+
+                2145 input_data =  0, next = 0, done = 0, display = 00000000101, Compute_done = 0
+
+error
+
+                2175 input_data =  0, next = 0, done = 0, display = 00000000100, Compute_done = 0
+
+                2205 input_data =  0, next = 1, done = 0, display = 00000000100, Compute_done = 0
+
+                2215 input_data =  0, next = 1, done = 0, display = 00000001001, Compute_done = 0
+
+                2225 input_data =  0, next = 0, done = 0, display = 00000001001, Compute_done = 0
+
+error
+
+                2255 input_data =  0, next = 0, done = 0, display = 00000001000, Compute_done = 0
+
+                2285 input_data =  0, next = 1, done = 0, display = 00000001000, Compute_done = 0
+
+                2295 input_data =  0, next = 1, done = 0, display = 00000010001, Compute_done = 0
+
+                2305 input_data =  0, next = 0, done = 0, display = 00000010001, Compute_done = 0
+
+error
+
+                2335 input_data =  0, next = 0, done = 0, display = 00000010000, Compute_done = 0
+
+                2365 input_data =  0, next = 1, done = 0, display = 00000010000, Compute_done = 0
+
+                2375 input_data =  0, next = 1, done = 0, display = 00000100001, Compute_done = 0
+
+                2385 input_data =  0, next = 0, done = 0, display = 00000100001, Compute_done = 0
+
+error
+
+                2415 input_data =  0, next = 0, done = 0, display = 00000100000, Compute_done = 0
+
+                2445 input_data =  0, next = 1, done = 0, display = 00000100000, Compute_done = 0
+
+                2455 input_data =  0, next = 1, done = 0, display = 00001000000, Compute_done = 0
+
+                2465 input_data =  0, next = 0, done = 0, display = 00001000000, Compute_done = 0
+
+error
+
+                2495 input_data =  0, next = 0, done = 0, display = 00001000001, Compute_done = 0
+
+                2525 input_data =  0, next = 1, done = 0, display = 00001000001, Compute_done = 0
+
+                2535 input_data =  0, next = 1, done = 0, display = 00010000011, Compute_done = 0
+
+                2545 input_data =  0, next = 0, done = 0, display = 00010000011, Compute_done = 0
+
+error
+
+                2575 input_data =  0, next = 0, done = 0, display = 00010000010, Compute_done = 0
+
+                2605 input_data =  0, next = 1, done = 0, display = 00010000010, Compute_done = 0
+
+                2615 input_data =  0, next = 1, done = 0, display = 00100000101, Compute_done = 0
+
+                2625 input_data =  0, next = 0, done = 0, display = 00100000101, Compute_done = 0
+
+error
+
+                2655 input_data =  0, next = 0, done = 0, display = 00100000100, Compute_done = 0
+
+                2685 input_data =  0, next = 1, done = 0, display = 00100000100, Compute_done = 0
+
+                2695 input_data =  0, next = 1, done = 0, display = 01000001001, Compute_done = 0
+
+                2705 input_data =  0, next = 0, done = 0, display = 01000001001, Compute_done = 0
+
+error
+
+                2735 input_data =  0, next = 0, done = 0, display = 01000001000, Compute_done = 0
+
+                2765 input_data =  0, next = 1, done = 0, display = 01000001000, Compute_done = 0
+
+                2775 input_data =  0, next = 1, done = 0, display = 10000010000, Compute_done = 0
+
+                2785 input_data =  0, next = 0, done = 0, display = 10000010000, Compute_done = 0
+
+error
+
+$finish called from file "TuringMachine_test.sv", line 432.
+$finish at simulation time                 2806
+Simulation complete, time is 2806.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2806
+CPU Time:      0.150 seconds;       Data structure size:   0.0Mb
+Sun Apr 30 16:00:32 2023
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug' will be deprecated in a future release.  Please use 
+  '-debug_acc+pp+f+dmptf -debug_region+cell+encrypt' instead.
+
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Sun Apr 30 16:00:33 2023
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'TuringMachine_test.sv'
+Parsing design file 'TuringMachine.sv'
+
+Warning-[IPDW] Identifier previously declared
+TuringMachine.sv, 32
+  Second declaration for identifier 'Compute_done' ignored
+  Identifier 'Compute_done' previously declared as output port. 
+  [TuringMachine.sv, 28]
+
+Parsing design file 'library.sv'
+Top Level Modules:
+       TuringMachine_test
+       MagComp
+       Adder
+       Multiplexer
+       Decoder
+       DFlipFlop
+       Synchronizer
+       ShiftRegister_PIPO
+       ShiftRegister_SIPO
+       BarrelShiftRegister
+No TimeScale specified
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 46
+"Mux2to1 #(dw) mux_input_calculate( .I0 (data_reg_out),  .I1 (input_data),  .S (ReadInput),  .Y (write_data));"
+  The following 1-bit expression is connected to 4-bit port "I0" of module 
+  "Mux2to1", instance "mux_input_calculate".
+  Expression: data_reg_out
+  Instantiated module defined at: "library.sv", 61
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 47
+"Mux2to1 #(aw) mux_next_state( .I0 (next_state_prep),  .I1 (1'b1),  .S (NextState_init),  .Y (next_state_in));"
+  The following 1-bit expression is connected to 6-bit port "I1" of module 
+  "Mux2to1", instance "mux_next_state".
+  Expression: 1'b1
+  Instantiated module defined at: "library.sv", 61
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 48
+"Mux4to1 #(aw) mux_state_tape_addr( .I0 (state_addr_out),  .I1 (tape_addr_out),  .I2 ((tape_addr_out - 'd6)),  .I3 (input_addr_out),  .S (Addr_sel),  .Y (memory_addr));"
+  The following 32-bit expression is connected to 6-bit port "I2" of module 
+  "Mux4to1", instance "mux_state_tape_addr".
+  Expression: (tape_addr_out - 'd6)
+  Instantiated module defined at: "library.sv", 72
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 63
+"Demux1to4 #(dw) demux( .I (read_data),  .S (Data_sel),  .Y0 (data_reg_in),  .Y1 (direction_in),  .Y2 (next_state_prep),  .Y3 (tape_reg_in));"
+  The following 1-bit expression is connected to 4-bit port "Y0" of module 
+  "Demux1to4", instance "demux".
+  Expression: data_reg_in
+  Instantiated module defined at: "library.sv", 42
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 63
+"Demux1to4 #(dw) demux( .I (read_data),  .S (Data_sel),  .Y0 (data_reg_in),  .Y1 (direction_in),  .Y2 (next_state_prep),  .Y3 (tape_reg_in));"
+  The following 2-bit expression is connected to 4-bit port "Y1" of module 
+  "Demux1to4", instance "demux".
+  Expression: direction_in
+  Instantiated module defined at: "library.sv", 42
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 63
+"Demux1to4 #(dw) demux( .I (read_data),  .S (Data_sel),  .Y0 (data_reg_in),  .Y1 (direction_in),  .Y2 (next_state_prep),  .Y3 (tape_reg_in));"
+  The following 6-bit expression is connected to 4-bit port "Y2" of module 
+  "Demux1to4", instance "demux".
+  Expression: next_state_prep
+  Instantiated module defined at: "library.sv", 42
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 63
+"Demux1to4 #(dw) demux( .I (read_data),  .S (Data_sel),  .Y0 (data_reg_in),  .Y1 (direction_in),  .Y2 (next_state_prep),  .Y3 (tape_reg_in));"
+  The following 1-bit expression is connected to 4-bit port "Y3" of module 
+  "Demux1to4", instance "demux".
+  Expression: tape_reg_in
+  Instantiated module defined at: "library.sv", 42
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 73
+"Register #(aw) direction_reg( .en (Direction_en),  .clear (1'b0),  .D (direction_in),  .Q (direction_out),  .clock (clock));"
+  The following 2-bit expression is connected to 6-bit port "D" of module 
+  "Register", instance "direction_reg".
+  Expression: direction_in
+  Instantiated module defined at: "library.sv", 115
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 73
+"Register #(aw) direction_reg( .en (Direction_en),  .clear (1'b0),  .D (direction_in),  .Q (direction_out),  .clock (clock));"
+  The following 2-bit expression is connected to 6-bit port "Q" of module 
+  "Register", instance "direction_reg".
+  Expression: direction_out
+  Instantiated module defined at: "library.sv", 115
+  Use +lint=PCWM for more details.
+
+Starting vcs inline pass...
+
+10 modules and 0 UDP read.
+recompiling module TuringMachine_test
+	However, due to incremental compilation, only 1 module needs to be compiled. 
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib -L/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib  -Wl,-rpath-link=./     _182277_archive_1.so _prev_archive_1.so _cuarc0.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lnuma -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive          /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/vcs_save_restore_new.o -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .420 seconds to compile + .374 seconds to elab + .232 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Apr 30 16:00 2023
+VCD+ Writer T-2022.06_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
+The file '/afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/inter.vpd' was opened successfully.
+                   0 input_data =  x, next = 0, done = 0, display = xxxxxxxxxxx, Compute_done = 0
+
+                   5 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                  35 input_data =  3, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                  55 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                  75 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 105 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 125 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 175 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 195 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 215 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 245 input_data =  2, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 265 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 285 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 315 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 335 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 385 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 405 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 455 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 475 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 495 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 525 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 545 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 595 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 615 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 635 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 665 input_data =  3, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 685 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 705 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 735 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 755 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 805 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 825 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 845 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 875 input_data =  2, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 895 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 915 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 945 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 965 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 985 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1015 input_data =  2, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1035 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1055 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1085 input_data =  3, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1105 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1125 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1155 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1175 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1195 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1225 input_data =  2, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1245 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1265 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1295 input_data =  3, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1315 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1335 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1365 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1385 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1435 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1455 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1505 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1525 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1575 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1595 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1615 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1645 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1665 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1685 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1715 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1735 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1785 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1805 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1855 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1875 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1895 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1925 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1945 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1965 input_data =  0, next = 0, done = 1, display = 00000000000, Compute_done = 0
+
+                1985 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+error
+
+                2045 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                2055 input_data =  0, next = 1, done = 0, display = 00000000001, Compute_done = 0
+
+                2065 input_data =  0, next = 0, done = 0, display = 00000000001, Compute_done = 0
+
+error
+
+                2125 input_data =  0, next = 1, done = 0, display = 00000000001, Compute_done = 0
+
+                2135 input_data =  0, next = 1, done = 0, display = 00000000011, Compute_done = 0
+
+                2145 input_data =  0, next = 0, done = 0, display = 00000000011, Compute_done = 0
+
+error
+
+                2205 input_data =  0, next = 1, done = 0, display = 00000000011, Compute_done = 0
+
+                2215 input_data =  0, next = 1, done = 0, display = 00000000111, Compute_done = 0
+
+                2225 input_data =  0, next = 0, done = 0, display = 00000000111, Compute_done = 0
+
+error
+
+                2285 input_data =  0, next = 1, done = 0, display = 00000000111, Compute_done = 0
+
+                2295 input_data =  0, next = 1, done = 0, display = 00000001111, Compute_done = 0
+
+                2305 input_data =  0, next = 0, done = 0, display = 00000001111, Compute_done = 0
+
+error
+
+                2335 input_data =  0, next = 0, done = 0, display = 00000001110, Compute_done = 0
+
+                2365 input_data =  0, next = 1, done = 0, display = 00000001110, Compute_done = 0
+
+                2375 input_data =  0, next = 1, done = 0, display = 00000011100, Compute_done = 0
+
+                2385 input_data =  0, next = 0, done = 0, display = 00000011100, Compute_done = 0
+
+error
+
+                2445 input_data =  0, next = 1, done = 0, display = 00000011100, Compute_done = 0
+
+                2455 input_data =  0, next = 1, done = 0, display = 00000111001, Compute_done = 0
+
+                2465 input_data =  0, next = 0, done = 0, display = 00000111001, Compute_done = 0
+
+error
+
+                2525 input_data =  0, next = 1, done = 0, display = 00000111001, Compute_done = 0
+
+                2535 input_data =  0, next = 1, done = 0, display = 00001110011, Compute_done = 0
+
+                2545 input_data =  0, next = 0, done = 0, display = 00001110011, Compute_done = 0
+
+error
+
+                2605 input_data =  0, next = 1, done = 0, display = 00001110011, Compute_done = 0
+
+                2615 input_data =  0, next = 1, done = 0, display = 00011100111, Compute_done = 0
+
+                2625 input_data =  0, next = 0, done = 0, display = 00011100111, Compute_done = 0
+
+error
+
+                2685 input_data =  0, next = 1, done = 0, display = 00011100111, Compute_done = 0
+
+                2705 input_data =  0, next = 0, done = 0, display = 10001110011, Compute_done = 0
+
+error
+
+                2735 input_data =  0, next = 0, done = 0, display = 10001110010, Compute_done = 0
+
+                2765 input_data =  0, next = 1, done = 0, display = 10001110010, Compute_done = 0
+
+                2785 input_data =  0, next = 0, done = 0, display = 11000111001, Compute_done = 0
+
+error
+
+$finish called from file "TuringMachine_test.sv", line 432.
+$finish at simulation time                 2806
+Simulation complete, time is 2806.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2806
+CPU Time:      0.150 seconds;       Data structure size:   0.0Mb
+Sun Apr 30 16:36:46 2023
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug' will be deprecated in a future release.  Please use 
+  '-debug_acc+pp+f+dmptf -debug_region+cell+encrypt' instead.
+
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Sun Apr 30 16:36:47 2023
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'TuringMachine_test.sv'
+Parsing design file 'TuringMachine.sv'
+
+Warning-[IPDW] Identifier previously declared
+TuringMachine.sv, 32
+  Second declaration for identifier 'Compute_done' ignored
+  Identifier 'Compute_done' previously declared as output port. 
+  [TuringMachine.sv, 28]
+
+Parsing design file 'library.sv'
+Top Level Modules:
+       TuringMachine_test
+       MagComp
+       Adder
+       Multiplexer
+       Decoder
+       DFlipFlop
+       Synchronizer
+       ShiftRegister_PIPO
+       ShiftRegister_SIPO
+       BarrelShiftRegister
+No TimeScale specified
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 46
+"Mux2to1 #(dw) mux_input_calculate( .I0 (data_reg_out),  .I1 (input_data),  .S (ReadInput),  .Y (write_data));"
+  The following 1-bit expression is connected to 4-bit port "I0" of module 
+  "Mux2to1", instance "mux_input_calculate".
+  Expression: data_reg_out
+  Instantiated module defined at: "library.sv", 61
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 47
+"Mux2to1 #(aw) mux_next_state( .I0 (next_state_prep),  .I1 (1'b1),  .S (NextState_init),  .Y (next_state_in));"
+  The following 1-bit expression is connected to 6-bit port "I1" of module 
+  "Mux2to1", instance "mux_next_state".
+  Expression: 1'b1
+  Instantiated module defined at: "library.sv", 61
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 48
+"Mux4to1 #(aw) mux_state_tape_addr( .I0 (state_addr_out),  .I1 (tape_addr_out),  .I2 ((tape_addr_out - 'd6)),  .I3 (input_addr_out),  .S (Addr_sel),  .Y (memory_addr));"
+  The following 32-bit expression is connected to 6-bit port "I2" of module 
+  "Mux4to1", instance "mux_state_tape_addr".
+  Expression: (tape_addr_out - 'd6)
+  Instantiated module defined at: "library.sv", 72
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 63
+"Demux1to4 #(dw) demux( .I (read_data),  .S (Data_sel),  .Y0 (data_reg_in),  .Y1 (direction_in),  .Y2 (next_state_prep),  .Y3 (tape_reg_in));"
+  The following 1-bit expression is connected to 4-bit port "Y0" of module 
+  "Demux1to4", instance "demux".
+  Expression: data_reg_in
+  Instantiated module defined at: "library.sv", 42
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 63
+"Demux1to4 #(dw) demux( .I (read_data),  .S (Data_sel),  .Y0 (data_reg_in),  .Y1 (direction_in),  .Y2 (next_state_prep),  .Y3 (tape_reg_in));"
+  The following 2-bit expression is connected to 4-bit port "Y1" of module 
+  "Demux1to4", instance "demux".
+  Expression: direction_in
+  Instantiated module defined at: "library.sv", 42
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 63
+"Demux1to4 #(dw) demux( .I (read_data),  .S (Data_sel),  .Y0 (data_reg_in),  .Y1 (direction_in),  .Y2 (next_state_prep),  .Y3 (tape_reg_in));"
+  The following 6-bit expression is connected to 4-bit port "Y2" of module 
+  "Demux1to4", instance "demux".
+  Expression: next_state_prep
+  Instantiated module defined at: "library.sv", 42
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 63
+"Demux1to4 #(dw) demux( .I (read_data),  .S (Data_sel),  .Y0 (data_reg_in),  .Y1 (direction_in),  .Y2 (next_state_prep),  .Y3 (tape_reg_in));"
+  The following 1-bit expression is connected to 4-bit port "Y3" of module 
+  "Demux1to4", instance "demux".
+  Expression: tape_reg_in
+  Instantiated module defined at: "library.sv", 42
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 73
+"Register #(aw) direction_reg( .en (Direction_en),  .clear (1'b0),  .D (direction_in),  .Q (direction_out),  .clock (clock));"
+  The following 2-bit expression is connected to 6-bit port "D" of module 
+  "Register", instance "direction_reg".
+  Expression: direction_in
+  Instantiated module defined at: "library.sv", 115
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 73
+"Register #(aw) direction_reg( .en (Direction_en),  .clear (1'b0),  .D (direction_in),  .Q (direction_out),  .clock (clock));"
+  The following 2-bit expression is connected to 6-bit port "Q" of module 
+  "Register", instance "direction_reg".
+  Expression: direction_out
+  Instantiated module defined at: "library.sv", 115
+  Use +lint=PCWM for more details.
+
+Starting vcs inline pass...
+
+10 modules and 0 UDP read.
+recompiling module TuringMachine_test
+	However, due to incremental compilation, only 1 module needs to be compiled. 
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib -L/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib  -Wl,-rpath-link=./     _196094_archive_1.so _prev_archive_1.so _cuarc0.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lnuma -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive          /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/vcs_save_restore_new.o -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .421 seconds to compile + .356 seconds to elab + .231 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Apr 30 16:36 2023
+VCD+ Writer T-2022.06_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
+The file '/afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/inter.vpd' was opened successfully.
+                   0 input_data =  x, next = 0, done = 0, display = xxxxxxxxxxx, Compute_done = 0
+
+                   5 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                  35 input_data =  3, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                  55 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                  75 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 105 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 125 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 175 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 195 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 215 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 245 input_data =  2, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 265 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 285 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 315 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 335 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 385 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 405 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 455 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 475 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 495 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 525 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 545 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 595 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 615 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 635 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 665 input_data =  3, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 685 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 705 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 735 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 755 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 805 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 825 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 845 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 875 input_data =  2, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 895 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 915 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 945 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 965 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 985 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1015 input_data =  2, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1035 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1055 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1085 input_data =  3, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1105 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1125 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1155 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1175 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1195 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1225 input_data =  2, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1245 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1265 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1295 input_data =  3, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1315 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1335 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1365 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1385 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1435 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1455 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1505 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1525 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1575 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1595 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1615 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1645 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1665 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1685 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1715 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1735 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1785 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1805 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1855 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1875 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1895 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1925 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1945 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1965 input_data =  0, next = 0, done = 1, display = 00000000000, Compute_done = 0
+
+                1985 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+error
+
+                2045 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                2065 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+error
+
+                2085 input_data =  0, next = 0, done = 0, display = 00000000001, Compute_done = 0
+
+                2125 input_data =  0, next = 1, done = 0, display = 00000000001, Compute_done = 0
+
+                2145 input_data =  0, next = 0, done = 0, display = 00000000001, Compute_done = 0
+
+error
+
+                2165 input_data =  0, next = 0, done = 0, display = 00000000011, Compute_done = 0
+
+                2205 input_data =  0, next = 1, done = 0, display = 00000000011, Compute_done = 0
+
+                2225 input_data =  0, next = 0, done = 0, display = 00000000011, Compute_done = 0
+
+error
+
+                2245 input_data =  0, next = 0, done = 0, display = 00000000111, Compute_done = 0
+
+                2285 input_data =  0, next = 1, done = 0, display = 00000000111, Compute_done = 0
+
+                2305 input_data =  0, next = 0, done = 0, display = 00000000111, Compute_done = 0
+
+error
+
+                2325 input_data =  0, next = 0, done = 0, display = 00000001110, Compute_done = 0
+
+                2335 input_data =  0, next = 0, done = 0, display = 00000001111, Compute_done = 0
+
+                2365 input_data =  0, next = 1, done = 0, display = 00000001111, Compute_done = 0
+
+                2385 input_data =  0, next = 0, done = 0, display = 00000001111, Compute_done = 0
+
+error
+
+                2405 input_data =  0, next = 0, done = 0, display = 00000011111, Compute_done = 0
+
+                2445 input_data =  0, next = 1, done = 0, display = 00000011111, Compute_done = 0
+
+                2465 input_data =  0, next = 0, done = 0, display = 00000011111, Compute_done = 0
+
+error
+
+                2485 input_data =  0, next = 0, done = 0, display = 00000111111, Compute_done = 0
+
+                2525 input_data =  0, next = 1, done = 0, display = 00000111111, Compute_done = 0
+
+                2545 input_data =  0, next = 0, done = 0, display = 00000111111, Compute_done = 0
+
+error
+
+                2565 input_data =  0, next = 0, done = 0, display = 00001111111, Compute_done = 0
+
+                2605 input_data =  0, next = 1, done = 0, display = 00001111111, Compute_done = 0
+
+                2625 input_data =  0, next = 0, done = 0, display = 00001111111, Compute_done = 0
+
+error
+
+                2645 input_data =  0, next = 0, done = 0, display = 00011111110, Compute_done = 0
+
+                2685 input_data =  0, next = 1, done = 0, display = 00011111110, Compute_done = 0
+
+                2705 input_data =  0, next = 0, done = 0, display = 10001111111, Compute_done = 0
+
+error
+
+                2725 input_data =  0, next = 0, done = 0, display = 11000111111, Compute_done = 0
+
+                2735 input_data =  0, next = 0, done = 0, display = 11000111110, Compute_done = 0
+
+                2765 input_data =  0, next = 1, done = 0, display = 11000111110, Compute_done = 0
+
+                2785 input_data =  0, next = 0, done = 0, display = 11100011111, Compute_done = 0
+
+error
+
+                2805 input_data =  0, next = 0, done = 0, display = 11110001111, Compute_done = 0
+
+$finish called from file "TuringMachine_test.sv", line 432.
+$finish at simulation time                 2806
+Simulation complete, time is 2806.
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Apr 30 16:39 2023
+VCD+ Writer T-2022.06_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
+The file '/afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/inter.vpd' was opened successfully.
+                   0 input_data =  x, next = 0, done = 0, display = xxxxxxxxxxx, Compute_done = 0
+
+                   5 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                  35 input_data =  3, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                  55 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                  75 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 105 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 125 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 175 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 195 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 215 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 245 input_data =  2, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 265 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 285 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 315 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 335 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 385 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 405 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 455 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 475 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 495 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 525 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 545 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 595 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 615 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 635 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 665 input_data =  3, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 685 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 705 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 735 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 755 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 805 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 825 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 845 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 875 input_data =  2, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 895 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 915 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 945 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 965 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 985 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1015 input_data =  2, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1035 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1055 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1085 input_data =  3, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1105 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1125 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1155 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1175 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1195 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1225 input_data =  2, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1245 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1265 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1295 input_data =  3, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1315 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1335 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1365 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1385 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1435 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1455 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1505 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1525 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1575 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1595 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1615 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1645 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1665 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1685 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1715 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1735 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1785 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1805 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1855 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1875 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1895 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1925 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1945 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1965 input_data =  0, next = 0, done = 1, display = 00000000000, Compute_done = 0
+
+                1985 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+error
+
+                2045 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                2065 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+error
+
+                2085 input_data =  0, next = 0, done = 0, display = 00000000001, Compute_done = 0
+
+                2125 input_data =  0, next = 1, done = 0, display = 00000000001, Compute_done = 0
+
+                2145 input_data =  0, next = 0, done = 0, display = 00000000001, Compute_done = 0
+
+error
+
+                2165 input_data =  0, next = 0, done = 0, display = 00000000011, Compute_done = 0
+
+                2205 input_data =  0, next = 1, done = 0, display = 00000000011, Compute_done = 0
+
+                2225 input_data =  0, next = 0, done = 0, display = 00000000011, Compute_done = 0
+
+error
+
+                2245 input_data =  0, next = 0, done = 0, display = 00000000111, Compute_done = 0
+
+                2285 input_data =  0, next = 1, done = 0, display = 00000000111, Compute_done = 0
+
+                2305 input_data =  0, next = 0, done = 0, display = 00000000111, Compute_done = 0
+
+error
+
+                2325 input_data =  0, next = 0, done = 0, display = 00000001110, Compute_done = 0
+
+                2335 input_data =  0, next = 0, done = 0, display = 00000001111, Compute_done = 0
+
+                2365 input_data =  0, next = 1, done = 0, display = 00000001111, Compute_done = 0
+
+                2385 input_data =  0, next = 0, done = 0, display = 00000001111, Compute_done = 0
+
+error
+
+                2405 input_data =  0, next = 0, done = 0, display = 00000011111, Compute_done = 0
+
+                2445 input_data =  0, next = 1, done = 0, display = 00000011111, Compute_done = 0
+
+                2465 input_data =  0, next = 0, done = 0, display = 00000011111, Compute_done = 0
+
+error
+
+                2485 input_data =  0, next = 0, done = 0, display = 00000111111, Compute_done = 0
+
+                2525 input_data =  0, next = 1, done = 0, display = 00000111111, Compute_done = 0
+
+                2545 input_data =  0, next = 0, done = 0, display = 00000111111, Compute_done = 0
+
+error
+
+                2565 input_data =  0, next = 0, done = 0, display = 00001111111, Compute_done = 0
+
+                2605 input_data =  0, next = 1, done = 0, display = 00001111111, Compute_done = 0
+
+                2625 input_data =  0, next = 0, done = 0, display = 00001111111, Compute_done = 0
+
+error
+
+                2645 input_data =  0, next = 0, done = 0, display = 00011111110, Compute_done = 0
+
+                2685 input_data =  0, next = 1, done = 0, display = 00011111110, Compute_done = 0
+
+                2705 input_data =  0, next = 0, done = 0, display = 10001111111, Compute_done = 0
+
+error
+
+                2725 input_data =  0, next = 0, done = 0, display = 11000111111, Compute_done = 0
+
+                2735 input_data =  0, next = 0, done = 0, display = 11000111110, Compute_done = 0
+
+                2765 input_data =  0, next = 1, done = 0, display = 11000111110, Compute_done = 0
+
+                2785 input_data =  0, next = 0, done = 0, display = 11100011111, Compute_done = 0
+
+error
+
+                2805 input_data =  0, next = 0, done = 0, display = 11110001111, Compute_done = 0
+
+$finish called from file "TuringMachine_test.sv", line 432.
+$finish at simulation time                 2806
+Simulation complete, time is 2806.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2806
+CPU Time:      0.140 seconds;       Data structure size:   0.0Mb
+Sun Apr 30 16:40:17 2023
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug' will be deprecated in a future release.  Please use 
+  '-debug_acc+pp+f+dmptf -debug_region+cell+encrypt' instead.
+
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Sun Apr 30 16:40:18 2023
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'TuringMachine_test.sv'
+Parsing design file 'TuringMachine.sv'
+
+Warning-[IPDW] Identifier previously declared
+TuringMachine.sv, 32
+  Second declaration for identifier 'Compute_done' ignored
+  Identifier 'Compute_done' previously declared as output port. 
+  [TuringMachine.sv, 28]
+
+Parsing design file 'library.sv'
+Top Level Modules:
+       TuringMachine_test
+       MagComp
+       Adder
+       Multiplexer
+       Decoder
+       DFlipFlop
+       Synchronizer
+       ShiftRegister_PIPO
+       ShiftRegister_SIPO
+       BarrelShiftRegister
+No TimeScale specified
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 46
+"Mux2to1 #(dw) mux_input_calculate( .I0 (data_reg_out),  .I1 (input_data),  .S (ReadInput),  .Y (write_data));"
+  The following 1-bit expression is connected to 4-bit port "I0" of module 
+  "Mux2to1", instance "mux_input_calculate".
+  Expression: data_reg_out
+  Instantiated module defined at: "library.sv", 61
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 47
+"Mux2to1 #(aw) mux_next_state( .I0 (next_state_prep),  .I1 (1'b1),  .S (NextState_init),  .Y (next_state_in));"
+  The following 1-bit expression is connected to 6-bit port "I1" of module 
+  "Mux2to1", instance "mux_next_state".
+  Expression: 1'b1
+  Instantiated module defined at: "library.sv", 61
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 48
+"Mux4to1 #(aw) mux_state_tape_addr( .I0 (state_addr_out),  .I1 (tape_addr_out),  .I2 ((tape_addr_out - 'd6)),  .I3 (input_addr_out),  .S (Addr_sel),  .Y (memory_addr));"
+  The following 32-bit expression is connected to 6-bit port "I2" of module 
+  "Mux4to1", instance "mux_state_tape_addr".
+  Expression: (tape_addr_out - 'd6)
+  Instantiated module defined at: "library.sv", 72
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 63
+"Demux1to4 #(dw) demux( .I (read_data),  .S (Data_sel),  .Y0 (data_reg_in),  .Y1 (direction_in),  .Y2 (next_state_prep),  .Y3 (tape_reg_in));"
+  The following 1-bit expression is connected to 4-bit port "Y0" of module 
+  "Demux1to4", instance "demux".
+  Expression: data_reg_in
+  Instantiated module defined at: "library.sv", 42
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 63
+"Demux1to4 #(dw) demux( .I (read_data),  .S (Data_sel),  .Y0 (data_reg_in),  .Y1 (direction_in),  .Y2 (next_state_prep),  .Y3 (tape_reg_in));"
+  The following 2-bit expression is connected to 4-bit port "Y1" of module 
+  "Demux1to4", instance "demux".
+  Expression: direction_in
+  Instantiated module defined at: "library.sv", 42
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 63
+"Demux1to4 #(dw) demux( .I (read_data),  .S (Data_sel),  .Y0 (data_reg_in),  .Y1 (direction_in),  .Y2 (next_state_prep),  .Y3 (tape_reg_in));"
+  The following 6-bit expression is connected to 4-bit port "Y2" of module 
+  "Demux1to4", instance "demux".
+  Expression: next_state_prep
+  Instantiated module defined at: "library.sv", 42
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 63
+"Demux1to4 #(dw) demux( .I (read_data),  .S (Data_sel),  .Y0 (data_reg_in),  .Y1 (direction_in),  .Y2 (next_state_prep),  .Y3 (tape_reg_in));"
+  The following 1-bit expression is connected to 4-bit port "Y3" of module 
+  "Demux1to4", instance "demux".
+  Expression: tape_reg_in
+  Instantiated module defined at: "library.sv", 42
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 73
+"Register #(aw) direction_reg( .en (Direction_en),  .clear (1'b0),  .D (direction_in),  .Q (direction_out),  .clock (clock));"
+  The following 2-bit expression is connected to 6-bit port "D" of module 
+  "Register", instance "direction_reg".
+  Expression: direction_in
+  Instantiated module defined at: "library.sv", 115
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+TuringMachine.sv, 73
+"Register #(aw) direction_reg( .en (Direction_en),  .clear (1'b0),  .D (direction_in),  .Q (direction_out),  .clock (clock));"
+  The following 2-bit expression is connected to 6-bit port "Q" of module 
+  "Register", instance "direction_reg".
+  Expression: direction_out
+  Instantiated module defined at: "library.sv", 115
+  Use +lint=PCWM for more details.
+
+Starting vcs inline pass...
+
+10 modules and 0 UDP read.
+recompiling module TuringMachine_test
+	However, due to incremental compilation, only 1 module needs to be compiled. 
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib -L/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib  -Wl,-rpath-link=./     _198527_archive_1.so _prev_archive_1.so _cuarc0.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lnuma -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive          /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/vcs_save_restore_new.o -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .420 seconds to compile + .378 seconds to elab + .229 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Apr 30 16:40 2023
+VCD+ Writer T-2022.06_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
+The file '/afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/inter.vpd' was opened successfully.
+                   0 input_data =  x, next = 0, done = 0, display = xxxxxxxxxxx, Compute_done = 0
+
+                   5 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                  35 input_data =  3, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                  55 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                  75 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 105 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 125 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 175 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 195 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 215 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 245 input_data =  2, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 265 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 285 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 315 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 335 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 385 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 405 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 455 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 475 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 495 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 525 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 545 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 595 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 615 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 635 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 665 input_data =  3, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 685 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 705 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 735 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 755 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 805 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 825 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 845 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 875 input_data =  2, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 895 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 915 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 945 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                 965 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                 985 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1015 input_data =  2, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1035 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1055 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1085 input_data =  3, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1105 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1125 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1155 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1175 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1195 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1225 input_data =  2, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1245 input_data =  2, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1265 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1295 input_data =  3, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1315 input_data =  3, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1335 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1365 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1385 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1435 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1455 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1505 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1525 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1575 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1595 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1615 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1645 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1665 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1685 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1715 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1735 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1785 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1805 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1855 input_data =  1, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1875 input_data =  1, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1895 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1925 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                1945 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+                1965 input_data =  0, next = 0, done = 1, display = 00000000000, Compute_done = 0
+
+                1985 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+error
+
+                2045 input_data =  0, next = 1, done = 0, display = 00000000000, Compute_done = 0
+
+                2065 input_data =  0, next = 0, done = 0, display = 00000000000, Compute_done = 0
+
+error
+
+                2095 input_data =  0, next = 0, done = 0, display = 00000000001, Compute_done = 0
+
+                2125 input_data =  0, next = 1, done = 0, display = 00000000001, Compute_done = 0
+
+                2145 input_data =  0, next = 0, done = 0, display = 00000000001, Compute_done = 0
+
+error
+
+                2175 input_data =  0, next = 0, done = 0, display = 00000000011, Compute_done = 0
+
+                2205 input_data =  0, next = 1, done = 0, display = 00000000011, Compute_done = 0
+
+                2225 input_data =  0, next = 0, done = 0, display = 00000000011, Compute_done = 0
+
+error
+
+                2255 input_data =  0, next = 0, done = 0, display = 00000000111, Compute_done = 0
+
+                2285 input_data =  0, next = 1, done = 0, display = 00000000111, Compute_done = 0
+
+                2305 input_data =  0, next = 0, done = 0, display = 00000000111, Compute_done = 0
+
+error
+
+                2335 input_data =  0, next = 0, done = 0, display = 00000000110, Compute_done = 0
+
+                2345 input_data =  0, next = 0, done = 0, display = 00000001100, Compute_done = 0
+
+                2365 input_data =  0, next = 1, done = 0, display = 00000001100, Compute_done = 0
+
+                2385 input_data =  0, next = 0, done = 0, display = 00000001100, Compute_done = 0
+
+error
+
+                2415 input_data =  0, next = 0, done = 0, display = 00000011001, Compute_done = 0
+
+                2445 input_data =  0, next = 1, done = 0, display = 00000011001, Compute_done = 0
+
+                2465 input_data =  0, next = 0, done = 0, display = 00000011001, Compute_done = 0
+
+error
+
+                2495 input_data =  0, next = 0, done = 0, display = 00000110011, Compute_done = 0
+
+                2525 input_data =  0, next = 1, done = 0, display = 00000110011, Compute_done = 0
+
+                2545 input_data =  0, next = 0, done = 0, display = 00000110011, Compute_done = 0
+
+error
+
+                2575 input_data =  0, next = 0, done = 0, display = 00001100111, Compute_done = 0
+
+                2605 input_data =  0, next = 1, done = 0, display = 00001100111, Compute_done = 0
+
+                2625 input_data =  0, next = 0, done = 0, display = 00001100111, Compute_done = 0
+
+error
+
+                2655 input_data =  0, next = 0, done = 0, display = 00011001110, Compute_done = 0
+
+                2685 input_data =  0, next = 1, done = 0, display = 00011001110, Compute_done = 0
+
+                2705 input_data =  0, next = 0, done = 0, display = 10001100111, Compute_done = 0
+
+error
+
+                2735 input_data =  0, next = 0, done = 0, display = 10001100110, Compute_done = 0
+
+                2745 input_data =  0, next = 0, done = 0, display = 11000110011, Compute_done = 0
+
+                2765 input_data =  0, next = 1, done = 0, display = 11000110011, Compute_done = 0
+
+                2785 input_data =  0, next = 0, done = 0, display = 11100011001, Compute_done = 0
+
+error
+
+$finish called from file "TuringMachine_test.sv", line 432.
+$finish at simulation time                 2806
+Simulation complete, time is 2806.

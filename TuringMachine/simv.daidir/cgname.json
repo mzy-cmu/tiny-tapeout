@@ -53,6 +53,12 @@
         "module",
         12
     ],
+    "ShiftRegister_SIPO": [
+        "ShiftRegister_SIPO",
+        "ckLmD",
+        "module",
+        16
+    ],
     "BarrelShiftRegister": [
         "BarrelShiftRegister",
         "ts568",
