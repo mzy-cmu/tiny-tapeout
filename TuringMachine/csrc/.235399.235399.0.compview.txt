@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1683004137.208046491, "rt":2.26, "ut":0.47, "st":0.19}}
+{"vcselab":{"timestamp_begin":1683004139.752599193, "rt":1.30, "ut":0.46, "st":0.15}}
+{"link":{"timestamp_begin":1683004141.534346880, "rt":1.22, "ut":0.21, "st":0.19}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1683004136.399328982}
+{"VCS_COMP_START_TIME": 1683004136.399328982}
+{"VCS_COMP_END_TIME": 1683004143.444820533}
+{"VCS_USER_OPTIONS": "-sverilog -debug TuringMachine_test.sv TuringMachine.sv library.sv"}
+{"vcs1": {"peak_mem": 340968}}
+{"stitch_vcselab": {"peak_mem": 238968}}

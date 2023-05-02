@@ -334,128 +334,157 @@ module TuringMachine_test();
     @(posedge clock);
     @(posedge clock);
 
-    if ((display != 11'b00000_1_11101) || Compute_done)
+    @(posedge clock);
+    @(posedge clock);
+    if ((display != 11'b00000_0_00001) || Compute_done)
       $display("error\n");
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
     Next <= 1'b1;
     @(posedge clock);
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((display != 11'b00001_1_11011) || Compute_done)
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    if ((display != 11'b00000_0_00011) || Compute_done)
       $display("error\n");
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
     Next <= 1'b1;
     @(posedge clock);
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((display != 11'b00011_1_10111) || Compute_done)
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    if ((display != 11'b00000_0_00111) || Compute_done)
       $display("error\n");
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
     Next <= 1'b1;
     @(posedge clock);
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((display != 11'b00111_1_01110) || Compute_done)
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    if ((display != 11'b00000_0_01111) || Compute_done)
       $display("error\n");
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
     Next <= 1'b1;
     @(posedge clock);
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((display != 11'b01111_0_11100) || Compute_done)
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    if ((display != 11'b00000_0_11110) || Compute_done)
       $display("error\n");
+    Next <= 1'b1;
+    @(posedge clock);
+    @(posedge clock);
+    if ((display != 11'b00000_0_11111) || Compute_done)
+      $display("error\n");
+    Next <= 1'b0;
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
+    if ((display != 11'b00000_1_11111) || Compute_done)
+      $display("error\n");
     Next <= 1'b1;
     @(posedge clock);
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((display != 11'b11111_1_11000) || Compute_done)
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    if ((display != 11'b00001_1_11111) || Compute_done)
       $display("error\n");
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
     Next <= 1'b1;
     @(posedge clock);
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((display != 11'b11111_1_10000) || Compute_done)
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    if ((display != 11'b00011_1_11111) || Compute_done)
       $display("error\n");
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
     Next <= 1'b1;
     @(posedge clock);
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((display != 11'b11111_1_00000) || Compute_done)
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    if ((display != 11'b00111_1_11110) || Compute_done)
       $display("error\n");
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
     Next <= 1'b1;
     @(posedge clock);
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((display != 11'b11111_0_00000) || Compute_done)
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    if ((display != 11'b00011_1_11111) || Compute_done)
       $display("error\n");
+    Next <= 1'b1;
+    @(posedge clock);
+    @(posedge clock);
+    if ((display != 11'b00011_1_11110) || (~Compute_done))
+      $display("error\n");
+    Next <= 1'b0;
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
+    if ((display != 11'b00011_1_11110) || (~Compute_done))
+      $display("error\n");
     Next <= 1'b1;
     @(posedge clock);
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((display != 11'b11111_1_00000) || Compute_done)
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    if ((display != 11'b00011_1_11110) || (~Compute_done))
       $display("error\n");
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
     Next <= 1'b1;
     @(posedge clock);
     @(posedge clock);
     Next <= 1'b0;
     @(posedge clock);
-    if ((display != 11'b11111_0_00000) || (~Compute_done))
-      $display("error\n");
     @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    if ((display != 11'b00011_1_11110) || (~Compute_done))
+      $display("error\n");
+    Next <= 1'b1;
+    @(posedge clock);
+    @(posedge clock);
+    Next <= 1'b0;
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    if ((display != 11'b00011_1_11110) || (~Compute_done))
+      $display("error\n");
     #1 $finish;
   end
 

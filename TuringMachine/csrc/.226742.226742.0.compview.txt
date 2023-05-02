@@ -1,0 +1,6 @@
+{"vcs1":{"timestamp_begin":1683003362.432405485, "rt":0.73, "ut":0.15, "st":0.08}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1683003360.171078400}
+{"VCS_COMP_START_TIME": 1683003360.171078400}
+{"VCS_COMP_END_TIME": 1683003363.881886334}
+{"VCS_USER_OPTIONS": "+lint=all -sverilog TuringMachine_test.sv TuringMachine.sv library.sv"}
+{"vcs1": {"peak_mem": 321900}}
