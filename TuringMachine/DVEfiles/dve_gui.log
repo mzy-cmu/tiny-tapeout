@@ -6165,3 +6165,7 @@ error
 $finish called from file "TuringMachine_test.sv", line 488.
 $finish at simulation time                 3036
 Simulation complete, time is 3036.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 3036
+CPU Time:      0.130 seconds;       Data structure size:   0.0Mb
+Tue May  2 18:54:00 2023

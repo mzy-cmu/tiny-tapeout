@@ -1,14 +1,13 @@
 # Begin_DVE_Session_Save_Info
 # DVE full session
-# Saved on Sun Apr 30 16:46:45 2023
+# Saved on Tue May 2 01:45:21 2023
 # Designs open: 1
 #   Sim: /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/simv
 # Toplevel windows open: 1
 # 	TopLevel.1
 #   Source.1: TuringMachine_test
-#   Group count = 2
-#   Group Group1 signal count = 54
-#   Group Group2 signal count = 8
+#   Group count = 1
+#   Group Group1 signal count = 56
 # End_DVE_Session_Save_Info
 
 # DVE version: T-2022.06_Full64
@@ -67,7 +66,7 @@ if {![gui_exist_window -window TopLevel.1]} {
 } else { 
     set TopLevel.1 TopLevel.1
 }
-gui_show_window -window ${TopLevel.1} -show_state normal -rect {{2 44} {1507 879}}
+gui_show_window -window ${TopLevel.1} -show_state normal -rect {{0 22} {1503 855}}
 
 # ToolBar settings
 gui_set_toolbar_attributes -toolbar {TimeOperations} -dock_state top
@@ -114,23 +113,23 @@ gui_show_toolbar -toolbar {Testbench}
 # End ToolBar settings
 
 # Docked window settings
-set HSPane.1 [gui_create_window -type HSPane -parent ${TopLevel.1} -dock_state left -dock_on_new_line true -dock_extent 148]
+set HSPane.1 [gui_create_window -type HSPane -parent ${TopLevel.1} -dock_state left -dock_on_new_line true -dock_extent 146]
 catch { set Hier.1 [gui_share_window -id ${HSPane.1} -type Hier] }
-gui_set_window_pref_key -window ${HSPane.1} -key dock_width -value_type integer -value 148
+gui_set_window_pref_key -window ${HSPane.1} -key dock_width -value_type integer -value 146
 gui_set_window_pref_key -window ${HSPane.1} -key dock_height -value_type integer -value -1
 gui_set_window_pref_key -window ${HSPane.1} -key dock_offset -value_type integer -value 0
-gui_update_layout -id ${HSPane.1} {{left 0} {top 0} {width 147} {height 379} {dock_state left} {dock_on_new_line true} {child_hier_colhier 140} {child_hier_coltype 100} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
-set DLPane.1 [gui_create_window -type DLPane -parent ${TopLevel.1} -dock_state left -dock_on_new_line true -dock_extent 445]
+gui_update_layout -id ${HSPane.1} {{left 0} {top 0} {width 145} {height 379} {dock_state left} {dock_on_new_line true} {child_hier_colhier 140} {child_hier_coltype 100} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
+set DLPane.1 [gui_create_window -type DLPane -parent ${TopLevel.1} -dock_state left -dock_on_new_line true -dock_extent 443]
 catch { set Data.1 [gui_share_window -id ${DLPane.1} -type Data] }
-gui_set_window_pref_key -window ${DLPane.1} -key dock_width -value_type integer -value 445
+gui_set_window_pref_key -window ${DLPane.1} -key dock_width -value_type integer -value 443
 gui_set_window_pref_key -window ${DLPane.1} -key dock_height -value_type integer -value 379
 gui_set_window_pref_key -window ${DLPane.1} -key dock_offset -value_type integer -value 0
-gui_update_layout -id ${DLPane.1} {{left 0} {top 0} {width 444} {height 379} {dock_state left} {dock_on_new_line true} {child_data_colvariable 199} {child_data_colvalue 159} {child_data_coltype 102} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
-set Console.1 [gui_create_window -type Console -parent ${TopLevel.1} -dock_state bottom -dock_on_new_line true -dock_extent 343]
+gui_update_layout -id ${DLPane.1} {{left 0} {top 0} {width 442} {height 379} {dock_state left} {dock_on_new_line true} {child_data_colvariable 199} {child_data_colvalue 159} {child_data_coltype 102} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
+set Console.1 [gui_create_window -type Console -parent ${TopLevel.1} -dock_state bottom -dock_on_new_line true -dock_extent 341]
 gui_set_window_pref_key -window ${Console.1} -key dock_width -value_type integer -value 1452
-gui_set_window_pref_key -window ${Console.1} -key dock_height -value_type integer -value 343
+gui_set_window_pref_key -window ${Console.1} -key dock_height -value_type integer -value 341
 gui_set_window_pref_key -window ${Console.1} -key dock_offset -value_type integer -value 0
-gui_update_layout -id ${Console.1} {{left 0} {top 0} {width 1505} {height 342} {dock_state bottom} {dock_on_new_line true}}
+gui_update_layout -id ${Console.1} {{left 0} {top 0} {width 1503} {height 340} {dock_state bottom} {dock_on_new_line true}}
 #### Start - Readjusting docked view's offset / size
 set dockAreaList { top left right bottom }
 foreach dockArea $dockAreaList {
@@ -200,34 +199,22 @@ gui_set_time_units 1s
 # Global: Signal Compare
 
 # Global: Signal Groups
-gui_load_child_values {TuringMachine_test.dut.fsm}
-gui_load_child_values {TuringMachine_test.dut.display_reg}
 gui_load_child_values {TuringMachine_test.dut}
 
 
-set _session_group_8 Group1
-gui_sg_create "$_session_group_8"
-set Group1 "$_session_group_8"
+set _session_group_5 Group1
+gui_sg_create "$_session_group_5"
+set Group1 "$_session_group_5"
 
-gui_sg_addsignal -group "$_session_group_8" { TuringMachine_test.dut.Addr_sel TuringMachine_test.dut.Compute_done TuringMachine_test.dut.DataReg_clr TuringMachine_test.dut.DataReg_en TuringMachine_test.dut.Data_eq TuringMachine_test.dut.Data_sel TuringMachine_test.dut.Direction_en TuringMachine_test.dut.Display_clr TuringMachine_test.dut.Display_en TuringMachine_test.dut.Display_rewrite TuringMachine_test.dut.Done TuringMachine_test.dut.Halt TuringMachine_test.dut.InputAddr_clr TuringMachine_test.dut.InputAddr_en TuringMachine_test.dut.Memory_end TuringMachine_test.dut.Next TuringMachine_test.dut.NextState_en TuringMachine_test.dut.NextState_init TuringMachine_test.dut.ReadInput TuringMachine_test.dut.Read_en TuringMachine_test.dut.Reset TuringMachine_test.dut.Right TuringMachine_test.dut.StateAddr_en TuringMachine_test.dut.StateAddr_ld TuringMachine_test.dut.TapeAddr_en TuringMachine_test.dut.TapeAddr_ld TuringMachine_test.dut.TapeReg_clr TuringMachine_test.dut.TapeReg_en TuringMachine_test.dut.Write_en TuringMachine_test.dut.aw TuringMachine_test.dut.clock TuringMachine_test.dut.fsm.currState TuringMachine_test.dut.data_reg_in TuringMachine_test.dut.data_reg_out TuringMachine_test.dut.direction_in TuringMachine_test.dut.direction_out TuringMachine_test.dut.display TuringMachine_test.dut.dw TuringMachine_test.dut.input_addr_out TuringMachine_test.dut.input_data TuringMachine_test.dut.memory_addr TuringMachine_test.dut.memory_data TuringMachine_test.dut.next_state_in TuringMachine_test.dut.next_state_out TuringMachine_test.dut.next_state_prep TuringMachine_test.dut.read_data TuringMachine_test.dut.state_addr_in TuringMachine_test.dut.state_addr_out TuringMachine_test.dut.tape_addr_in TuringMachine_test.dut.tape_addr_out TuringMachine_test.dut.tape_reg_in TuringMachine_test.dut.tape_reg_out TuringMachine_test.dut.w TuringMachine_test.dut.write_data }
+gui_sg_addsignal -group "$_session_group_5" { TuringMachine_test.dut.Addr_sel TuringMachine_test.dut.Compute_done TuringMachine_test.dut.DataReg_en TuringMachine_test.dut.Data_eq TuringMachine_test.dut.Data_sel TuringMachine_test.dut.Direction_en TuringMachine_test.dut.Display_en TuringMachine_test.dut.Display_rewrite TuringMachine_test.dut.Done TuringMachine_test.dut.Halt TuringMachine_test.dut.Init TuringMachine_test.dut.InputAddr_en TuringMachine_test.dut.Left TuringMachine_test.dut.Memory_end TuringMachine_test.dut.Next TuringMachine_test.dut.NextState_en TuringMachine_test.dut.PrevTape_en TuringMachine_test.dut.ReadInput TuringMachine_test.dut.Read_en TuringMachine_test.dut.StateAddr_en TuringMachine_test.dut.StateAddr_ld TuringMachine_test.dut.TapeAddr_en TuringMachine_test.dut.TapeReg_en TuringMachine_test.dut.Write_en TuringMachine_test.dut.aw TuringMachine_test.dut.clock TuringMachine_test.dut.fsm.currState TuringMachine_test.dut.data_reg_in TuringMachine_test.dut.data_reg_out TuringMachine_test.dut.direction_in TuringMachine_test.dut.direction_out TuringMachine_test.dut.display_in TuringMachine_test.dut.display_out TuringMachine_test.dut.dw TuringMachine_test.dut.input_addr_out TuringMachine_test.dut.input_data TuringMachine_test.dut.memory_addr TuringMachine_test.dut.memory_data TuringMachine_test.dut.next_state_in TuringMachine_test.dut.next_state_out TuringMachine_test.dut.next_state_prep TuringMachine_test.dut.prev_tape_addr TuringMachine_test.dut.prev_tape_in TuringMachine_test.dut.prev_tape_out TuringMachine_test.dut.read_data TuringMachine_test.dut.reset TuringMachine_test.dut.state_addr_in TuringMachine_test.dut.state_addr_out TuringMachine_test.dut.tape_addr_in TuringMachine_test.dut.tape_addr_out TuringMachine_test.dut.tape_in TuringMachine_test.dut.tape_init_addr TuringMachine_test.dut.tape_reg_in TuringMachine_test.dut.tape_reg_out TuringMachine_test.dut.w TuringMachine_test.dut.write_data }
 gui_set_radix -radix {decimal} -signals {Sim:TuringMachine_test.dut.aw}
 gui_set_radix -radix {twosComplement} -signals {Sim:TuringMachine_test.dut.aw}
-gui_set_radix -radix {binary} -signals {Sim:TuringMachine_test.dut.display}
-gui_set_radix -radix {unsigned} -signals {Sim:TuringMachine_test.dut.display}
+gui_set_radix -radix {binary} -signals {Sim:TuringMachine_test.dut.display_out}
+gui_set_radix -radix {unsigned} -signals {Sim:TuringMachine_test.dut.display_out}
 gui_set_radix -radix {decimal} -signals {Sim:TuringMachine_test.dut.dw}
 gui_set_radix -radix {twosComplement} -signals {Sim:TuringMachine_test.dut.dw}
 gui_set_radix -radix {decimal} -signals {Sim:TuringMachine_test.dut.w}
 gui_set_radix -radix {twosComplement} -signals {Sim:TuringMachine_test.dut.w}
-
-set _session_group_9 Group2
-gui_sg_create "$_session_group_9"
-set Group2 "$_session_group_9"
-
-gui_sg_addsignal -group "$_session_group_9" { TuringMachine_test.dut.display_reg.en TuringMachine_test.dut.display_reg.clear TuringMachine_test.dut.display_reg.serial TuringMachine_test.dut.display_reg.left TuringMachine_test.dut.display_reg.rewrite TuringMachine_test.dut.display_reg.clock TuringMachine_test.dut.display_reg.Q TuringMachine_test.dut.display_reg.w }
-gui_set_radix -radix {binary} -signals {Sim:TuringMachine_test.dut.display_reg.Q}
-gui_set_radix -radix {unsigned} -signals {Sim:TuringMachine_test.dut.display_reg.Q}
-gui_set_radix -radix {decimal} -signals {Sim:TuringMachine_test.dut.display_reg.w}
-gui_set_radix -radix {twosComplement} -signals {Sim:TuringMachine_test.dut.display_reg.w}
 
 # Global: Highlighting
 
@@ -237,14 +224,13 @@ gui_change_stack_mode -mode list
 # Post database loading setting...
 
 # Restore C1 time
-gui_set_time -C1_only 2806
+gui_set_time -C1_only 2735
 
 
 
 # Save global setting...
 
 # Wave/List view global setting
-gui_list_create_group_when_add -wave -enable
 gui_cov_show_value -switch false
 
 # Close all empty TopLevel windows
@@ -265,19 +251,19 @@ gui_hier_list_init -id ${Hier.1}
 gui_change_design -id ${Hier.1} -design Sim
 catch {gui_list_expand -id ${Hier.1} TuringMachine_test}
 catch {gui_list_expand -id ${Hier.1} TuringMachine_test.dut}
-catch {gui_list_select -id ${Hier.1} {TuringMachine_test.dut.display_reg}}
-gui_view_scroll -id ${Hier.1} -vertical -set 22
+catch {gui_list_select -id ${Hier.1} {TuringMachine_test.dut.fsm}}
+gui_view_scroll -id ${Hier.1} -vertical -set 262
 gui_view_scroll -id ${Hier.1} -horizontal -set 0
 
 # Data 'Data.1'
 gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
 gui_list_set_filter -id ${Data.1} -text {*}
-gui_list_show_data -id ${Data.1} {TuringMachine_test.dut.display_reg}
+gui_list_show_data -id ${Data.1} {TuringMachine_test.dut.fsm}
 gui_show_window -window ${Data.1}
-catch { gui_list_select -id ${Data.1} {TuringMachine_test.dut.display_reg.clock TuringMachine_test.dut.display_reg.serial TuringMachine_test.dut.display_reg.rewrite TuringMachine_test.dut.display_reg.Q TuringMachine_test.dut.display_reg.w TuringMachine_test.dut.display_reg.clear TuringMachine_test.dut.display_reg.left TuringMachine_test.dut.display_reg.en }}
-gui_view_scroll -id ${Data.1} -vertical -set 0
+catch { gui_list_select -id ${Data.1} {TuringMachine_test.dut.fsm.currState }}
+gui_view_scroll -id ${Data.1} -vertical -set 332
 gui_view_scroll -id ${Data.1} -horizontal -set 0
-gui_view_scroll -id ${Hier.1} -vertical -set 22
+gui_view_scroll -id ${Hier.1} -vertical -set 262
 gui_view_scroll -id ${Hier.1} -horizontal -set 0
 
 # Source 'Source.1'

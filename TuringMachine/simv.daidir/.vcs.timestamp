@@ -29,10 +29,10 @@
 -picarchive
 -sverilog
 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/bin/vcs1
-TuringMachine_test.sv
 TuringMachine.sv
 library.sv
-65
+m_design.sv
+68
 no_proxy=localhost,127.0.0.1,.cmu.edu,.cmu.local
 https_proxy=http://proximus.ece.cmu.edu:3128/
 http_proxy=http://proximus.ece.cmu.edu:3128/
@@ -46,6 +46,8 @@ VSCODE_GIT_ASKPASS_NODE=/afs/andrew.cmu.edu/usr1/zhiyingm/.vscode-server/bin/704
 VSCODE_GIT_ASKPASS_MAIN=/afs/andrew.cmu.edu/usr1/zhiyingm/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/extensions/git/dist/askpass-main.js
 VSCODE_GIT_ASKPASS_EXTRA_ARGS=
 VMR_MODE_FLAG=32
+VIRTUAL_ENV=OSS CAD Suite
+VERILATOR_ROOT=/afs/club.cc.cmu.edu/projects/stuco-open-eda/oss-cad-suite/share/verilator
 VCS_TARGET_ARCH=amd64
 VCS_PATHMAP_PRELOAD_DONE=1
 VCS_MX_HOME_INTERNAL=1
@@ -92,6 +94,7 @@ HTTP_PROXY=http://proximus.ece.cmu.edu:3128/
 HTTPS_PROXY=http://proximus.ece.cmu.edu:3128/
 HISTCONTROL=ignoredups
 GIT_ASKPASS=/afs/andrew.cmu.edu/usr1/zhiyingm/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/extensions/git/dist/askpass.sh
+GHDL_PREFIX=/afs/club.cc.cmu.edu/projects/stuco-open-eda/oss-cad-suite/lib/ghdl
 FTP_PROXY=http://proximus.ece.cmu.edu:3128/
 DC_HOME=/syn/T-2022.03-SP2/
 CVS_RSH=ssh
@@ -101,14 +104,14 @@ AKLOG=/usr/bin/aklog
 0
 0
 4
+1683068031 m_design.sv
 1682895318 library.sv
-1683060648 TuringMachine.sv
-1683064904 TuringMachine_test.sv
+1683065823 TuringMachine.sv
 1654052745 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/vcsdp.tab
 4
 1654054205 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvirsim.so
 1654053585 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
 1654053489 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libsnpsmalloc.so
 1654053565 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvfs.so
-1683064906 simv.daidir
+1683068353 simv.daidir
 -1 partitionlib

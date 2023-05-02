@@ -45,7 +45,7 @@ module TuringMachine
   // datapath modules & connections
   Mux2to1 #(dw) mux_input_calculate (.I0(data_reg_out), .I1(input_data), .S(ReadInput), .Y(write_data));
   Counter #(aw) input_addr (.en(InputAddr_en), .clear(Init), .load(1'b0), .up(1'b1), .clock, .D(), .Q(input_addr_out));
-  assign Memory_end = memory_data == input_addr_out;
+  assign Memory_end = (memory_data == tape_init_addr) || (memory_data == input_addr_out);
 
   assign state_addr_in = ((next_state_out + next_state_out + next_state_out - 'd3) << 1'b1) + 1'b1 + (tape_in + tape_in + tape_in);
   assign tape_addr_in = ((input_data + input_data + input_data) << 1'b1) + 1'b1;
@@ -79,6 +79,8 @@ module TuringMachine
   Register #(aw) direction_reg (.en(Direction_en), .clear(Init), .clock, .D(direction_in), .Q(direction_out));
   assign Left = direction_out[0];
   assign Halt = direction_out[1];
+
+  assign Compute_done = Memory_end || Halt;
   
   // finite state machine
   FSM fsm (.*);
@@ -90,7 +92,7 @@ module FSM (
   input logic clock, reset, Next, Done,
   input logic Data_eq, Halt, Left, Memory_end,
   output logic Init, NextState_en, InputAddr_en, StateAddr_ld, StateAddr_en, TapeAddr_en, Write_en, Read_en, ReadInput, 
-               PrevTape_en, TapeReg_en, DataReg_en, Direction_en, Display_en, Display_rewrite, Compute_done,
+               PrevTape_en, TapeReg_en, DataReg_en, Direction_en, Display_en, Display_rewrite,
   output logic [1:0] Addr_sel, Data_sel);
 
   enum logic [3:0] {START, WAIT, WRITE_INPUT, READ_TAPE, READ_DATA, REWRITE_TAPE, READ_DIRECTION, READ_STATE, STOP} currState, nextState;
@@ -119,7 +121,6 @@ module FSM (
     ReadInput = 1'b0; Data_sel = 2'b00;
     PrevTape_en = 1'b0; TapeReg_en = 1'b0; DataReg_en = 1'b0; Direction_en = 1'b0;
     Display_en = 1'b0; Display_rewrite = 1'b0;
-    Compute_done = 1'b0;
     case (currState)
       START:
         if (Next) begin
@@ -194,8 +195,7 @@ module FSM (
           Data_sel = 2'b11;
           TapeReg_en = 1'b1;
         end
-      STOP:
-        Compute_done = 1'b1;
+      // STOP outputs nothing
     endcase
   end
 

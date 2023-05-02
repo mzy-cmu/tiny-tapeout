@@ -359,3 +359,4 @@ gui_sim_restart
 gui_sim_restart -build {vcs -sverilog -debug TuringMachine_test.sv TuringMachine.sv library.sv}
 gui_sim_continue  
 gui_wv_scroll_hslidermove -id  Wave.1 32389
+gui_close_window -window TopLevel.2

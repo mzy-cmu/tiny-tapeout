@@ -442,7 +442,7 @@ module TuringMachine_test();
     Next <= 1'b1;
     @(posedge clock);
     @(posedge clock);
-    if ((display != 11'b00011_1_11110) || (~Compute_done))
+    if ((display != 11'b00011_1_11110) || Compute_done)
       $display("error\n");
     Next <= 1'b0;
     @(posedge clock);
