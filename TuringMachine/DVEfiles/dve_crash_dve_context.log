@@ -1,0 +1,141 @@
+=======================DVE Context and Call Stack=========================
+Command line: /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/linux64/bin/dve.exe -full64 -ucliplatform=linux64 -toolargs "-ucligui -toolexe ./simv  -pid 60995" -toolin /tmp/vcs_20230501184057_60993_zhiyingm..stdin -toolout /tmp/vcs_20230501184057_60993_zhiyingm..stdout
+
+--- Stack trace follows:
+[New LWP 61283]
+[New LWP 61287]
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+
+warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
+0x00002aaaae250659 in waitpid () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x2aaab450b700 (LWP 61287)):
+#0  0x00002aaaae27ab5d in read () from /lib64/libc.so.6
+#1  0x00002aaaae206d54 in __GI__IO_file_underflow () from /lib64/libc.so.6
+#2  0x00002aaaae207f22 in __GI__IO_default_uflow () from /lib64/libc.so.6
+#3  0x00002aaaae1facd4 in __GI__IO_getline_info () from /lib64/libc.so.6
+#4  0x00002aaaae1f9ad6 in fgets () from /lib64/libc.so.6
+#5  0x00000000013f3e10 in ag::dveSmlSocket::run() ()
+#6  0x0000000002b3f93a in QThreadInstance::start(void*) ()
+#7  0x00002aaaacbbdea5 in start_thread () from /lib64/libpthread.so.0
+#8  0x00002aaaae289b0d in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x2aaab430a700 (LWP 61283)):
+#0  0x00002aaaacbc1a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00002aaaad341940 in ?? () from /lib64/libX11.so.6
+#2  0x00002aaaad341e39 in ?? () from /lib64/libX11.so.6
+#3  0x00002aaaad336278 in XFreeFont () from /lib64/libX11.so.6
+#4  0x0000000002e1ce77 in QFontEngineXLFD::~QFontEngineXLFD() ()
+#5  0x0000000002e1cf31 in QFontEngineXLFD::~QFontEngineXLFD() ()
+#6  0x0000000002e1cf92 in QFontEngineLatinXLFD::~QFontEngineLatinXLFD() ()
+#7  0x0000000002e1d031 in QFontEngineLatinXLFD::~QFontEngineLatinXLFD() ()
+#8  0x0000000002b5bb37 in QFontCache::~QFontCache() ()
+#9  0x0000000002b5bdf1 in QFontCache::~QFontCache() ()
+#10 0x0000000002b5ca45 in QSingleCleanupHandler<QFontCache>::~QSingleCleanupHandler() ()
+#11 0x00002aaaae1c4ce9 in __run_exit_handlers () from /lib64/libc.so.6
+#12 0x00002aaaae1c4d37 in exit () from /lib64/libc.so.6
+#13 0x0000000002aee6ec in ?? ()
+#14 0x00002aaaad35649e in _XIOError () from /lib64/libX11.so.6
+#15 0x00002aaaad353dfd in _XEventsQueued () from /lib64/libX11.so.6
+#16 0x00002aaaad3301f4 in XCheckTypedEvent () from /lib64/libX11.so.6
+#17 0x00000000012cd4f5 in ag::dveXThread::run() ()
+#18 0x0000000002b3f93a in QThreadInstance::start(void*) ()
+#19 0x00002aaaacbbdea5 in start_thread () from /lib64/libpthread.so.0
+#20 0x00002aaaae289b0d in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x2aaaaab563c0 (LWP 61010)):
+#0  0x00002aaaae250659 in waitpid () from /lib64/libc.so.6
+#1  0x00002aaaae1cdf62 in do_system () from /lib64/libc.so.6
+#2  0x00002aaaae1ce311 in system () from /lib64/libc.so.6
+#3  0x00002aaaab0a2183 in SNPSle_10ee25eff68cd8461c9146fa1d0b35e87067f3c8015b313e639d2928478c79b3f673f99203bcf8be64600612100082236bffb2007f1e0ef9 () from /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
+#4  0x00002aaaab0a2790 in SNPSle_10ee25eff68cd8461c9146fa1d0b35e87067f3c8015b313e81c34e9ac4c8988ef4a6e067b3aa9271e9f15440f9e8f69e71727f1bc8d6ddca () from /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
+#5  0x00002aaaab0a3dba in SNPSle_10ee25eff68cd8461c9146fa1d0b35e87067f3c8015b313efba706aab251478fa49e66610e453774633a6c152e7ef778f93045171fb3645d () from /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
+#6  0x00002aaaab09bf43 in SNPSle_d35ca1ff70d465c2b9b1a72eee90a50630165806651fae96c1bbda5b5d02066c () from /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
+#7  0x000000000220797b in ag::logErrorMessage(ag::errorType, QString const&, bool) ()
+#8  0x0000000002207f8e in ?? ()
+#9  0x00002aaaae1c4cc9 in __run_exit_handlers () from /lib64/libc.so.6
+#10 0x00002aaaae1c4d37 in exit () from /lib64/libc.so.6
+#11 0x0000000002aee6ec in ?? ()
+#12 0x00002aaaad35649e in _XIOError () from /lib64/libX11.so.6
+#13 0x00002aaaad353dfd in _XEventsQueued () from /lib64/libX11.so.6
+#14 0x00002aaaad34580d in XPending () from /lib64/libX11.so.6
+#15 0x0000000002b0a064 in QEventLoop::processEvents(unsigned int) ()
+#16 0x000000000131942a in ag::ovaEventLoop::processEvents(unsigned int) ()
+#17 0x0000000002b55c29 in QEventLoop::enterLoop() ()
+#18 0x0000000002b55baa in QEventLoop::exec() ()
+#19 0x0000000001318e96 in run_cci_event_loop ()
+#20 0x00000000012cf6b2 in ag::ovaAppInst::enterEventLoop(int, char**) ()
+#21 0x0000000000e840c7 in main ()
+
+Process VmPeak: 475280 kb, VmSize: 475280 kb
+System Free Memory: 83101432 kb, System Free Swap: 30055152 kb
+
+No context available
+==========================================================================

@@ -6,13 +6,13 @@ synopsys::env hasTB
 trigger_hier_stack_context_switch 0
 synUtils::setDVEInitPhase 1
 synopsys::dump -type VPD -file /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/inter.vpd -locking
-synopsys::dump -autoflush on -fid VPD5
-set ::dve_fid VPD5
+synopsys::dump -autoflush on -fid VPD2
+set ::dve_fid VPD2
 synUtils::setDVEInitPhase 0
 ucliCore::getToolPID
-synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpIuaRaR
-synUtils::sendTool -active {_icl_start_rpc -version "T-2022.06_Full64" -sync_file /tmp/vcs_dve_rpc.zhiyingm.198780}
-synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.zhiyingm.198780}
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpGHEv46
+synUtils::sendTool -active {_icl_start_rpc -version "T-2022.06_Full64" -sync_file /tmp/vcs_dve_rpc.zhiyingm.63580}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.zhiyingm.63580}
 config endofsim noexit
 config onfail enable all
 config syscaddplainmembers
@@ -21,17 +21,16 @@ config syscaddstructtypes
 synopsys::listing -disable
 # Begin_DVE_Session_Save_Info
 # DVE restart session
-# Saved on Sun Apr 30 16:40:18 2023
+# Saved on Mon May 1 14:44:07 2023
 # Designs open: 1
 #   Sim: /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/simv
 # Toplevel windows open: 2
 # 	TopLevel.1
 # 	TopLevel.2
 #   Source.1: TuringMachine_test
-#   Wave.1: 62 signals
-#   Group count = 2
-#   Group Group1 signal count = 54
-#   Group Group2 signal count = 8
+#   Wave.1: 57 signals
+#   Group count = 1
+#   Group Group1 signal count = 57
 # End_DVE_Session_Save_Info
 # DVE version: T-2022.06_Full64
 # DVE build date: May 31 2022 20:53:03
@@ -66,13 +65,9 @@ set Wave.1 Wave.1
 # Global: Signal Time Shift
 # Global: Signal Compare
 # Global: Signal Groups
-synopsys::dump -add {TuringMachine_test.dut.fsm} -scope "." -depth 1 -fid VPD5
-synopsys::dump -add {TuringMachine_test.dut.display_reg} -scope "." -depth 1 -fid VPD5
-synopsys::dump -add {TuringMachine_test.dut} -scope "." -depth 1 -fid VPD5
-set _session_group_6 Group1
-set Group1 "$_session_group_6"
-set _session_group_7 Group2
-set Group2 "$_session_group_7"
+synopsys::dump -add {TuringMachine_test.dut} -scope "." -depth 1 -fid VPD2
+set _session_group_2 Group1
+set Group1 "$_session_group_2"
 # Global: Highlighting
 # Global: Stack
 # Post database loading setting...
@@ -84,14 +79,16 @@ foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_
 # Hier 'Hier.1'
 catch {gui_list_expand -id ${Hier.1} TuringMachine_test}
 catch {gui_list_expand -id ${Hier.1} TuringMachine_test.dut}
-catch {gui_list_select -id ${Hier.1} {TuringMachine_test.dut.display_reg}}
+catch {gui_list_select -id ${Hier.1} {TuringMachine_test.dut.fsm}}
 # Data 'Data.1'
-catch { gui_list_select -id ${Data.1} {TuringMachine_test.dut.display_reg.clock TuringMachine_test.dut.display_reg.serial TuringMachine_test.dut.display_reg.rewrite TuringMachine_test.dut.display_reg.Q TuringMachine_test.dut.display_reg.w TuringMachine_test.dut.display_reg.clear TuringMachine_test.dut.display_reg.left TuringMachine_test.dut.display_reg.en }}
+catch { gui_list_select -id ${Data.1} {TuringMachine_test.dut.fsm.currState }}
 # Source 'Source.1'
 # View 'Wave.1'
 set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
 set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
 set origGroupCreationState [gui_list_create_group_when_add -wave]
+ucliGUI::vpdAddHierarchy -scope TuringMachine_test.dut.fsm -depth 1 -file /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/inter.vpd; synopsys::dump -flush VPD2
+synopsys::dump -add {TuringMachine_test.dut.fsm.currState } -aggregates  -fid VPD2
 if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
 if { $groupExD } {  gui_msg_report -code DVWW028 }
 # Restore toplevel window zorder
@@ -104,8 +101,3 @@ set ucliGUI::state
 set ucliGUI::state
 set ucliGUI::state
 set ucliGUI::state
-if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
-synopsys::finish
-set ucliGUI::state
-set ucliGUI::state
-ucli_exit
