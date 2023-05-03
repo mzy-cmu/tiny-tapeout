@@ -25,6 +25,8 @@ module TuringMachine
   (input logic [dw-1:0] input_data,
    input logic clock, reset, Next, Done,
    output logic [10:0] display_out,
+   output logic [3:0] currState,
+   output logic display_in,
    output logic Compute_done);
 
   // control points
@@ -59,8 +61,8 @@ module TuringMachine
   assign prev_tape_addr = tape_addr_out - 'd11;
   
   Mux4to1 #(aw) mux_state_tape_addr (.I0(state_addr_out), .I1(tape_addr_out), .I2(prev_tape_addr), .I3(input_addr_out), .S(Addr_sel), .Y(memory_addr));
-  Memory #(dw, w, aw) memory (.re(Read_en), .we(Write_en), .clock, .addr(memory_addr), .data(memory_data));
-  BusDriver #(dw) busdriver (.en(Write_en), .data(write_data), .buff(read_data), .bus(memory_data));
+  Memory_synth #(dw, w, aw) memory (.re(Read_en), .we(Write_en), .clock, .addr(memory_addr), .data_in(write_data), .data_out(read_data));
+  //BusDriver #(dw) busdriver (.en(Write_en), .data(write_data), .buff(read_data), .bus(memory_data));
   
   Demux1to4 #(dw) demux (.I(read_data), .S(Data_sel), .Y0(data_reg_in), .Y1(direction_in), .Y2(next_state_prep), .Y3(tape_in));
   
@@ -93,7 +95,8 @@ module FSM (
   input logic Data_eq, Halt, Left, Memory_end,
   output logic Init, NextState_en, InputAddr_en, StateAddr_ld, StateAddr_en, TapeAddr_en, Write_en, Read_en, ReadInput, 
                PrevTape_en, TapeReg_en, DataReg_en, Direction_en, Display_en, Display_rewrite,
-  output logic [1:0] Addr_sel, Data_sel);
+  output logic [1:0] Addr_sel, Data_sel,
+  output logic [3:0] currState);
 
   enum logic [3:0] {START, WAIT, WRITE_INPUT, READ_TAPE, READ_DATA, REWRITE_TAPE, READ_DIRECTION, READ_STATE, STOP} currState, nextState;
 
@@ -106,7 +109,7 @@ module FSM (
       READ_TAPE: nextState = Memory_end ? STOP : READ_DATA;
       READ_DATA: nextState = Next ? (Data_eq ? READ_DIRECTION : REWRITE_TAPE) : READ_DATA;
       REWRITE_TAPE: nextState = READ_DIRECTION;
-      READ_DIRECTION: nextState = Next ? READ_DIRECTION : READ_STATE;
+      READ_DIRECTION: nextState = (~Next) ? READ_STATE : READ_DIRECTION;
       READ_STATE: nextState = READ_TAPE;
       STOP: nextState = STOP;
       default: nextState = currState;

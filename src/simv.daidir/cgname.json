@@ -5,65 +5,17 @@
         "module",
         1
     ],
-    "my_chip": [
-        "my_chip",
-        "P0xrA",
-        "module",
-        2
-    ],
-    "MagComp": [
-        "MagComp",
-        "vaLRj",
-        "module",
-        3
-    ],
-    "Adder": [
-        "Adder",
-        "xUt1z",
-        "module",
-        4
-    ],
-    "Multiplexer": [
-        "Multiplexer",
-        "UxyT3",
-        "module",
-        5
-    ],
-    "Decoder": [
-        "Decoder",
-        "t8TcA",
-        "module",
-        6
-    ],
     "DFlipFlop": [
         "DFlipFlop",
         "NafP4",
         "module",
         7
     ],
-    "Synchronizer": [
-        "Synchronizer",
-        "mLbx7",
+    "my_chip": [
+        "my_chip",
+        "P0xrA",
         "module",
-        8
-    ],
-    "ShiftRegister_PIPO": [
-        "ShiftRegister_PIPO",
-        "yK5FF",
-        "module",
-        9
-    ],
-    "ShiftRegister_SIPO": [
-        "ShiftRegister_SIPO",
-        "ckLmD",
-        "module",
-        10
-    ],
-    "BarrelShiftRegister": [
-        "BarrelShiftRegister",
-        "ts568",
-        "module",
-        11
+        2
     ],
     "...MASTER...": [
         "SIM",

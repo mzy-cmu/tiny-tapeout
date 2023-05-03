@@ -26,7 +26,7 @@ module TuringMachine
    input logic clock, reset, Next, Done,
    output logic [10:0] display_out,
    output logic [3:0] currState,
-   output logic [3:0] read_data,
+   output logic display_in,
    output logic Compute_done);
 
   // control points
@@ -168,7 +168,7 @@ module FSM (
             Write_en = 1'b1;
             Display_rewrite = 1'b1;
           end
-        end else Read_en = 1'b1;
+        end
       REWRITE_TAPE:
         begin
           StateAddr_en = 1'b1;
@@ -182,7 +182,7 @@ module FSM (
           Data_sel = 2'b10;
           NextState_en = 1'b1;
           TapeAddr_en = ~Halt;
-        end else Read_en = 1'b1;
+        end
       READ_STATE:
         if (Left) begin
           StateAddr_ld = 1'b1;

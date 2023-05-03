@@ -104,3 +104,10 @@ gui_marker_move -id  Wave.1 C1 2676
 gui_marker_select -id  Wave.1 { C1 }
 gui_marker_move -id  Wave.1 C1 2675
 gui_wv_scroll_hslidermove -id  Wave.1 13998
+gui_sim_restart -build {vcs -sverilog -debug TuringMachine_test.sv TuringMachine.sv library.sv}
+gui_sim_continue  
+gui_wv_scroll_hslidermove -id  Wave.1 16678
+gui_list_select -id Wave.1 -selected  { {TuringMachine_test.dut.display_out[10:0]}   }
+gui_list_set_selected_property -id Wave.1 -radix binary
+gui_wv_scroll_hslidermove -id  Wave.1 12280
+gui_wv_scroll_hslidermove -id  Wave.1 12413

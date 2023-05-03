@@ -44,19 +44,19 @@ module m_design (
     Synchronizer sync1 (.async(btn[0]), .sync(Next), .clock(clk100));
     Synchronizer sync2 (.async(btn[1]), .sync(Done), .clock(clk100));
 
-    TuringMachine TM (.input_data, .clock(clk100), .reset(~reset_n), .currState, .read_data,
+    TuringMachine TM (.input_data, .clock(clk100), .reset(~reset_n), .currState, .display_in,
                       .Next, .Done, .display_out(led[10:0]), .Compute_done(led[11]));
 
     logic [3:0] currState;
     logic [3:0] input_data;
-    logic [3:0] read_data;
+    logic display_in;
 
     assign input_data = sw[3:0];
 
-    hex_to_sevenseg hex2(.hexdigit(read_data), .seg(display));
+    hex_to_sevenseg hex2(.hexdigit(currState), .seg(display));
     assign display_sel = 4'b1110;
 
-    assign base_led = input_data;
+    assign base_led = display_in;
 
     // logic [31:0] ctr;
 
@@ -75,9 +75,5 @@ module m_design (
     //         end
     //     end
     // end
-
-    assign led[12] = btn[0];
-    assign led[13] = btn[1];
-    assign led[14] = btn[2];
 
 endmodule

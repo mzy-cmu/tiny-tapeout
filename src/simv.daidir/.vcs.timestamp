@@ -22,19 +22,19 @@
 -picarchive
 -sverilog
 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/bin/vcs1
-chip.sv
 TuringMachine.sv
 library.sv
+chip.sv
 68
 no_proxy=localhost,127.0.0.1,.cmu.edu,.cmu.local
 https_proxy=http://proximus.ece.cmu.edu:3128/
 http_proxy=http://proximus.ece.cmu.edu:3128/
 ftp_proxy=http://proximus.ece.cmu.edu:3128/
-XDG_SESSION_ID=11023
+XDG_SESSION_ID=11192
 XDG_RUNTIME_DIR=/run/user/2678383
 XDG_DATA_DIRS=/afs/andrew.cmu.edu/usr1/zhiyingm/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
-VSCODE_IPC_HOOK_CLI=/run/user/2678383/vscode-ipc-c098f0db-2403-45f4-99bb-0bea2ed3aa91.sock
-VSCODE_GIT_IPC_HANDLE=/run/user/2678383/vscode-git-957a4152a1.sock
+VSCODE_IPC_HOOK_CLI=/run/user/2678383/vscode-ipc-37c67095-0659-4a54-ac8b-d6d04c1c29dd.sock
+VSCODE_GIT_IPC_HANDLE=/run/user/2678383/vscode-git-0012ef45e0.sock
 VSCODE_GIT_ASKPASS_NODE=/afs/andrew.cmu.edu/usr1/zhiyingm/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/node
 VSCODE_GIT_ASKPASS_MAIN=/afs/andrew.cmu.edu/usr1/zhiyingm/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/extensions/git/dist/askpass-main.js
 VSCODE_GIT_ASKPASS_EXTRA_ARGS=
@@ -58,8 +58,8 @@ TERM_PROGRAM_VERSION=1.77.3
 TERM_PROGRAM=vscode
 SYN_DIR=/syn/T-2022.03-SP2
 SYNOPSYS_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation
-SSH_CONNECTION=128.2.13.178 35780 172.19.136.193 22
-SSH_CLIENT=128.2.13.178 35780 22
+SSH_CONNECTION=128.2.13.166 50260 172.19.136.193 22
+SSH_CLIENT=128.2.13.166 50260 22
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
 SNPS_VCS_CLANG_PATH=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/clang
 SNPS_INTERNAL_VCS_LINUX_OS=linux
@@ -97,13 +97,13 @@ AKLOG=/usr/bin/aklog
 0
 0
 3
-1682897891 library.sv
-1683090159 TuringMachine.sv
-1683090291 chip.sv
+1683141625 chip.sv
+1683141675 library.sv
+1683141520 TuringMachine.sv
 4
 1654054205 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvirsim.so
 1654053585 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
 1654053489 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libsnpsmalloc.so
 1654053565 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvfs.so
-1683090294 simv.daidir
+1683141678 simv.daidir
 -1 partitionlib
