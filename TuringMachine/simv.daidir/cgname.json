@@ -5,6 +5,12 @@
         "module",
         1
     ],
+    "TuringMachine_test": [
+        "TuringMachine_test",
+        "HeszI",
+        "module",
+        15
+    ],
     "MagComp": [
         "MagComp",
         "vaLRj",
@@ -58,12 +64,6 @@
         "ts568",
         "module",
         14
-    ],
-    "m_design": [
-        "m_design",
-        "hFw3y",
-        "module",
-        10
     ],
     "...MASTER...": [
         "SIM",

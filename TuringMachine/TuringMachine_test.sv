@@ -1,7 +1,7 @@
 `default_nettype none
 
 module TuringMachine_test();
-  logic [3:0] input_data;
+  logic [3:0] input_data, currState;
   logic clock, reset, Next, Done, Compute_done;
   logic [10:0] display;
 

@@ -1,187 +1,175 @@
-16:51:01    3221 --> ...                                                                                      [tcl] ucliGUI::start /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/simv -ucligui 
-16:51:01    3222 --> ...                                                                                          [tcl] set ucliGUI::state
-16:51:01    3223 --> ...                                                                                              [tcl] set ucliGUI::state
-16:51:01    3224 --> ...                                                                                                  [tcl] ucliCore::getToolPID
-16:51:01    3225 --> ...  [tcl] synopsys::env hasTB
-16:51:01    3226 --> ...      [tcl] trigger_hier_stack_context_switch 0
-16:51:01    3227 --> ...          [tcl] synUtils::setDVEInitPhase 1
-16:51:01    3228 --> ...              [tcl] gui_get_env SIMSETUP::SIMVPD
-16:51:01    3229 --> ...                  [tcl] synopsys::dump -type VPD -file /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/inter.vpd -locking
-16:51:01    3230 --> ...                      [tcl] synopsys::dump -autoflush on -fid VPD15
-16:51:01    3231 --> ...                          [tcl] set ::dve_fid VPD15
-16:51:01    3232 --> ...                              [tcl] synUtils::setDVEInitPhase 0
-16:51:01    3233 --> ...                                  [tcl] ucliCore::getToolPID
-16:51:01    3234 --> ...                                      [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpSJGt4J
-16:51:01    3235 --> ...                                          [tcl] synUtils::sendTool -active {_icl_start_rpc -version "T-2022.06_Full64" -sync_file /tmp/vcs_dve_rpc.zhiyingm.12218}
-16:51:02    3236 --> ...                                              [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.zhiyingm.12218}
-16:51:02    3237 --> ...                                                  [tcl] config endofsim noexit
-16:51:02    3238 --> ...                                                      [tcl] config onfail enable all
-16:51:02    3239 --> ...                                                          [tcl] config syscaddplainmembers
-16:51:02    3240 --> ...                                                              [tcl] config syscaddsourcenames
-16:51:02    3241 --> ...                                                                  [tcl] config syscaddstructtypes
-16:51:02    3242 --> ...                                                                      [tcl] synopsys::listing -disable
-16:51:02    3243 --> ...                                                                          [tcl] # Begin_DVE_Session_Save_Info
-16:51:02    3244 --> ...                                                                              [tcl] # DVE restart session
-16:51:02    3245 --> ...                                                                                  [tcl] # Saved on Tue May 2 16:50:58 2023
-16:51:02    3246 --> ...                                                                                      [tcl] # Designs open: 1
-16:51:02    3247 --> ...                                                                                          [tcl] #   Sim: /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/simv
-16:51:02    3248 --> ...                                                                                              [tcl] # Toplevel windows open: 2
-16:51:02    3249 --> ...                                                                                                  [tcl] # 	TopLevel.1
-16:51:02    3250 --> ...  [tcl] # 	TopLevel.2
-16:51:02    3251 --> ...      [tcl] #   Source.1: TuringMachine_test
-16:51:02    3252 --> ...          [tcl] #   Wave.1: 64 signals
-16:51:02    3253 --> ...              [tcl] #   Group count = 1
-16:51:02    3254 --> ...                  [tcl] #   Group Group1 signal count = 64
-16:51:02    3255 --> ...                      [tcl] # End_DVE_Session_Save_Info
-16:51:02    3256 --> ...                          [tcl] # DVE version: T-2022.06_Full64
-16:51:02    3257 --> ...                              [tcl] # DVE build date: May 31 2022 20:53:03
-16:51:02    3258 --> ...                                  [tcl] #<Session mode="Restart" path=".restartSimSession.tcl" type="Debug">
-16:51:02    3259 --> ...                                      [tcl] gui_set_loading_session_type Restart
-16:51:02    3260 --> ...                                          [tcl] gui_continuetime_set
-16:51:02    3261 --> ...                                              [tcl] gui_clear_window -type Wave
-16:51:02    3262 --> ...                                                  [tcl] gui_clear_window -type List
-16:51:02    3263 --> ...                                                      [tcl] # Application preferences
-16:51:02    3264 --> ...                                                          [tcl] gui_set_pref_value -key app_default_font -value {Helvetica,10,-1,5,50,0,0,0,0,0}
-16:51:02    3265 --> ...                                                              [tcl] gui_src_preferences -tabstop 8 -maxbits 24 -windownumber 1
-16:51:02    3266 --> ...                                                                  [tcl] #<WindowLayout>
-16:51:02    3267 --> ...                                                                      [tcl] # DVE top-level session
-16:51:02    3268 --> ...                                                                          [tcl] # Create and position top-level window: TopLevel.1
-16:51:02    3269 --> ...                                                                              [tcl] set TopLevel.1 TopLevel.1
-16:51:02    3270 --> ...                                                                                  [tcl] # Docked window settings
-16:51:02    3271 --> ...                                                                                      [tcl] set HSPane.1 HSPane.1
-16:51:02    3272 --> ...                                                                                          [tcl] set Hier.1 Hier.1
-16:51:02    3273 --> ...                                                                                              [tcl] set DLPane.1 DLPane.1
-16:51:02    3274 --> ...                                                                                                  [tcl] set Data.1 Data.1
-16:51:02    3275 --> ...  [tcl] set Console.1 Console.1
-16:51:02    3276 --> ...      [tcl] gui_sync_global -id ${TopLevel.1} -option true
-16:51:02    3277 --> ...          [tcl] # MDI window settings
-16:51:02    3278 --> ...              [tcl] set Source.1 Source.1
-16:51:02    3279 --> ...                  [tcl] gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
-16:51:02    3280 --> ...                      [tcl] # End MDI window settings
-16:51:02    3281 --> ...                          [tcl] # Create and position top-level window: TopLevel.2
-16:51:02    3282 --> ...                              [tcl] set TopLevel.2 TopLevel.2
-16:51:02    3283 --> ...                                  [tcl] # Docked window settings
-16:51:02    3284 --> ...                                      [tcl] gui_sync_global -id ${TopLevel.2} -option true
-16:51:02    3285 --> ...                                          [tcl] # MDI window settings
-16:51:02    3286 --> ...                                              [tcl] set Wave.1 Wave.1
-16:51:02    3287 --> ...                                                  [tcl] gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 416} {child_wave_right 1015} {child_wave_colname 206} {child_wave_colvalue 206} {child_wave_col1 0} {child_wave_col2 1}}
-16:51:02    3288 --> ...                                                      [tcl] # End MDI window settings
-16:51:02    3289 --> ...                                                          [tcl] #</WindowLayout>
-16:51:02    3290 --> ...                                                              [tcl] #<Database>
-16:51:02    3291 --> ...                                                                  [tcl] gui_set_precision 1s
-16:51:02    3292 --> ...                                                                      [tcl] gui_set_time_units 1s
-16:51:02    3293 --> ...                                                                          [tcl] #</Database>
-16:51:02    3294 --> ...                                                                              [tcl] # DVE Global setting session:
-16:51:02    3295 --> ...                                                                                  [tcl] # Global: Breakpoints
-16:51:02    3296 --> ...                                                                                      [tcl] # Global: Bus
-16:51:02    3297 --> ...                                                                                          [tcl] # Global: Expressions
-16:51:02    3298 --> ...                                                                                              [tcl] # Global: Signal Time Shift
-16:51:02    3299 --> ...                                                                                                  [tcl] # Global: Signal Compare
-16:51:02    3300 --> ...  [tcl] # Global: Signal Groups
-16:51:02    3301 --> ...      [tcl] gui_load_child_values {TuringMachine_test.dut.fsm}
-16:51:02    3302 --> ...          [tcl] synopsys::dump -add {TuringMachine_test.dut.fsm} -scope "." -depth 1 -fid VPD15
-16:51:02    3303 --> ...              [tcl] gui_load_child_values {TuringMachine_test.dut.display_reg}
-16:51:02    3304 --> ...                  [tcl] synopsys::dump -add {TuringMachine_test.dut.display_reg} -scope "." -depth 1 -fid VPD15
-16:51:02    3305 --> ...                      [tcl] gui_load_child_values {TuringMachine_test.dut}
-16:51:02    3306 --> ...                          [tcl] synopsys::dump -add {TuringMachine_test.dut} -scope "." -depth 1 -fid VPD15
-16:51:02    3307 --> ...                              [tcl] set _session_group_15 Group1
-16:51:02    3308 --> ...                                  [tcl] gui_sg_create "$_session_group_15"
-16:51:02    3309 --> ...                                      [tcl] set Group1 "$_session_group_15"
-16:51:02    3310 --> ...                                          [tcl] gui_sg_addsignal -group "$_session_group_15" { TuringMachine_test.dut.Addr_sel TuringMachine_test.dut.Compute_done TuringMachine_test.dut.DataReg_en TuringMachine_test.dut.Data_eq TuringMachine_test.dut.Data_sel TuringMachine_test.dut.Direction_en TuringMachine_test.dut.Display_en TuringMachine_test.dut.Display_rewrite TuringMachine_test.dut.Done TuringMachine_test.dut.Halt TuringMachine_test.dut.Init TuringMachine_test.dut.InputAddr_en TuringMachine_test.dut.Left TuringMachine_test.dut.Memory_end TuringMachine_test.dut.Next TuringMachine_test.dut.NextState_en TuringMachine_test.dut.PrevTape_en TuringMachine_test.dut.ReadInput TuringMachine_test.dut.Read_en TuringMachine_test.dut.StateAddr_en TuringMachine_test.dut.StateAddr_ld TuringMachine_test.dut.TapeAddr_en TuringMachine_test.dut.TapeReg_en TuringMachine_test.dut.Write_en TuringMachine_test.dut.aw TuringMachine_test.dut.clock TuringMachine_test.dut.fsm.currState TuringMachine_test.dut.data_reg_in TuringMachine_test.dut.data_reg_out TuringMachine_test.dut.direction_in TuringMachine_test.dut.direction_out TuringMachine_test.dut.display_in TuringMachine_test.dut.display_out TuringMachine_test.dut.dw TuringMachine_test.dut.input_addr_out TuringMachine_test.dut.input_data TuringMachine_test.dut.memory_addr TuringMachine_test.dut.memory_data TuringMachine_test.dut.next_state_in TuringMachine_test.dut.next_state_out TuringMachine_test.dut.next_state_prep TuringMachine_test.dut.prev_tape_addr TuringMachine_test.dut.prev_tape_in TuringMachine_test.dut.prev_tape_out TuringMachine_test.dut.read_data TuringMachine_test.dut.reset TuringMachine_test.dut.state_addr_in TuringMachine_test.dut.state_addr_out TuringMachine_test.dut.tape_addr_in TuringMachine_test.dut.tape_addr_out TuringMachine_test.dut.tape_in TuringMachine_test.dut.tape_init_addr TuringMachine_test.dut.tape_reg_in TuringMachine_test.dut.tape_reg_out TuringMachine_test.dut.w TuringMachine_test.dut.write_data TuringMachine_test.dut.display_reg.en TuringMachine_test.dut.display_reg.clear TuringMachine_test.dut.display_reg.serial TuringMachine_test.dut.display_reg.left TuringMachine_test.dut.display_reg.rewrite TuringMachine_test.dut.display_reg.clock TuringMachine_test.dut.display_reg.Q TuringMachine_test.dut.display_reg.w }
-16:51:02    3311 --> ...                                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:TuringMachine_test.dut.aw}
-16:51:02    3312 --> ...                                                  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:TuringMachine_test.dut.aw}
-16:51:02    3313 --> ...                                                      [tcl] gui_set_radix -radix {binary} -signals {Sim:TuringMachine_test.dut.display_out}
-16:51:02    3314 --> ...                                                          [tcl] gui_set_radix -radix {unsigned} -signals {Sim:TuringMachine_test.dut.display_out}
-16:51:02    3315 --> ...                                                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:TuringMachine_test.dut.dw}
-16:51:02    3316 --> ...                                                                  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:TuringMachine_test.dut.dw}
-16:51:02    3317 --> ...                                                                      [tcl] gui_set_radix -radix {decimal} -signals {Sim:TuringMachine_test.dut.memory_addr}
-16:51:02    3318 --> ...                                                                          [tcl] gui_set_radix -radix {unsigned} -signals {Sim:TuringMachine_test.dut.memory_addr}
-16:51:02    3319 --> ...                                                                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:TuringMachine_test.dut.w}
-16:51:02    3320 --> ...                                                                                  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:TuringMachine_test.dut.w}
-16:51:02    3321 --> ...                                                                                      [tcl] gui_set_radix -radix {decimal} -signals {Sim:TuringMachine_test.dut.display_reg.w}
-16:51:02    3322 --> ...                                                                                          [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:TuringMachine_test.dut.display_reg.w}
-16:51:02    3323 --> ...                                                                                              [tcl] # Global: Highlighting
-16:51:02    3324 --> ...                                                                                                  [tcl] # Global: Stack
-16:51:02    3325 --> ...  [tcl] gui_change_stack_mode -mode list
-16:51:02    3326 --> ...      [tcl] # Post database loading setting...
-16:51:02    3327 --> ...          [tcl] # Save global setting...
-16:51:02    3328 --> ...              [tcl] # Wave/List view global setting
-16:51:02    3329 --> ...                  [tcl] gui_cov_show_value -switch false
-16:51:02    3330 --> ...                      [tcl] # Close all empty TopLevel windows
-16:51:02    3331 --> ...                          [tcl] foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
-16:51:02    3332 --> ...                              [tcl] gui_set_loading_session_type noSession
-16:51:02    3333 --> ...                                  [tcl] # DVE View/pane content session:
-16:51:02    3334 --> ...                                      [tcl] # Hier 'Hier.1'
-16:51:02    3335 --> ...                                          [tcl] gui_show_window -window ${Hier.1}
-16:51:02    3336 --> ...                                              [tcl] gui_list_set_filter -id ${Hier.1} -list { {Package 1} {All 0} {Process 1} {VirtPowSwitch 0} {UnnamedProcess 1} {UDP 0} {Function 1} {Block 1} {SrsnAndSpaCell 0} {OVA Unit 1} {LeafScCell 1} {LeafVlgCell 1} {Interface 1} {LeafVhdCell 1} {$unit 1} {NamedBlock 1} {Task 1} {VlgPackage 1} {ClassDef 1} {VirtIsoCell 0} }
-16:51:02    3337 --> ...                                                  [tcl] gui_list_set_filter -id ${Hier.1} -text {*}
-16:51:02    3338 --> ...                                                      [tcl] gui_change_design -id ${Hier.1} -design Sim
-16:51:02    3339 --> ...                                                          [tcl] catch {gui_list_expand -id ${Hier.1} TuringMachine_test}
-16:51:02    3340 --> ...                                                              [tcl] catch {gui_list_expand -id ${Hier.1} TuringMachine_test.dut}
-16:51:02    3341 --> ...                                                                  [tcl] catch {gui_list_select -id ${Hier.1} {TuringMachine_test.dut.display_reg}}
-16:51:02    3342 --> ...                                                                      [tcl] dveMisc::vbusExpand TuringMachine_test.dut.display_reg
-16:51:02    3343 --> ...                                                                          [tcl] gui_view_scroll -id ${Hier.1} -vertical -set 142
-16:51:02    3344 --> ...                                                                              [tcl] gui_view_scroll -id ${Hier.1} -horizontal -set 0
-16:51:02    3345 --> ...                                                                                  [tcl] # Data 'Data.1'
-16:51:02    3346 --> ...                                                                                      [tcl] gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
-16:51:02    3347 --> ...                                                                                          [tcl] gui_list_set_filter -id ${Data.1} -text {*}
-16:51:02    3348 --> ...                                                                                              [tcl] gui_list_show_data -id ${Data.1} {TuringMachine_test.dut.display_reg}
-16:51:02    3349 --> ...                                                                                                  [tcl] gui_show_window -window ${Data.1}
-16:51:02    3350 --> ...  [tcl] catch { gui_list_select -id ${Data.1} {TuringMachine_test.dut.display_reg.clock TuringMachine_test.dut.display_reg.serial TuringMachine_test.dut.display_reg.rewrite TuringMachine_test.dut.display_reg.Q TuringMachine_test.dut.display_reg.w TuringMachine_test.dut.display_reg.clear TuringMachine_test.dut.display_reg.left TuringMachine_test.dut.display_reg.en }}
-16:51:02    3351 --> ...      [tcl] gui_view_scroll -id ${Data.1} -vertical -set 0
-16:51:02    3352 --> ...          [tcl] gui_view_scroll -id ${Data.1} -horizontal -set 0
-16:51:02    3353 --> ...              [tcl] gui_view_scroll -id ${Hier.1} -vertical -set 142
-16:51:02    3354 --> ...                  [tcl] gui_view_scroll -id ${Hier.1} -horizontal -set 0
-16:51:02    3355 --> ...                      [tcl] # Source 'Source.1'
-16:51:02    3356 --> ...                          [tcl] gui_src_value_annotate -id ${Source.1} -switch false
-16:51:02    3357 --> ...                              [tcl] gui_set_env TOGGLE::VALUEANNOTATE 0
-16:51:02    3358 --> ...                                  [tcl] gui_open_source -id ${Source.1}  -replace -active TuringMachine_test /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/TuringMachine_test.sv
-16:51:02    3359 --> ...                                      [tcl] gui_view_scroll -id ${Source.1} -vertical -set 32
-16:51:02    3360 --> ...                                          [tcl] gui_src_set_reusable -id ${Source.1}
-16:51:02    3361 --> ...                                              [tcl] # View 'Wave.1'
-16:51:02    3362 --> ...                                                  [tcl] gui_wv_sync -id ${Wave.1} -switch false
-16:51:02    3363 --> ...                                                      [tcl] set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
-16:51:02    3364 --> ...                                                          [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value {false}
-16:51:02    3365 --> ...                                                              [tcl] set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
-16:51:02    3366 --> ...                                                                  [tcl] gui_list_set_height -id Wave -height 25
-16:51:02    3367 --> ...                                                                      [tcl] set origGroupCreationState [gui_list_create_group_when_add -wave]
-16:51:02    3368 --> ...                                                                          [tcl] gui_list_create_group_when_add -wave -disable
-16:51:02    3369 --> ...                                                                              [tcl] gui_wv_zoom_timerange -id ${Wave.1} 0 91
-16:51:02    3370 --> ...                                                                                  [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Group1}
-16:51:02    3371 --> ...                                                                                      [tcl] gui_list_select -id ${Wave.1} {TuringMachine_test.dut.memory_addr }
-16:51:02    3372 --> ...                                                                                          [tcl] gui_seek_criteria -id ${Wave.1} {Any Edge}
-16:51:02    3373 --> ...                                                                                              [tcl] gui_set_env TOGGLE::DEFAULT_WAVE_WINDOW ${Wave.1}
-16:51:02    3374 --> ...                                                                                                  [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value $groupExD
-16:51:02    3375 --> ...  [tcl] gui_list_set_height -id Wave -height $origWaveHeight
-16:51:02    3376 --> ...      [tcl] if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
-16:51:02    3377 --> ...          [tcl] if { $groupExD } {  gui_msg_report -code DVWW028 }
-16:51:02    3378 --> ...              [tcl] gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
-16:51:02    3379 --> ...                  [tcl] gui_list_set_filter -id ${Wave.1} -text {*}
-16:51:02    3380 --> ...                      [tcl] gui_list_set_insertion_bar  -id ${Wave.1} -group Group1  -position in
-16:51:02    3381 --> ...                          [tcl] gui_view_scroll -id ${Wave.1} -vertical -set 609
-16:51:02    3382 --> ...                              [tcl] gui_show_grid -id ${Wave.1} -enable false
-16:51:02    3383 --> ...                                  [tcl] # Restore toplevel window zorder
-16:51:02    3384 --> ...                                      [tcl] # The toplevel window could be closed if it has no view/pane
-16:51:02    3385 --> ...                                          [tcl] if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${Source.1} 	gui_set_active_window -window ${DLPane.1} }
-16:51:02    3386 --> ...                                              [tcl] if {[gui_exist_window -window ${TopLevel.2}]} { 	gui_set_active_window -window ${TopLevel.2} 	gui_set_active_window -window ${Wave.1} }
-16:51:02    3387 --> ...                                                  [tcl] #</Session>
-16:51:03    3388 --> ...                                                      [tcl] synopsys::run
-16:51:03    3389 --> ...                                                          [tcl] set ucliGUI::state
-16:51:03    3390 --> ...                                                              [tcl] gui_update_simulator_buttons
-16:51:03    3391 --> ...                                                                  [tcl] set ucliGUI::state
-16:51:03    3392 --> ...                                                                      [tcl] set ucliGUI::state
-16:51:03    3393 --> ...                                                                          [tcl] set ucliGUI::state
-16:51:03    3394 --> ...                                                                              [tcl] catch {senv activeDomain} dveMisc::result 
-16:51:03    3395 --> ...                                                                                  [tcl] set dveMisc::result
-16:51:03    3396 --> ...                                                                                      [tcl] gui_update_simulator_buttons
-18:54:00    3397 --> ...                                                                                          [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
-18:54:00    3398 --> ...                                                                                              [tcl] synopsys::finish
-18:54:00    3399 --> ...                                                                                                  [tcl] set ucliGUI::state
-18:54:00    3400 --> ...  [tcl] gui_update_simulator_buttons
-18:54:00    3401 --> ...      [tcl] set ucliGUI::state
-18:54:00    3402 --> ...          [tcl] catch {senv activeDomain} dveMisc::result 
-18:54:00    3403 --> ...              [tcl] set dveMisc::result
-18:54:00    3404 --> ...                  [tcl] gui_update_simulator_buttons
-18:54:00    3405 --> ...                      [tcl] catch {senv activeDomain} dveMisc::result 
-18:54:00    3406 --> ...                          [tcl] set dveMisc::result
-18:54:00    3407 --> ...                              [tcl] ucli_exit
+01:10:29    71 --> ...                                                                                      [tcl] ucliGUI::start /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/simv -ucligui 
+01:10:29    72 --> ...                                                                                          [tcl] set ucliGUI::state
+01:10:29    73 --> ...                                                                                              [tcl] gui_update_simulator_buttons
+01:10:30    74 --> ...                                                                                                  [tcl] set ucliGUI::state
+01:10:30    75 --> ...  [tcl] ucliCore::getToolPID
+01:10:30    76 --> ...      [tcl] synopsys::env hasTB
+01:10:30    77 --> ...          [tcl] trigger_hier_stack_context_switch 0
+01:10:30    78 --> ...              [tcl] synUtils::setDVEInitPhase 1
+01:10:30    79 --> ...                  [tcl] gui_get_env SIMSETUP::SIMVPD
+01:10:30    80 --> ...                      [tcl] synopsys::dump -type VPD -file /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/inter.vpd -locking
+01:10:30    81 --> ...                          [tcl] synopsys::dump -autoflush on -fid VPD1
+01:10:30    82 --> ...                              [tcl] set ::dve_fid VPD1
+01:10:30    83 --> ...                                  [tcl] synUtils::setDVEInitPhase 0
+01:10:30    84 --> ...                                      [tcl] ucliCore::getToolPID
+01:10:30    85 --> ...                                          [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp071ACq
+01:10:30    86 --> ...                                              [tcl] synUtils::sendTool -active {_icl_start_rpc -version "T-2022.06_Full64" -sync_file /tmp/vcs_dve_rpc.zhiyingm.152033}
+01:10:30    87 --> ...                                                  [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.zhiyingm.152033}
+01:10:30    88 --> ...                                                      [tcl] config endofsim noexit
+01:10:30    89 --> ...                                                          [tcl] config onfail enable all
+01:10:30    90 --> ...                                                              [tcl] config syscaddplainmembers
+01:10:30    91 --> ...                                                                  [tcl] config syscaddsourcenames
+01:10:30    92 --> ...                                                                      [tcl] config syscaddstructtypes
+01:10:30    93 --> ...                                                                          [tcl] synopsys::listing -disable
+01:10:30    94 --> ...                                                                              [tcl] # Begin_DVE_Session_Save_Info
+01:10:30    95 --> ...                                                                                  [tcl] # DVE restart session
+01:10:30    96 --> ...                                                                                      [tcl] # Saved on Wed May 3 01:10:29 2023
+01:10:30    97 --> ...                                                                                          [tcl] # Designs open: 1
+01:10:30    98 --> ...                                                                                              [tcl] #   Sim: /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/simv
+01:10:30    99 --> ...                                                                                                  [tcl] # Toplevel windows open: 2
+01:10:30    100 --> ...  [tcl] # 	TopLevel.1
+01:10:30    101 --> ...      [tcl] # 	TopLevel.2
+01:10:30    102 --> ...          [tcl] #   Source.1: TuringMachine_test
+01:10:30    103 --> ...              [tcl] #   Wave.1: 57 signals
+01:10:30    104 --> ...                  [tcl] #   Group count = 2
+01:10:30    105 --> ...                      [tcl] #   Group Group1 signal count = 9
+01:10:30    106 --> ...                          [tcl] #   Group Group2 signal count = 57
+01:10:30    107 --> ...                              [tcl] # End_DVE_Session_Save_Info
+01:10:30    108 --> ...                                  [tcl] # DVE version: T-2022.06_Full64
+01:10:30    109 --> ...                                      [tcl] # DVE build date: May 31 2022 20:53:03
+01:10:30    110 --> ...                                          [tcl] #<Session mode="Restart" path=".restartSimSession.tcl" type="Debug">
+01:10:30    111 --> ...                                              [tcl] gui_set_loading_session_type Restart
+01:10:30    112 --> ...                                                  [tcl] gui_continuetime_set
+01:10:30    113 --> ...                                                      [tcl] gui_clear_window -type Wave
+01:10:30    114 --> ...                                                          [tcl] gui_clear_window -type List
+01:10:30    115 --> ...                                                              [tcl] # Application preferences
+01:10:30    116 --> ...                                                                  [tcl] gui_set_pref_value -key app_default_font -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+01:10:30    117 --> ...                                                                      [tcl] gui_src_preferences -tabstop 8 -maxbits 24 -windownumber 1
+01:10:30    118 --> ...                                                                          [tcl] #<WindowLayout>
+01:10:30    119 --> ...                                                                              [tcl] # DVE top-level session
+01:10:30    120 --> ...                                                                                  [tcl] # Create and position top-level window: TopLevel.1
+01:10:30    121 --> ...                                                                                      [tcl] set TopLevel.1 TopLevel.1
+01:10:30    122 --> ...                                                                                          [tcl] # Docked window settings
+01:10:30    123 --> ...                                                                                              [tcl] set HSPane.1 HSPane.1
+01:10:30    124 --> ...                                                                                                  [tcl] set Hier.1 Hier.1
+01:10:30    125 --> ...  [tcl] set DLPane.1 DLPane.1
+01:10:30    126 --> ...      [tcl] set Data.1 Data.1
+01:10:30    127 --> ...          [tcl] set Console.1 Console.1
+01:10:30    128 --> ...              [tcl] gui_sync_global -id ${TopLevel.1} -option true
+01:10:30    129 --> ...                  [tcl] # MDI window settings
+01:10:30    130 --> ...                      [tcl] set Source.1 Source.1
+01:10:30    131 --> ...                          [tcl] gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
+01:10:30    132 --> ...                              [tcl] # End MDI window settings
+01:10:30    133 --> ...                                  [tcl] # Create and position top-level window: TopLevel.2
+01:10:30    134 --> ...                                      [tcl] set TopLevel.2 TopLevel.2
+01:10:30    135 --> ...                                          [tcl] # Docked window settings
+01:10:30    136 --> ...                                              [tcl] gui_sync_global -id ${TopLevel.2} -option true
+01:10:30    137 --> ...                                                  [tcl] # MDI window settings
+01:10:30    138 --> ...                                                      [tcl] set Wave.1 Wave.1
+01:10:30    139 --> ...                                                          [tcl] gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 416} {child_wave_right 1013} {child_wave_colname 206} {child_wave_colvalue 206} {child_wave_col1 0} {child_wave_col2 1}}
+01:10:30    140 --> ...                                                              [tcl] # End MDI window settings
+01:10:30    141 --> ...                                                                  [tcl] #</WindowLayout>
+01:10:30    142 --> ...                                                                      [tcl] #<Database>
+01:10:30    143 --> ...                                                                          [tcl] gui_set_precision 1s
+01:10:30    144 --> ...                                                                              [tcl] gui_set_time_units 1s
+01:10:30    145 --> ...                                                                                  [tcl] #</Database>
+01:10:30    146 --> ...                                                                                      [tcl] # DVE Global setting session:
+01:10:30    147 --> ...                                                                                          [tcl] # Global: Breakpoints
+01:10:30    148 --> ...                                                                                              [tcl] # Global: Bus
+01:10:30    149 --> ...                                                                                                  [tcl] # Global: Expressions
+01:10:30    150 --> ...  [tcl] # Global: Signal Time Shift
+01:10:30    151 --> ...      [tcl] # Global: Signal Compare
+01:10:30    152 --> ...          [tcl] # Global: Signal Groups
+01:10:30    153 --> ...              [tcl] gui_load_child_values {TuringMachine_test.dut}
+01:10:30    154 --> ...                  [tcl] synopsys::dump -add {TuringMachine_test.dut} -scope "." -depth 1 -fid VPD1
+01:10:30    155 --> ...                      [tcl] gui_load_child_values {m_design}
+01:10:30    156 --> ...                          [tcl] synopsys::dump -add {m_design} -scope "." -depth 1 -fid VPD1
+01:10:30    157 --> ...                              [tcl] set _session_group_1 Group1
+01:10:30    158 --> ...                                  [tcl] gui_sg_create "$_session_group_1"
+01:10:30    159 --> ...                                      [tcl] set Group1 "$_session_group_1"
+01:10:30    160 --> ...                                          [tcl] gui_sg_addsignal -group "$_session_group_1" { m_design.clk100 m_design.reset_n m_design.base_led m_design.led m_design.sw m_design.btn m_design.display_sel m_design.display m_design.currState }
+01:10:30    161 --> ...                                              [tcl] set _session_group_2 Group2
+01:10:30    162 --> ...                                                  [tcl] gui_sg_create "$_session_group_2"
+01:10:30    163 --> ...                                                      [tcl] set Group2 "$_session_group_2"
+01:10:30    164 --> ...                                                          [tcl] gui_sg_addsignal -group "$_session_group_2" { TuringMachine_test.dut.input_data TuringMachine_test.dut.clock TuringMachine_test.dut.reset TuringMachine_test.dut.Next TuringMachine_test.dut.Done TuringMachine_test.dut.display_out TuringMachine_test.dut.currState TuringMachine_test.dut.Compute_done TuringMachine_test.dut.Init TuringMachine_test.dut.NextState_en TuringMachine_test.dut.InputAddr_en TuringMachine_test.dut.StateAddr_ld TuringMachine_test.dut.StateAddr_en TuringMachine_test.dut.TapeAddr_en TuringMachine_test.dut.Write_en TuringMachine_test.dut.Read_en TuringMachine_test.dut.ReadInput TuringMachine_test.dut.PrevTape_en TuringMachine_test.dut.TapeReg_en TuringMachine_test.dut.DataReg_en TuringMachine_test.dut.Direction_en TuringMachine_test.dut.Display_en TuringMachine_test.dut.Display_rewrite TuringMachine_test.dut.Addr_sel TuringMachine_test.dut.Data_sel TuringMachine_test.dut.Data_eq TuringMachine_test.dut.Halt TuringMachine_test.dut.Left TuringMachine_test.dut.Memory_end TuringMachine_test.dut.next_state_prep TuringMachine_test.dut.next_state_in TuringMachine_test.dut.next_state_out TuringMachine_test.dut.state_addr_in TuringMachine_test.dut.state_addr_out TuringMachine_test.dut.tape_addr_in TuringMachine_test.dut.tape_addr_out TuringMachine_test.dut.tape_init_addr TuringMachine_test.dut.prev_tape_addr TuringMachine_test.dut.input_addr_out TuringMachine_test.dut.memory_addr TuringMachine_test.dut.write_data TuringMachine_test.dut.read_data TuringMachine_test.dut.direction_in TuringMachine_test.dut.direction_out TuringMachine_test.dut.tape_in TuringMachine_test.dut.tape_reg_in TuringMachine_test.dut.tape_reg_out TuringMachine_test.dut.prev_tape_in TuringMachine_test.dut.prev_tape_out TuringMachine_test.dut.data_reg_in TuringMachine_test.dut.data_reg_out TuringMachine_test.dut.display_in TuringMachine_test.dut.memory_data TuringMachine_test.dut.dw TuringMachine_test.dut.w TuringMachine_test.dut.aw TuringMachine_test.dut.fsm.currState }
+01:10:30    165 --> ...                                                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:TuringMachine_test.dut.dw}
+01:10:30    166 --> ...                                                                  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:TuringMachine_test.dut.dw}
+01:10:30    167 --> ...                                                                      [tcl] gui_set_radix -radix {decimal} -signals {Sim:TuringMachine_test.dut.w}
+01:10:30    168 --> ...                                                                          [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:TuringMachine_test.dut.w}
+01:10:30    169 --> ...                                                                              [tcl] gui_set_radix -radix {decimal} -signals {Sim:TuringMachine_test.dut.aw}
+01:10:30    170 --> ...                                                                                  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:TuringMachine_test.dut.aw}
+01:10:30    171 --> ...                                                                                      [tcl] # Global: Highlighting
+01:10:30    172 --> ...                                                                                          [tcl] # Global: Stack
+01:10:30    173 --> ...                                                                                              [tcl] gui_change_stack_mode -mode list
+01:10:30    174 --> ...                                                                                                  [tcl] synopsys::xml {set_only_active_frame <data value="1" />}
+01:10:30    175 --> ...  [tcl] # Post database loading setting...
+01:10:30    176 --> ...      [tcl] # Save global setting...
+01:10:30    177 --> ...          [tcl] # Wave/List view global setting
+01:10:30    178 --> ...              [tcl] gui_cov_show_value -switch false
+01:10:30    179 --> ...                  [tcl] # Close all empty TopLevel windows
+01:10:30    180 --> ...                      [tcl] foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
+01:10:30    181 --> ...                          [tcl] gui_set_loading_session_type noSession
+01:10:30    182 --> ...                              [tcl] # DVE View/pane content session:
+01:10:30    183 --> ...                                  [tcl] # Hier 'Hier.1'
+01:10:30    184 --> ...                                      [tcl] gui_show_window -window ${Hier.1}
+01:10:30    185 --> ...                                          [tcl] gui_list_set_filter -id ${Hier.1} -list { {Package 1} {All 0} {Process 1} {VirtPowSwitch 0} {UnnamedProcess 1} {UDP 0} {Function 1} {Block 1} {SrsnAndSpaCell 0} {OVA Unit 1} {LeafScCell 1} {LeafVlgCell 1} {Interface 1} {LeafVhdCell 1} {$unit 1} {NamedBlock 1} {Task 1} {VlgPackage 1} {ClassDef 1} {VirtIsoCell 0} }
+01:10:30    186 --> ...                                              [tcl] gui_list_set_filter -id ${Hier.1} -text {*}
+01:10:30    187 --> ...                                                  [tcl] gui_change_design -id ${Hier.1} -design Sim
+01:10:30    188 --> ...                                                      [tcl] catch {gui_list_expand -id ${Hier.1} TuringMachine_test}
+01:10:30    189 --> ...                                                          [tcl] catch {gui_list_expand -id ${Hier.1} TuringMachine_test.dut}
+01:10:30    190 --> ...                                                              [tcl] catch {gui_list_select -id ${Hier.1} {TuringMachine_test.dut.fsm}}
+01:10:30    191 --> ...                                                                  [tcl] dveMisc::vbusExpand TuringMachine_test.dut.fsm
+01:10:30    192 --> ...                                                                      [tcl] gui_view_scroll -id ${Hier.1} -vertical -set 164
+01:10:31    193 --> ...                                                                          [tcl] gui_view_scroll -id ${Hier.1} -horizontal -set 0
+01:10:31    194 --> ...                                                                              [tcl] # Data 'Data.1'
+01:10:31    195 --> ...                                                                                  [tcl] gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+01:10:31    196 --> ...                                                                                      [tcl] gui_list_set_filter -id ${Data.1} -text {*}
+01:10:31    197 --> ...                                                                                          [tcl] gui_list_show_data -id ${Data.1} {TuringMachine_test.dut.fsm}
+01:10:31    198 --> ...                                                                                              [tcl] gui_show_window -window ${Data.1}
+01:10:31    199 --> ...                                                                                                  [tcl] catch { gui_list_select -id ${Data.1} {TuringMachine_test.dut.fsm.currState }}
+01:10:31    200 --> ...  [tcl] gui_view_scroll -id ${Data.1} -vertical -set 310
+01:10:31    201 --> ...      [tcl] gui_view_scroll -id ${Data.1} -horizontal -set 0
+01:10:31    202 --> ...          [tcl] gui_view_scroll -id ${Hier.1} -vertical -set 164
+01:10:31    203 --> ...              [tcl] gui_view_scroll -id ${Hier.1} -horizontal -set 0
+01:10:31    204 --> ...                  [tcl] # Source 'Source.1'
+01:10:31    205 --> ...                      [tcl] gui_src_value_annotate -id ${Source.1} -switch false
+01:10:31    206 --> ...                          [tcl] gui_set_env TOGGLE::VALUEANNOTATE 0
+01:10:31    207 --> ...                              [tcl] gui_open_source -id ${Source.1}  -replace -active TuringMachine_test /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/TuringMachine_test.sv
+01:10:31    208 --> ...                                  [tcl] gui_view_scroll -id ${Source.1} -vertical -set 32
+01:10:31    209 --> ...                                      [tcl] gui_src_set_reusable -id ${Source.1}
+01:10:31    210 --> ...                                          [tcl] # View 'Wave.1'
+01:10:31    211 --> ...                                              [tcl] gui_wv_sync -id ${Wave.1} -switch false
+01:10:31    212 --> ...                                                  [tcl] set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+01:10:31    213 --> ...                                                      [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value {false}
+01:10:31    214 --> ...                                                          [tcl] set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+01:10:31    215 --> ...                                                              [tcl] gui_list_set_height -id Wave -height 25
+01:10:31    216 --> ...                                                                  [tcl] set origGroupCreationState [gui_list_create_group_when_add -wave]
+01:10:31    217 --> ...                                                                      [tcl] gui_list_create_group_when_add -wave -disable
+01:10:31    218 --> ...                                                                          [tcl] gui_wv_zoom_timerange -id ${Wave.1} 0 331
+01:10:31    219 --> ...                                                                              [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Group2}
+01:10:31    220 --> ...                                                                                  [tcl] synopsys::dump -add {TuringMachine_test.dut.fsm.currState } -aggregates  -fid VPD1
+01:10:31    221 --> ...                                                                                      [tcl] gui_seek_criteria -id ${Wave.1} {Any Edge}
+01:10:31    222 --> ...                                                                                          [tcl] gui_set_env TOGGLE::DEFAULT_WAVE_WINDOW ${Wave.1}
+01:10:31    223 --> ...                                                                                              [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value $groupExD
+01:10:31    224 --> ...                                                                                                  [tcl] gui_list_set_height -id Wave -height $origWaveHeight
+01:10:31    225 --> ...  [tcl] if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
+01:10:31    226 --> ...      [tcl] if { $groupExD } {  gui_msg_report -code DVWW028 }
+01:10:31    227 --> ...          [tcl] gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+01:10:31    228 --> ...              [tcl] gui_list_set_filter -id ${Wave.1} -text {*}
+01:10:31    229 --> ...                  [tcl] gui_list_set_insertion_bar  -id ${Wave.1} -group Group2  -position in
+01:10:31    230 --> ...                      [tcl] gui_view_scroll -id ${Wave.1} -vertical -set 0
+01:10:31    231 --> ...                          [tcl] gui_show_grid -id ${Wave.1} -enable false
+01:10:31    232 --> ...                              [tcl] # Restore toplevel window zorder
+01:10:31    233 --> ...                                  [tcl] # The toplevel window could be closed if it has no view/pane
+01:10:31    234 --> ...                                      [tcl] if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${Source.1} 	gui_set_active_window -window ${DLPane.1} }
+01:10:31    235 --> ...                                          [tcl] if {[gui_exist_window -window ${TopLevel.2}]} { 	gui_set_active_window -window ${TopLevel.2} 	gui_set_active_window -window ${Wave.1} }
+01:10:31    236 --> ...                                              [tcl] #</Session>
+01:10:33    237 --> ...                                                  [tcl] synopsys::run
+01:10:33    238 --> ...                                                      [tcl] set ucliGUI::state
+01:10:33    239 --> ...                                                          [tcl] gui_update_simulator_buttons
+01:10:33    240 --> ...                                                              [tcl] set ucliGUI::state
+01:10:33    241 --> ...                                                                  [tcl] set ucliGUI::state
+01:10:33    242 --> ...                                                                      [tcl] set ucliGUI::state
+01:10:33    243 --> ...                                                                          [tcl] catch {senv activeDomain} dveMisc::result 
+01:10:33    244 --> ...                                                                              [tcl] set dveMisc::result
+01:10:33    245 --> ...                                                                                  [tcl] gui_update_simulator_buttons

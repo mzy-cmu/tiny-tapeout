@@ -1,1 +1,1 @@
-QWarning: QMetaObjectCleanUp::setMetaObject: Double use of QMetaObjectCleanUp!
+QWarning: Grabbing the mouse failed with "GrabInvalidTime"

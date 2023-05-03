@@ -39,12 +39,12 @@ module m_design (
     output logic [7:0] display // Seven-segment display
 );
 
-    TuringMachine TM (.input_data(sw[3:0]), .clock(clk100), .reset(~reset_n), .currState,
+    TuringMachine TM (.input_data(sw[3:0]), .clock(clk100), .reset(~reset_n), .state,
                       .Next(btn[0]), .Done(btn[1]), .display_out(led[10:0]), .Compute_done(led[11]));
 
-    logic [3:0] currState;
+    logic [3:0] state;
 
-    hex_to_sevenseg hts (.hexdigit(currState), .seg(display));
+    hex_to_sevenseg hts (.hexdigit(state), .seg(display));
 
     assign display_sel = 4'b1110;
 
