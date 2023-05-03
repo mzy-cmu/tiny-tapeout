@@ -49,65 +49,59 @@ gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab p
 gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_VPDCombo} -value_type string -value inter.vpd
 gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_argsCombo} -value_type string -value {{-ucligui }}
 gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value {/afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/TapeOut /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/hw1 /afs/andrew.cmu.edu/usr1/zhiyingm/private/18240/lab5/task5 /afs/andrew.cmu.edu/usr1/zhiyingm/private/18240/lab5/RISC240}
-gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value {/afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/simv ./simv /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/TapeOut/simv /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/hw1/simv /afs/andrew.cmu.edu/usr1/zhiyingm/private/18240/lab5/task5/simv}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value {./simv /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/simv /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/TapeOut/simv /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/hw1/simv /afs/andrew.cmu.edu/usr1/zhiyingm/private/18240/lab5/task5/simv}
 gui_state_default_create -off
 
 # Begin command logging
 gui_sim_run Ucli -exe ./simv -args {-ucligui  } -dir .
 gui_list_expand -id  Hier.1   TuringMachine_test
 gui_list_select -id Hier.1 -current_item_name TuringMachine_test.dut -current_item_type Scope  -selected  { TuringMachine_test.dut   }
-gui_list_select -id Data.1 -selected  { TuringMachine_test.dut.Next   }
+gui_list_select -id Data.1 -selected  { TuringMachine_test.dut.reset   }
 gui_list_select_all -id Data.1
 gui_open_window Wave
-gui_list_add -id Wave.1 -from Data.1 { {TuringMachine_test.dut.input_data[3:0]} TuringMachine_test.dut.clock TuringMachine_test.dut.reset TuringMachine_test.dut.Next TuringMachine_test.dut.Done {TuringMachine_test.dut.display_out[10:0]} TuringMachine_test.dut.Compute_done TuringMachine_test.dut.Init TuringMachine_test.dut.NextState_en TuringMachine_test.dut.InputAddr_en TuringMachine_test.dut.StateAddr_ld TuringMachine_test.dut.StateAddr_en TuringMachine_test.dut.TapeAddr_en TuringMachine_test.dut.Write_en TuringMachine_test.dut.Read_en TuringMachine_test.dut.ReadInput TuringMachine_test.dut.PrevTape_en TuringMachine_test.dut.TapeReg_en TuringMachine_test.dut.DataReg_en TuringMachine_test.dut.Direction_en TuringMachine_test.dut.Display_en TuringMachine_test.dut.Display_rewrite {TuringMachine_test.dut.Addr_sel[1:0]} {TuringMachine_test.dut.Data_sel[1:0]} TuringMachine_test.dut.Data_eq TuringMachine_test.dut.Halt TuringMachine_test.dut.Left TuringMachine_test.dut.Memory_end {TuringMachine_test.dut.next_state_prep[5:0]} {TuringMachine_test.dut.next_state_in[5:0]} {TuringMachine_test.dut.next_state_out[5:0]} {TuringMachine_test.dut.state_addr_in[5:0]} {TuringMachine_test.dut.state_addr_out[5:0]} {TuringMachine_test.dut.tape_addr_in[5:0]} {TuringMachine_test.dut.tape_addr_out[5:0]} {TuringMachine_test.dut.tape_init_addr[5:0]} {TuringMachine_test.dut.prev_tape_addr[5:0]} {TuringMachine_test.dut.input_addr_out[5:0]} {TuringMachine_test.dut.memory_addr[5:0]} {TuringMachine_test.dut.write_data[3:0]} {TuringMachine_test.dut.read_data[3:0]} {TuringMachine_test.dut.direction_in[1:0]} {TuringMachine_test.dut.direction_out[1:0]} TuringMachine_test.dut.tape_in TuringMachine_test.dut.tape_reg_in TuringMachine_test.dut.tape_reg_out TuringMachine_test.dut.prev_tape_in TuringMachine_test.dut.prev_tape_out TuringMachine_test.dut.data_reg_in TuringMachine_test.dut.data_reg_out TuringMachine_test.dut.display_in {TuringMachine_test.dut.memory_data[3:0]} {TuringMachine_test.dut.dw[31:0]} {TuringMachine_test.dut.w[31:0]} {TuringMachine_test.dut.aw[31:0]} } -insertionbar
-gui_list_expand -id  Hier.1   TuringMachine_test.dut
-gui_list_select -id Hier.1 -current_item_name TuringMachine_test.dut.input_addr -current_item_type Scope  -selected  { TuringMachine_test.dut.input_addr   }
-gui_list_select -id Data.1 -selected  { TuringMachine_test.dut.fsm.currState   }
-gui_list_add -id Wave.1 -from Data.1 { {TuringMachine_test.dut.fsm.currState[3:0]} } -insertionbar
+gui_list_add -id Wave.1 -from Data.1 { {TuringMachine_test.dut.input_data[3:0]} TuringMachine_test.dut.clock TuringMachine_test.dut.reset TuringMachine_test.dut.Next TuringMachine_test.dut.Done {TuringMachine_test.dut.display_out[10:0]} {TuringMachine_test.dut.currState[3:0]} TuringMachine_test.dut.display_in TuringMachine_test.dut.tape_reg_out TuringMachine_test.dut.data_reg_out {TuringMachine_test.dut.next_state_out[5:0]} TuringMachine_test.dut.Compute_done TuringMachine_test.dut.Init TuringMachine_test.dut.NextState_en TuringMachine_test.dut.InputAddr_en TuringMachine_test.dut.StateAddr_ld TuringMachine_test.dut.StateAddr_en TuringMachine_test.dut.TapeAddr_en TuringMachine_test.dut.Write_en TuringMachine_test.dut.Read_en TuringMachine_test.dut.ReadInput TuringMachine_test.dut.PrevTape_en TuringMachine_test.dut.TapeReg_en TuringMachine_test.dut.DataReg_en TuringMachine_test.dut.Direction_en TuringMachine_test.dut.Display_en TuringMachine_test.dut.Display_rewrite {TuringMachine_test.dut.Addr_sel[1:0]} {TuringMachine_test.dut.Data_sel[1:0]} TuringMachine_test.dut.Data_eq TuringMachine_test.dut.Halt TuringMachine_test.dut.Left TuringMachine_test.dut.Memory_end {TuringMachine_test.dut.next_state_prep[5:0]} {TuringMachine_test.dut.next_state_in[5:0]} {TuringMachine_test.dut.state_addr_in[5:0]} {TuringMachine_test.dut.state_addr_out[5:0]} {TuringMachine_test.dut.tape_addr_in[5:0]} {TuringMachine_test.dut.tape_addr_out[5:0]} {TuringMachine_test.dut.tape_init_addr[5:0]} {TuringMachine_test.dut.prev_tape_addr[5:0]} {TuringMachine_test.dut.input_addr_out[5:0]} {TuringMachine_test.dut.memory_addr[5:0]} {TuringMachine_test.dut.write_data[3:0]} {TuringMachine_test.dut.read_data[3:0]} {TuringMachine_test.dut.direction_in[1:0]} {TuringMachine_test.dut.direction_out[1:0]} TuringMachine_test.dut.tape_in TuringMachine_test.dut.tape_reg_in TuringMachine_test.dut.prev_tape_in TuringMachine_test.dut.prev_tape_out TuringMachine_test.dut.data_reg_in {TuringMachine_test.dut.memory_data[3:0]} {TuringMachine_test.dut.dw[31:0]} {TuringMachine_test.dut.w[31:0]} {TuringMachine_test.dut.aw[31:0]} } -insertionbar
 gui_sim_continue  
+gui_wv_scroll_hslidermove -id  Wave.1 7570
+gui_marker_move -id  Wave.1 C1 2665
+gui_marker_move -id  Wave.1 C1 2655
 gui_list_sort -id  Wave.1   {Name}
-gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_marker_move -id  Wave.1 C1 45
-gui_zoom -window Wave.1 -factor 2
-gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_list_select -id Wave.1 -selected  { {TuringMachine_test.dut.memory_data[3:0]}   }
-gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_list_select -id Wave.1 -selected  { {TuringMachine_test.dut.display_out[10:0]}   }
+gui_list_set_selected_property -id Wave.1 -radix binary
+gui_list_select -id Wave.1 -selected  { {TuringMachine_test.dut.memory_addr[5:0]}   }
+gui_wv_scroll_hslidermove -id  Wave.1 7305
 gui_set_env SIMSETUP::SIMCURRENTDIR /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine
 gui_sim_restart -build {vcs -sverilog -debug TuringMachine_test.sv TuringMachine.sv library.sv}
 gui_sim_continue  
-gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_marker_move -id  Wave.1 C1 55
-gui_wv_scroll_vslidermove -id  Wave.1 862
+gui_wv_scroll_hslidermove -id  Wave.1 5942
+gui_marker_move -id  Wave.1 C1 2019
+gui_marker_move -id  Wave.1 C1 2025
+gui_wv_scroll_hslidermove -id  Wave.1 5815
 gui_sim_restart -build {vcs -sverilog -debug TuringMachine_test.sv TuringMachine.sv library.sv}
 gui_sim_continue  
-gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_list_select -id Wave.1 -selected  { {TuringMachine_test.dut.read_data[3:0]}   }
-gui_wv_scroll_hslidermove -id  Wave.1 13289
-gui_marker_move -id  Wave.1 C1 2286
-gui_marker_move -id  Wave.1 C1 2284
-gui_marker_move -id  Wave.1 C1 2285
+gui_wv_scroll_hslidermove -id  Wave.1 7903
+gui_wv_scroll_hslidermove -id  Wave.1 5854
+gui_wv_scroll_hslidermove -id  Wave.1 5756
+gui_marker_move -id  Wave.1 C1 1969
+gui_marker_move -id  Wave.1 C1 2085
+gui_marker_move -id  Wave.1 C1 2023
+gui_list_select -id Wave.1 -selected  { {TuringMachine_test.dut.input_addr_out[5:0]}   }
+gui_wv_scroll_hslidermove -id  Wave.1 5707
+gui_marker_move -id  Wave.1 C1 2084
+gui_marker_move -id  Wave.1 C1 2031
+gui_marker_move -id  Wave.1 C1 2142
+gui_wv_scroll_hslidermove -id  Wave.1 5942
+gui_marker_move -id  Wave.1 C1 2105
+gui_list_select -id Wave.1 -selected  { TuringMachine_test.dut.Memory_end   }
+gui_wv_scroll_hslidermove -id  Wave.1 5923
+gui_marker_move -id  Wave.1 C1 2005
+gui_marker_move -id  Wave.1 C1 2015
 gui_sim_restart -build {vcs -sverilog -debug TuringMachine_test.sv TuringMachine.sv library.sv}
 gui_sim_continue  
-gui_wv_scroll_hslidermove -id  Wave.1 14055
-gui_wv_scroll_vslidermove -id  Wave.1 608
-gui_list_select -id Wave.1 -selected  { {TuringMachine_test.dut.fsm.currState[3:0]}   }
-gui_list_set_selected_property -id Wave.1 -radix ascii
-gui_list_set_selected_property -id Wave.1 -radix state
-gui_list_select -id Data.1 -selected  { TuringMachine_test.dut.fsm.nextState   }
-gui_list_show_data -select -id  Data.1   {TuringMachine_test.dut.fsm.nextState[3:0]}
-gui_list_add -id Wave.1 -from Data.1 { {TuringMachine_test.dut.fsm.nextState[3:0]} } -insertionbar
-gui_sim_restart
-gui_sim_continue  
-gui_wv_scroll_hslidermove -id  Wave.1 15731
-gui_marker_move -id  Wave.1 C1 2674
-gui_marker_move -id  Wave.1 C1 2676
-gui_marker_select -id  Wave.1 { C1 }
-gui_marker_move -id  Wave.1 C1 2675
-gui_wv_scroll_hslidermove -id  Wave.1 13998
-gui_sim_restart -build {vcs -sverilog -debug TuringMachine_test.sv TuringMachine.sv library.sv}
-gui_sim_continue  
-gui_wv_scroll_hslidermove -id  Wave.1 16678
-gui_list_select -id Wave.1 -selected  { {TuringMachine_test.dut.display_out[10:0]}   }
-gui_list_set_selected_property -id Wave.1 -radix binary
-gui_wv_scroll_hslidermove -id  Wave.1 12280
-gui_wv_scroll_hslidermove -id  Wave.1 12413
+gui_wv_scroll_hslidermove -id  Wave.1 7119
+gui_marker_move -id  Wave.1 C1 2495
+gui_marker_move -id  Wave.1 C1 2535
+gui_wv_scroll_hslidermove -id  Wave.1 7384
+gui_list_select -id Wave.1 -selected  { {TuringMachine_test.dut.tape_addr_out[5:0]}   }
+gui_wv_scroll_hslidermove -id  Wave.1 6639
+gui_wv_scroll_hslidermove -id  Wave.1 5864
+gui_marker_move -id  Wave.1 C1 2095

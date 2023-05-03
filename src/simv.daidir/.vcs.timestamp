@@ -1,6 +1,11 @@
 0 
-25
+32
++cli+4
++itf+/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/vcsdp.tab
 +lint=all
++memcbk
++vcsd
++vpi
 -Mamsrun=
 -Masflags=
 -Mcc=gcc
@@ -18,13 +23,15 @@
 -Mvcsaceobjs=
 -Mxcflags= -pipe -fPIC -I/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/include
 -Mxllcflags=
+-Xcbug=0x1
+-debug=3
 -gen_obj
 -picarchive
 -sverilog
 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/bin/vcs1
+chip.sv
 TuringMachine.sv
 library.sv
-chip.sv
 68
 no_proxy=localhost,127.0.0.1,.cmu.edu,.cmu.local
 https_proxy=http://proximus.ece.cmu.edu:3128/
@@ -96,14 +103,15 @@ BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`_}
 AKLOG=/usr/bin/aklog
 0
 0
-3
-1683141625 chip.sv
+4
 1683141675 library.sv
-1683141520 TuringMachine.sv
+1683158046 TuringMachine.sv
+1683158228 chip.sv
+1654052745 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/vcsdp.tab
 4
 1654054205 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvirsim.so
 1654053585 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
 1654053489 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libsnpsmalloc.so
 1654053565 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvfs.so
-1683141678 simv.daidir
+1683158263 simv.daidir
 -1 partitionlib

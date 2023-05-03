@@ -1,9 +1,12 @@
 `default_nettype none
 
 module TuringMachine_test();
-  logic [3:0] input_data, currState, read_data;
+  logic [3:0] input_data;
   logic clock, reset, Next, Done, Compute_done;
   logic [10:0] display;
+  logic [3:0] currState;
+  logic display_in, tape_reg_out, data_reg_out;
+  logic [5:0] next_state_out;
 
   TuringMachine #(4, 64) dut (.display_out(display), .*);
 

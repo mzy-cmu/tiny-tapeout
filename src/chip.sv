@@ -6,11 +6,17 @@ module my_chip (
     input logic clock,
     input logic reset // Important: Reset is ACTIVE-HIGH
 );
+    logic [3:0] input_data;
     logic Next, Done;
+
     Synchronizer sync1 (.async(io_in[1]), .sync(Next), .clock);
     Synchronizer sync2 (.async(io_in[0]), .sync(Done), .clock);
-
-    TuringMachine #(4, 64) dut (.clock, .reset, .input_data(io_in[5:2]), .Next, .Done,
+    Synchronizer sync3 (.async(io_in[2]), .sync(input_data[0]), .clock);
+    Synchronizer sync4 (.async(io_in[3]), .sync(input_data[1]), .clock);
+    Synchronizer sync5 (.async(io_in[4]), .sync(input_data[2]), .clock);
+    Synchronizer sync6 (.async(io_in[5]), .sync(input_data[3]), .clock);
+    
+    TuringMachine #(4, 64) dut (.clock, .reset, .input_data, .Next, .Done,
                                 .display_out(io_out[11:1]), .Compute_done(io_out[0]));
 
 endmodule

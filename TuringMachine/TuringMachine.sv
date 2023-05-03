@@ -26,7 +26,8 @@ module TuringMachine
    input logic clock, reset, Next, Done,
    output logic [10:0] display_out,
    output logic [3:0] currState,
-   output logic display_in,
+   output logic display_in, tape_reg_out, data_reg_out,
+   output logic [aw-1:0] next_state_out, tape_addr_out,
    output logic Compute_done);
 
   // control points
@@ -40,14 +41,13 @@ module TuringMachine
   // connecting wires
   logic [aw-1:0] next_state_prep, next_state_in, next_state_out, state_addr_in, state_addr_out, tape_addr_in, tape_addr_out, tape_init_addr, prev_tape_addr, input_addr_out, memory_addr;
   logic [dw-1:0] write_data, read_data;
-  tri   [dw-1:0] memory_data;
   logic [1:0] direction_in, direction_out;
   logic tape_in, tape_reg_in, tape_reg_out, prev_tape_in, prev_tape_out, data_reg_in, data_reg_out, display_in;
   
   // datapath modules & connections
   Mux2to1 #(dw) mux_input_calculate (.I0(data_reg_out), .I1(input_data), .S(ReadInput), .Y(write_data));
   Counter #(aw) input_addr (.en(InputAddr_en), .clear(Init), .load(1'b0), .up(1'b1), .clock, .D(), .Q(input_addr_out));
-  assign Memory_end = (memory_data == tape_init_addr) || (memory_data == input_addr_out);
+  assign Memory_end = (tape_addr_out >= input_addr_out) || (tape_addr_out < tape_init_addr);
 
   assign state_addr_in = ((next_state_out + next_state_out + next_state_out - 'd3) << 1'b1) + 1'b1 + (tape_in + tape_in + tape_in);
   assign tape_addr_in = ((input_data + input_data + input_data) << 1'b1) + 1'b1;
@@ -62,7 +62,6 @@ module TuringMachine
   
   Mux4to1 #(aw) mux_state_tape_addr (.I0(state_addr_out), .I1(tape_addr_out), .I2(prev_tape_addr), .I3(input_addr_out), .S(Addr_sel), .Y(memory_addr));
   Memory_synth #(dw, w, aw) memory (.re(Read_en), .we(Write_en), .clock, .addr(memory_addr), .data_in(write_data), .data_out(read_data));
-  //BusDriver #(dw) busdriver (.en(Write_en), .data(write_data), .buff(read_data), .bus(memory_data));
   
   Demux1to4 #(dw) demux (.I(read_data), .S(Data_sel), .Y0(data_reg_in), .Y1(direction_in), .Y2(next_state_prep), .Y3(tape_in));
   
@@ -106,11 +105,11 @@ module FSM (
       START: nextState = Next ? WAIT : START;
       WAIT: nextState = Next ? WRITE_INPUT : (Done ? READ_TAPE : WAIT);
       WRITE_INPUT: nextState = (~Next) ? WAIT : WRITE_INPUT;
-      READ_TAPE: nextState = Memory_end ? STOP : READ_DATA;
+      READ_TAPE: nextState = READ_DATA;
       READ_DATA: nextState = Next ? (Data_eq ? READ_DIRECTION : REWRITE_TAPE) : READ_DATA;
       REWRITE_TAPE: nextState = READ_DIRECTION;
       READ_DIRECTION: nextState = (~Next) ? READ_STATE : READ_DIRECTION;
-      READ_STATE: nextState = READ_TAPE;
+      READ_STATE: nextState = Memory_end ? STOP : READ_TAPE;
       STOP: nextState = STOP;
       default: nextState = currState;
     endcase
@@ -149,7 +148,7 @@ module FSM (
         end
       // WRITE_INPUT outputs nothing
       READ_TAPE:
-        if (~Memory_end) begin
+        begin
           StateAddr_en = 1'b1;
           Read_en = 1'b1;
           Data_sel = 2'b00;
@@ -184,19 +183,21 @@ module FSM (
           TapeAddr_en = ~Halt;
         end
       READ_STATE:
-        if (Left) begin
-          StateAddr_ld = 1'b1;
-          Addr_sel = 2'b10;
-          Read_en = 1'b1;
-          Data_sel = 2'b11;
-          PrevTape_en = 1'b1;
-          TapeReg_en = 1'b1;
-        end else begin
-          StateAddr_ld = 1'b1;
-          Addr_sel = 2'b01;
-          Read_en = 1'b1;
-          Data_sel = 2'b11;
-          TapeReg_en = 1'b1;
+        if (~Memory_end) begin
+          if (Left) begin
+            StateAddr_ld = 1'b1;
+            Addr_sel = 2'b10;
+            Read_en = 1'b1;
+            Data_sel = 2'b11;
+            PrevTape_en = 1'b1;
+            TapeReg_en = 1'b1;
+          end else begin
+            StateAddr_ld = 1'b1;
+            Addr_sel = 2'b01;
+            Read_en = 1'b1;
+            Data_sel = 2'b11;
+            TapeReg_en = 1'b1;
+          end
         end
       // STOP outputs nothing
     endcase
