@@ -1,5 +1,5 @@
 0 
-33
+32
 +cli+4
 +itf+/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/vcsdp.tab
 +lint=all
@@ -29,24 +29,25 @@
 -picarchive
 -sverilog
 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/bin/vcs1
-TuringMachineFPGA_test.sv
-m_design.sv
+TuringMachine_test.sv
 TuringMachine.sv
 library.sv
-65
+68
 no_proxy=localhost,127.0.0.1,.cmu.edu,.cmu.local
 https_proxy=http://proximus.ece.cmu.edu:3128/
 http_proxy=http://proximus.ece.cmu.edu:3128/
 ftp_proxy=http://proximus.ece.cmu.edu:3128/
-XDG_SESSION_ID=11023
+XDG_SESSION_ID=11192
 XDG_RUNTIME_DIR=/run/user/2678383
 XDG_DATA_DIRS=/afs/andrew.cmu.edu/usr1/zhiyingm/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
-VSCODE_IPC_HOOK_CLI=/run/user/2678383/vscode-ipc-807569e4-f64f-4798-aad3-9d4a193c8d71.sock
-VSCODE_GIT_IPC_HANDLE=/run/user/2678383/vscode-git-0012ef45e0.sock
+VSCODE_IPC_HOOK_CLI=/run/user/2678383/vscode-ipc-230064cc-ad61-4a0e-be06-24c10d10ac62.sock
+VSCODE_GIT_IPC_HANDLE=/run/user/2678383/vscode-git-957a4152a1.sock
 VSCODE_GIT_ASKPASS_NODE=/afs/andrew.cmu.edu/usr1/zhiyingm/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/node
 VSCODE_GIT_ASKPASS_MAIN=/afs/andrew.cmu.edu/usr1/zhiyingm/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/extensions/git/dist/askpass-main.js
 VSCODE_GIT_ASKPASS_EXTRA_ARGS=
 VMR_MODE_FLAG=32
+VIRTUAL_ENV=OSS CAD Suite
+VERILATOR_ROOT=/afs/club.cc.cmu.edu/projects/stuco-open-eda/oss-cad-suite/share/verilator
 VCS_TARGET_ARCH=amd64
 VCS_PATHMAP_PRELOAD_DONE=1
 VCS_MX_HOME_INTERNAL=1
@@ -64,8 +65,8 @@ TERM_PROGRAM_VERSION=1.77.3
 TERM_PROGRAM=vscode
 SYN_DIR=/syn/T-2022.03-SP2
 SYNOPSYS_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation
-SSH_CONNECTION=128.2.13.178 35780 172.19.136.193 22
-SSH_CLIENT=128.2.13.178 35780 22
+SSH_CONNECTION=128.2.13.166 50260 172.19.136.193 22
+SSH_CLIENT=128.2.13.166 50260 22
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
 SNPS_VCS_CLANG_PATH=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/clang
 SNPS_INTERNAL_VCS_LINUX_OS=linux
@@ -93,6 +94,7 @@ HTTP_PROXY=http://proximus.ece.cmu.edu:3128/
 HTTPS_PROXY=http://proximus.ece.cmu.edu:3128/
 HISTCONTROL=ignoredups
 GIT_ASKPASS=/afs/andrew.cmu.edu/usr1/zhiyingm/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/extensions/git/dist/askpass.sh
+GHDL_PREFIX=/afs/club.cc.cmu.edu/projects/stuco-open-eda/oss-cad-suite/lib/ghdl
 FTP_PROXY=http://proximus.ece.cmu.edu:3128/
 DC_HOME=/syn/T-2022.03-SP2/
 CVS_RSH=ssh
@@ -101,16 +103,15 @@ BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`_}
 AKLOG=/usr/bin/aklog
 0
 0
-5
-1682895318 library.sv
-1683091253 TuringMachine.sv
-1683091266 m_design.sv
-1683091438 TuringMachineFPGA_test.sv
+4
+1683140682 library.sv
+1683140669 TuringMachine.sv
+1683138957 TuringMachine_test.sv
 1654052745 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/vcsdp.tab
 4
 1654054205 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvirsim.so
 1654053585 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
 1654053489 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libsnpsmalloc.so
 1654053565 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvfs.so
-1683091440 simv.daidir
+1683140685 simv.daidir
 -1 partitionlib

@@ -255,3 +255,24 @@ module Memory // stores a number of words, conbinational read, sequential write
     rData = M[addr]; // conbinational read
 
 endmodule: Memory
+
+
+module Memory_synth // stores a number of words, conbinational read, sequential write
+ #(parameter dw = 8, // size of each word
+             w = 16, // number of words
+             aw = $clog2(w)) // address width
+  (input logic re, we, clock,
+   input logic [aw-1:0] addr,
+   input logic [dw-1:0] data_in,
+   output logic [dw-1:0] data_out);
+  
+  logic [dw-1:0] M[w];
+
+  assign data_out = (re) ? M[addr] : 'b0; // put the read data on the bus
+
+  always_ff @(posedge clock) begin
+    if (we)
+      M[addr] <= data_in; // synchronized write
+  end
+
+endmodule: Memory_synth

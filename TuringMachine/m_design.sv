@@ -39,18 +39,45 @@ module m_design (
     output logic [7:0] display // Seven-segment display
 );
 
-    TuringMachine TM (.input_data(sw[3:0]), .clock(clk100), .reset(~reset_n), .state,
-                      .Next(btn[0]), .Done(btn[1]), .display_out(led[10:0]), .Compute_done(led[11]));
+    logic Next, Done;
 
-    logic [3:0] state;
+    Synchronizer sync1 (.async(btn[0]), .sync(Next), .clock(clk100));
+    Synchronizer sync2 (.async(btn[1]), .sync(Done), .clock(clk100));
 
-    hex_to_sevenseg hts (.hexdigit(state), .seg(display));
+    TuringMachine TM (.input_data, .clock(clk100), .reset(~reset_n), .currState, .read_data,
+                      .Next, .Done, .display_out(led[10:0]), .Compute_done(led[11]));
 
+    logic [3:0] currState;
+    logic [3:0] input_data;
+    logic [3:0] read_data;
+
+    assign input_data = sw[3:0];
+
+    hex_to_sevenseg hex2(.hexdigit(read_data), .seg(display));
     assign display_sel = 4'b1110;
 
-    assign base_led = sw[3:0];
+    assign base_led = input_data;
+
+    // logic [31:0] ctr;
+
+    // always_ff @(posedge clk100) begin
+    //     if (~reset_n) begin
+    //         ctr <= 32'b0;
+    //     end
+    //     else begin
+    //         ctr <= ctr + 1'b1;
+    //         if (ctr[10]) begin
+    //             display_sel <= 4'b1110;
+    //             display <= display1;
+    //         end else begin
+    //             display_sel <= 4'b1101;
+    //             display <= display2;
+    //         end
+    //     end
+    // end
 
     assign led[12] = btn[0];
     assign led[13] = btn[1];
+    assign led[14] = btn[2];
 
 endmodule

@@ -65,6 +65,18 @@
         "module",
         14
     ],
+    "BusDriver": [
+        "BusDriver",
+        "Bt4nZ",
+        "module",
+        13
+    ],
+    "Memory": [
+        "Memory",
+        "f0K8C",
+        "module",
+        10
+    ],
     "...MASTER...": [
         "SIM",
         "amcQw",

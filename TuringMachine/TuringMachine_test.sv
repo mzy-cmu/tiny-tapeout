@@ -1,7 +1,7 @@
 `default_nettype none
 
 module TuringMachine_test();
-  logic [3:0] input_data, currState;
+  logic [3:0] input_data, currState, read_data;
   logic clock, reset, Next, Done, Compute_done;
   logic [10:0] display;
 
@@ -24,6 +24,10 @@ module TuringMachine_test();
     @(posedge clock);
     @(posedge clock);
     Next <= 1'b1;
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
     @(posedge clock);
     @(posedge clock);
     Next <= 1'b0;

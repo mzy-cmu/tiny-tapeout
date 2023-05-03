@@ -6,13 +6,13 @@ synopsys::env hasTB
 trigger_hier_stack_context_switch 0
 synUtils::setDVEInitPhase 1
 synopsys::dump -type VPD -file /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/inter.vpd -locking
-synopsys::dump -autoflush on -fid VPD1
-set ::dve_fid VPD1
+synopsys::dump -autoflush on -fid VPD4
+set ::dve_fid VPD4
 synUtils::setDVEInitPhase 0
 ucliCore::getToolPID
-synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp071ACq
-synUtils::sendTool -active {_icl_start_rpc -version "T-2022.06_Full64" -sync_file /tmp/vcs_dve_rpc.zhiyingm.152033}
-synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.zhiyingm.152033}
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp6XD2oj
+synUtils::sendTool -active {_icl_start_rpc -version "T-2022.06_Full64" -sync_file /tmp/vcs_dve_rpc.zhiyingm.100013}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.zhiyingm.100013}
 config endofsim noexit
 config onfail enable all
 config syscaddplainmembers
@@ -21,7 +21,7 @@ config syscaddstructtypes
 synopsys::listing -disable
 # Begin_DVE_Session_Save_Info
 # DVE restart session
-# Saved on Wed May 3 01:10:29 2023
+# Saved on Wed May 3 14:41:02 2023
 # Designs open: 1
 #   Sim: /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/simv
 # Toplevel windows open: 2
@@ -29,9 +29,8 @@ synopsys::listing -disable
 # 	TopLevel.2
 #   Source.1: TuringMachine_test
 #   Wave.1: 57 signals
-#   Group count = 2
-#   Group Group1 signal count = 9
-#   Group Group2 signal count = 57
+#   Group count = 1
+#   Group Group1 signal count = 57
 # End_DVE_Session_Save_Info
 # DVE version: T-2022.06_Full64
 # DVE build date: May 31 2022 20:53:03
@@ -66,15 +65,12 @@ set Wave.1 Wave.1
 # Global: Signal Time Shift
 # Global: Signal Compare
 # Global: Signal Groups
-synopsys::dump -add {TuringMachine_test.dut} -scope "." -depth 1 -fid VPD1
-synopsys::dump -add {m_design} -scope "." -depth 1 -fid VPD1
-set _session_group_1 Group1
-set Group1 "$_session_group_1"
-set _session_group_2 Group2
-set Group2 "$_session_group_2"
+synopsys::dump -add {TuringMachine_test.dut.fsm} -scope "." -depth 1 -fid VPD4
+synopsys::dump -add {TuringMachine_test.dut} -scope "." -depth 1 -fid VPD4
+set _session_group_4 Group1
+set Group1 "$_session_group_4"
 # Global: Highlighting
 # Global: Stack
-synopsys::xml {set_only_active_frame <data value="1" />}
 # Post database loading setting...
 # Save global setting...
 # Wave/List view global setting
@@ -86,13 +82,12 @@ catch {gui_list_expand -id ${Hier.1} TuringMachine_test}
 catch {gui_list_expand -id ${Hier.1} TuringMachine_test.dut}
 catch {gui_list_select -id ${Hier.1} {TuringMachine_test.dut.fsm}}
 # Data 'Data.1'
-catch { gui_list_select -id ${Data.1} {TuringMachine_test.dut.fsm.currState }}
+catch { gui_list_select -id ${Data.1} {TuringMachine_test.dut.fsm.nextState }}
 # Source 'Source.1'
 # View 'Wave.1'
 set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
 set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
 set origGroupCreationState [gui_list_create_group_when_add -wave]
-synopsys::dump -add {TuringMachine_test.dut.fsm.currState } -aggregates  -fid VPD1
 if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
 if { $groupExD } {  gui_msg_report -code DVWW028 }
 # Restore toplevel window zorder
