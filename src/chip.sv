@@ -6,17 +6,8 @@ module my_chip (
     input logic clock,
     input logic reset // Important: Reset is ACTIVE-HIGH
 );
-    logic [3:0] input_data;
-    logic Next, Done;
-    logic [10:0] display;
-    logic Compute_done;
 
-    assign input_data = io_in[5:2];
-    assign Next = io_in[1];
-    assign Done = io_in[0];
-    assign io_out[11:1] = display;
-    assign io_out[0] = Compute_done;
-
-    TuringMachine #(4, 64) dut (.*);
+    TuringMachine #(4, 64) dut (.input_data(io_in[5:2]), .Next(io_in[1]), .Done(io_in[0]),
+                                .display_out(io_out[11:1]), .Compute_done(io_out[0]));
 
 endmodule
