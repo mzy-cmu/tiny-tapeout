@@ -25,6 +25,7 @@ module TuringMachine
   (input logic [dw-1:0] input_data,
    input logic clock, reset, Next, Done,
    output logic [10:0] display_out,
+   output logic [3:0] currState,
    output logic Compute_done);
 
   // control points
@@ -80,7 +81,7 @@ module TuringMachine
   assign Left = direction_out[0];
   assign Halt = direction_out[1];
 
-  assign Compute_done = Memory_end || Halt;
+  assign Compute_done = Memory_end | Halt;
   
   // finite state machine
   FSM fsm (.*);
@@ -93,7 +94,8 @@ module FSM (
   input logic Data_eq, Halt, Left, Memory_end,
   output logic Init, NextState_en, InputAddr_en, StateAddr_ld, StateAddr_en, TapeAddr_en, Write_en, Read_en, ReadInput, 
                PrevTape_en, TapeReg_en, DataReg_en, Direction_en, Display_en, Display_rewrite,
-  output logic [1:0] Addr_sel, Data_sel);
+  output logic [1:0] Addr_sel, Data_sel,
+  output logic [3:0] currState);
 
   enum logic [3:0] {START, WAIT, WRITE_INPUT, READ_TAPE, READ_DATA, REWRITE_TAPE, READ_DIRECTION, READ_STATE, STOP} currState, nextState;
 
