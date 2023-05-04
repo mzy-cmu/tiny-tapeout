@@ -9,7 +9,7 @@ UUM=FALSE
 KDB=FALSE
 USE_NOVAS_HOME=FALSE
 COSIM=FALSE
-TOP=my_chip DFlipFlop 
+TOP=TuringMachine_test DFlipFlop Synchronizer 
 
 [Value]
 WREALX=ffff534e50535f58

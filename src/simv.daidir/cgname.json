@@ -5,17 +5,23 @@
         "module",
         1
     ],
-    "my_chip": [
-        "my_chip",
-        "P0xrA",
+    "TuringMachine_test": [
+        "TuringMachine_test",
+        "HeszI",
         "module",
-        2
+        11
     ],
     "DFlipFlop": [
         "DFlipFlop",
         "NafP4",
         "module",
         7
+    ],
+    "Synchronizer": [
+        "Synchronizer",
+        "mLbx7",
+        "module",
+        10
     ],
     "...MASTER...": [
         "SIM",

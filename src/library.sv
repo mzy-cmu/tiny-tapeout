@@ -115,6 +115,25 @@ module Synchronizer // protects FSM / HW from asynchronous input signal
 endmodule: Synchronizer
 
 
+module ShiftRegister_SIPO_wRewrite
+ #(parameter w = 8)
+  (input  logic en, clear, serial, left, rewrite, clock,
+   output logic [w-1:0] Q);
+
+  always_ff @(posedge clock) begin
+    if (clear)
+      Q <= w'('b0);
+    else if (rewrite)
+      Q <= {Q[w-1:1], ~Q[0]};
+    else if (en && left)
+      Q <= {Q[w-2:0], serial};
+    else if (en && (~left))
+      Q <= {serial, Q[w-1:1]};
+  end
+
+endmodule: ShiftRegister_SIPO_wRewrite
+
+
 module Memory_synth // stores a number of words, conbinational read, sequential write
  #(parameter dw = 8, // size of each word
              w = 16, // number of words

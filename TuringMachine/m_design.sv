@@ -81,7 +81,7 @@ module m_design (
     assign led[10:0] = (~reset_n) ? 'b0 : display_out;
     assign led[11] = (~reset_n) ? 'b0 : Compute_done;
 
-    hex_to_sevenseg hex2(.hexdigit(currState), .seg(display));
+    hex_to_sevenseg hex(.hexdigit(currState), .seg(display));
     assign display_sel = 4'b1110;
 
     assign base_led = (~reset_n) ? 'b0 : {display_in, tape_reg_out, data_reg_out};

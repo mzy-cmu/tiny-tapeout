@@ -29,7 +29,7 @@
 -picarchive
 -sverilog
 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/bin/vcs1
-TuringMachine_test.sv
+TuringMachine_test1.sv
 TuringMachine.sv
 library.sv
 68
@@ -105,13 +105,13 @@ AKLOG=/usr/bin/aklog
 0
 4
 1683140682 library.sv
-1683155411 TuringMachine.sv
-1683155306 TuringMachine_test.sv
+1683156101 TuringMachine.sv
+1683161208 TuringMachine_test1.sv
 1654052745 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/vcsdp.tab
 4
 1654054205 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvirsim.so
 1654053585 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
 1654053489 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libsnpsmalloc.so
 1654053565 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvfs.so
-1683155415 simv.daidir
+1683161211 simv.daidir
 -1 partitionlib
