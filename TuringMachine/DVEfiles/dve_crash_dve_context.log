@@ -1,9 +1,9 @@
 =======================DVE Context and Call Stack=========================
-Command line: /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/linux64/bin/dve.exe -full64 -ucliplatform=linux64 -toolargs "-ucligui -toolexe ./simv  -pid 137784" -toolin /tmp/vcs_20230503204222_137782_zhiyingm..stdin -toolout /tmp/vcs_20230503204222_137782_zhiyingm..stdout
+Command line: /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/linux64/bin/dve.exe -full64 -ucliplatform=linux64 -toolargs "-ucligui -toolexe ./simv  -pid 143674" -toolin /tmp/vcs_20230505054648_143672_zhiyingm..stdin -toolout /tmp/vcs_20230505054648_143672_zhiyingm..stdout
 
 --- Stack trace follows:
-[New LWP 138071]
-[New LWP 138075]
+[New LWP 143966]
+[New LWP 143969]
 
 warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
 [Thread debugging using libthread_db enabled]
@@ -76,7 +76,7 @@ warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compi
 warning: Cannot parse .gnu_debugdata section; LZMA support was disabled at compile time
 0x00007ffff4616659 in waitpid () from /lib64/libc.so.6
 
-Thread 3 (Thread 0x7fffee19e700 (LWP 138075)):
+Thread 3 (Thread 0x7fffee19e700 (LWP 143969)):
 #0  0x00007ffff4640b5d in read () from /lib64/libc.so.6
 #1  0x00007ffff45ccd54 in __GI__IO_file_underflow () from /lib64/libc.so.6
 #2  0x00007ffff45cdf22 in __GI__IO_default_uflow () from /lib64/libc.so.6
@@ -87,7 +87,7 @@ Thread 3 (Thread 0x7fffee19e700 (LWP 138075)):
 #7  0x00007ffff5cdfea5 in start_thread () from /lib64/libpthread.so.0
 #8  0x00007ffff464fb0d in clone () from /lib64/libc.so.6
 
-Thread 2 (Thread 0x7fffee99f700 (LWP 138071)):
+Thread 2 (Thread 0x7fffee99f700 (LWP 143966)):
 #0  0x00007ffff5ce3a35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
 #1  0x00007ffff548b940 in ?? () from /lib64/libX11.so.6
 #2  0x00007ffff548be39 in ?? () from /lib64/libX11.so.6
@@ -106,7 +106,7 @@ Thread 2 (Thread 0x7fffee99f700 (LWP 138071)):
 #15 0x00007ffff5cdfea5 in start_thread () from /lib64/libpthread.so.0
 #16 0x00007ffff464fb0d in clone () from /lib64/libc.so.6
 
-Thread 1 (Thread 0x7ffff7f75740 (LWP 137799)):
+Thread 1 (Thread 0x7ffff7f75740 (LWP 143689)):
 #0  0x00007ffff4616659 in waitpid () from /lib64/libc.so.6
 #1  0x00007ffff4593f62 in do_system () from /lib64/libc.so.6
 #2  0x00007ffff4594311 in system () from /lib64/libc.so.6
@@ -130,8 +130,8 @@ Thread 1 (Thread 0x7ffff7f75740 (LWP 137799)):
 #20 0x00000000012cf6b2 in ag::ovaAppInst::enterEventLoop(int, char**) ()
 #21 0x0000000000e840c7 in main ()
 
-Process VmPeak: 487544 kb, VmSize: 487544 kb
-System Free Memory: 99882516 kb, System Free Swap: 29932016 kb
+Process VmPeak: 493624 kb, VmSize: 493624 kb
+System Free Memory: 88284432 kb, System Free Swap: 29979888 kb
 
 No context available
 ==========================================================================

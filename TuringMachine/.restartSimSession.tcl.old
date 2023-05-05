@@ -1,15 +1,15 @@
 # Begin_DVE_Session_Save_Info
 # DVE restart session
-# Saved on Wed May 3 19:09:31 2023
+# Saved on Fri May 5 14:49:54 2023
 # Designs open: 1
 #   Sim: /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/simv
 # Toplevel windows open: 2
 # 	TopLevel.1
 # 	TopLevel.2
 #   Source.1: TuringMachine_test
-#   Wave.1: 56 signals
+#   Wave.1: 59 signals
 #   Group count = 1
-#   Group Group1 signal count = 56
+#   Group Group1 signal count = 59
 # End_DVE_Session_Save_Info
 
 # DVE version: T-2022.06_Full64
@@ -59,7 +59,7 @@ gui_sync_global -id ${TopLevel.2} -option true
 
 # MDI window settings
 set Wave.1 Wave.1
-gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 415} {child_wave_right 1013} {child_wave_colname 205} {child_wave_colvalue 206} {child_wave_col1 0} {child_wave_col2 1}}
+gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 415} {child_wave_right 1011} {child_wave_colname 205} {child_wave_colvalue 206} {child_wave_col1 0} {child_wave_col2 1}}
 
 # End MDI window settings
 
@@ -89,17 +89,21 @@ gui_set_time_units 1s
 gui_load_child_values {TuringMachine_test.dut}
 
 
-set _session_group_3 Group1
-gui_sg_create "$_session_group_3"
-set Group1 "$_session_group_3"
+set _session_group_6 Group1
+gui_sg_create "$_session_group_6"
+set Group1 "$_session_group_6"
 
-gui_sg_addsignal -group "$_session_group_3" { TuringMachine_test.dut.Addr_sel TuringMachine_test.dut.Compute_done TuringMachine_test.dut.DataReg_en TuringMachine_test.dut.Data_eq TuringMachine_test.dut.Data_sel TuringMachine_test.dut.Direction_en TuringMachine_test.dut.Display_en TuringMachine_test.dut.Display_rewrite TuringMachine_test.dut.Done TuringMachine_test.dut.Halt TuringMachine_test.dut.Init TuringMachine_test.dut.InputAddr_en TuringMachine_test.dut.Left TuringMachine_test.dut.Memory_end TuringMachine_test.dut.Next TuringMachine_test.dut.NextState_en TuringMachine_test.dut.PrevTape_en TuringMachine_test.dut.ReadInput TuringMachine_test.dut.Read_en TuringMachine_test.dut.StateAddr_en TuringMachine_test.dut.StateAddr_ld TuringMachine_test.dut.TapeAddr_en TuringMachine_test.dut.TapeReg_en TuringMachine_test.dut.Write_en TuringMachine_test.dut.aw TuringMachine_test.dut.clock TuringMachine_test.dut.currState TuringMachine_test.dut.data_reg_in TuringMachine_test.dut.data_reg_out TuringMachine_test.dut.direction_in TuringMachine_test.dut.direction_out TuringMachine_test.dut.display_in TuringMachine_test.dut.display_out TuringMachine_test.dut.dw TuringMachine_test.dut.input_addr_out TuringMachine_test.dut.input_data TuringMachine_test.dut.memory_addr TuringMachine_test.dut.memory_data TuringMachine_test.dut.next_state_in TuringMachine_test.dut.next_state_out TuringMachine_test.dut.next_state_prep TuringMachine_test.dut.prev_tape_addr TuringMachine_test.dut.prev_tape_in TuringMachine_test.dut.prev_tape_out TuringMachine_test.dut.read_data TuringMachine_test.dut.reset TuringMachine_test.dut.state_addr_in TuringMachine_test.dut.state_addr_out TuringMachine_test.dut.tape_addr_in TuringMachine_test.dut.tape_addr_out TuringMachine_test.dut.tape_in TuringMachine_test.dut.tape_init_addr TuringMachine_test.dut.tape_reg_in TuringMachine_test.dut.tape_reg_out TuringMachine_test.dut.w TuringMachine_test.dut.write_data }
+gui_sg_addsignal -group "$_session_group_6" { TuringMachine_test.dut.Addr_sel TuringMachine_test.dut.Compute_done TuringMachine_test.dut.DataReg_en TuringMachine_test.dut.Data_eq TuringMachine_test.dut.Data_sel TuringMachine_test.dut.Direction_en TuringMachine_test.dut.Display_en TuringMachine_test.dut.Display_rewrite TuringMachine_test.dut.Done TuringMachine_test.dut.Halt TuringMachine_test.dut.Init TuringMachine_test.dut.InputAddr_en TuringMachine_test.dut.Left TuringMachine_test.dut.Memory_end TuringMachine_test.dut.Next TuringMachine_test.dut.NextState_en TuringMachine_test.dut.PrevTape_en TuringMachine_test.dut.ReadInput TuringMachine_test.dut.Read_en TuringMachine_test.dut.StateAddr_en TuringMachine_test.dut.StateAddr_ld TuringMachine_test.dut.TapeAddr_en TuringMachine_test.dut.TapeAddr_ld TuringMachine_test.dut.TapeReg_en TuringMachine_test.dut.Tape_end TuringMachine_test.dut.Tape_start TuringMachine_test.dut.Write_en TuringMachine_test.dut.aw TuringMachine_test.dut.clock TuringMachine_test.dut.currState TuringMachine_test.dut.data_reg_in TuringMachine_test.dut.data_reg_out TuringMachine_test.dut.direction_in TuringMachine_test.dut.direction_out TuringMachine_test.dut.display_in TuringMachine_test.dut.display_out TuringMachine_test.dut.dw TuringMachine_test.dut.input_addr_out TuringMachine_test.dut.input_data TuringMachine_test.dut.memory_addr TuringMachine_test.dut.next_state_in TuringMachine_test.dut.next_state_out TuringMachine_test.dut.next_state_prep TuringMachine_test.dut.prev_tape_addr TuringMachine_test.dut.prev_tape_in TuringMachine_test.dut.prev_tape_out TuringMachine_test.dut.read_data TuringMachine_test.dut.reset TuringMachine_test.dut.state_addr_in TuringMachine_test.dut.state_addr_out TuringMachine_test.dut.tape_addr_out TuringMachine_test.dut.tape_in TuringMachine_test.dut.tape_init_addr TuringMachine_test.dut.tape_min_addr_in TuringMachine_test.dut.tape_min_addr_out TuringMachine_test.dut.tape_reg_in TuringMachine_test.dut.tape_reg_out TuringMachine_test.dut.w TuringMachine_test.dut.write_data }
 gui_set_radix -radix {decimal} -signals {Sim:TuringMachine_test.dut.aw}
 gui_set_radix -radix {twosComplement} -signals {Sim:TuringMachine_test.dut.aw}
+gui_set_radix -radix {decimal} -signals {Sim:TuringMachine_test.dut.currState}
+gui_set_radix -radix {unsigned} -signals {Sim:TuringMachine_test.dut.currState}
 gui_set_radix -radix {binary} -signals {Sim:TuringMachine_test.dut.display_out}
 gui_set_radix -radix {unsigned} -signals {Sim:TuringMachine_test.dut.display_out}
 gui_set_radix -radix {decimal} -signals {Sim:TuringMachine_test.dut.dw}
 gui_set_radix -radix {twosComplement} -signals {Sim:TuringMachine_test.dut.dw}
+gui_set_radix -radix {decimal} -signals {Sim:TuringMachine_test.dut.memory_addr}
+gui_set_radix -radix {unsigned} -signals {Sim:TuringMachine_test.dut.memory_addr}
 gui_set_radix -radix {decimal} -signals {Sim:TuringMachine_test.dut.w}
 gui_set_radix -radix {twosComplement} -signals {Sim:TuringMachine_test.dut.w}
 
@@ -140,7 +144,7 @@ gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linka
 gui_list_set_filter -id ${Data.1} -text {*}
 gui_list_show_data -id ${Data.1} {TuringMachine_test.dut}
 gui_show_window -window ${Data.1}
-catch { gui_list_select -id ${Data.1} {TuringMachine_test.dut.tape_reg_out TuringMachine_test.dut.Next TuringMachine_test.dut.ReadInput TuringMachine_test.dut.Halt TuringMachine_test.dut.currState TuringMachine_test.dut.next_state_in TuringMachine_test.dut.Display_rewrite TuringMachine_test.dut.input_data TuringMachine_test.dut.direction_in TuringMachine_test.dut.prev_tape_in TuringMachine_test.dut.input_addr_out TuringMachine_test.dut.Display_en TuringMachine_test.dut.Write_en TuringMachine_test.dut.Data_eq TuringMachine_test.dut.clock TuringMachine_test.dut.display_out TuringMachine_test.dut.reset TuringMachine_test.dut.prev_tape_out TuringMachine_test.dut.direction_out TuringMachine_test.dut.StateAddr_en TuringMachine_test.dut.memory_addr TuringMachine_test.dut.TapeReg_en TuringMachine_test.dut.Compute_done TuringMachine_test.dut.read_data TuringMachine_test.dut.next_state_prep TuringMachine_test.dut.Read_en TuringMachine_test.dut.StateAddr_ld TuringMachine_test.dut.dw TuringMachine_test.dut.tape_reg_in TuringMachine_test.dut.Data_sel TuringMachine_test.dut.Left TuringMachine_test.dut.tape_addr_out TuringMachine_test.dut.w TuringMachine_test.dut.Memory_end TuringMachine_test.dut.Direction_en TuringMachine_test.dut.Addr_sel TuringMachine_test.dut.state_addr_in TuringMachine_test.dut.TapeAddr_en TuringMachine_test.dut.Done TuringMachine_test.dut.prev_tape_addr TuringMachine_test.dut.state_addr_out TuringMachine_test.dut.DataReg_en TuringMachine_test.dut.Init TuringMachine_test.dut.tape_in TuringMachine_test.dut.data_reg_in TuringMachine_test.dut.next_state_out TuringMachine_test.dut.NextState_en TuringMachine_test.dut.PrevTape_en TuringMachine_test.dut.data_reg_out TuringMachine_test.dut.InputAddr_en TuringMachine_test.dut.write_data TuringMachine_test.dut.tape_init_addr TuringMachine_test.dut.display_in TuringMachine_test.dut.tape_addr_in TuringMachine_test.dut.aw TuringMachine_test.dut.memory_data }}
+catch { gui_list_select -id ${Data.1} {TuringMachine_test.dut.tape_reg_out TuringMachine_test.dut.Next TuringMachine_test.dut.ReadInput TuringMachine_test.dut.Halt TuringMachine_test.dut.currState TuringMachine_test.dut.next_state_in TuringMachine_test.dut.Display_rewrite TuringMachine_test.dut.input_data TuringMachine_test.dut.direction_in TuringMachine_test.dut.prev_tape_in TuringMachine_test.dut.input_addr_out TuringMachine_test.dut.Display_en TuringMachine_test.dut.Write_en TuringMachine_test.dut.Data_eq TuringMachine_test.dut.clock TuringMachine_test.dut.display_out TuringMachine_test.dut.reset TuringMachine_test.dut.prev_tape_out TuringMachine_test.dut.direction_out TuringMachine_test.dut.Tape_start TuringMachine_test.dut.StateAddr_en TuringMachine_test.dut.memory_addr TuringMachine_test.dut.TapeReg_en TuringMachine_test.dut.Compute_done TuringMachine_test.dut.read_data TuringMachine_test.dut.next_state_prep TuringMachine_test.dut.Read_en TuringMachine_test.dut.StateAddr_ld TuringMachine_test.dut.tape_reg_in TuringMachine_test.dut.dw TuringMachine_test.dut.Data_sel TuringMachine_test.dut.Left TuringMachine_test.dut.tape_addr_out TuringMachine_test.dut.w TuringMachine_test.dut.Memory_end TuringMachine_test.dut.Direction_en TuringMachine_test.dut.Addr_sel TuringMachine_test.dut.state_addr_in TuringMachine_test.dut.TapeAddr_en TuringMachine_test.dut.Done TuringMachine_test.dut.prev_tape_addr TuringMachine_test.dut.state_addr_out TuringMachine_test.dut.DataReg_en TuringMachine_test.dut.TapeAddr_ld TuringMachine_test.dut.Init TuringMachine_test.dut.tape_in TuringMachine_test.dut.tape_min_addr_in TuringMachine_test.dut.tape_min_addr_out TuringMachine_test.dut.Tape_end TuringMachine_test.dut.data_reg_in TuringMachine_test.dut.next_state_out TuringMachine_test.dut.NextState_en TuringMachine_test.dut.PrevTape_en TuringMachine_test.dut.data_reg_out TuringMachine_test.dut.InputAddr_en TuringMachine_test.dut.write_data TuringMachine_test.dut.tape_init_addr TuringMachine_test.dut.display_in TuringMachine_test.dut.aw }}
 gui_view_scroll -id ${Data.1} -vertical -set 0
 gui_view_scroll -id ${Data.1} -horizontal -set 0
 gui_view_scroll -id ${Hier.1} -vertical -set 0
@@ -161,9 +165,9 @@ set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
 gui_list_set_height -id Wave -height 25
 set origGroupCreationState [gui_list_create_group_when_add -wave]
 gui_list_create_group_when_add -wave -disable
-gui_wv_zoom_timerange -id ${Wave.1} 2811 3142
+gui_wv_zoom_timerange -id ${Wave.1} 3298 3633
 gui_list_add_group -id ${Wave.1} -after {New Group} {Group1}
-gui_list_select -id ${Wave.1} {TuringMachine_test.dut.Memory_end }
+gui_list_select -id ${Wave.1} {TuringMachine_test.dut.input_data }
 gui_seek_criteria -id ${Wave.1} {Any Edge}
 
 
@@ -181,7 +185,7 @@ gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linka
 gui_list_set_filter -id ${Wave.1} -text {*}
 gui_list_set_insertion_bar  -id ${Wave.1} -group Group1  -position in
 
-gui_view_scroll -id ${Wave.1} -vertical -set 525
+gui_view_scroll -id ${Wave.1} -vertical -set 714
 gui_show_grid -id ${Wave.1} -enable false
 # Restore toplevel window zorder
 # The toplevel window could be closed if it has no view/pane

@@ -11,30 +11,6 @@
         "module",
         15
     ],
-    "MagComp": [
-        "MagComp",
-        "vaLRj",
-        "module",
-        3
-    ],
-    "Adder": [
-        "Adder",
-        "xUt1z",
-        "module",
-        4
-    ],
-    "Multiplexer": [
-        "Multiplexer",
-        "UxyT3",
-        "module",
-        5
-    ],
-    "Decoder": [
-        "Decoder",
-        "t8TcA",
-        "module",
-        8
-    ],
     "DFlipFlop": [
         "DFlipFlop",
         "NafP4",
@@ -46,36 +22,6 @@
         "mLbx7",
         "module",
         11
-    ],
-    "ShiftRegister_PIPO": [
-        "ShiftRegister_PIPO",
-        "yK5FF",
-        "module",
-        12
-    ],
-    "ShiftRegister_SIPO": [
-        "ShiftRegister_SIPO",
-        "ckLmD",
-        "module",
-        16
-    ],
-    "BarrelShiftRegister": [
-        "BarrelShiftRegister",
-        "ts568",
-        "module",
-        14
-    ],
-    "BusDriver": [
-        "BusDriver",
-        "Bt4nZ",
-        "module",
-        13
-    ],
-    "Memory": [
-        "Memory",
-        "f0K8C",
-        "module",
-        10
     ],
     "...MASTER...": [
         "SIM",
