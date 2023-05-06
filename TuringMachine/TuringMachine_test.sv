@@ -9,7 +9,7 @@ module TuringMachine_test();
   logic [1:0] direction_out;
   logic [5:0] next_state_out, tape_addr_out;
 
-  TuringMachine #(6, 64) dut (.display_out(display), .*);
+  TuringMachine #(4, 64) dut (.display_out(display), .*);
 
   initial begin
     clock = 1'b0;

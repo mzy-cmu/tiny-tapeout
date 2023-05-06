@@ -1,14 +1,13 @@
 `default_nettype none
 
 module TuringMachine
- #(parameter dw = 6, // size of each word
+ #(parameter dw = 4, // size of each word
              w = 64, // number of words
              aw = $clog2(w))
-  (input logic [dw-1:0] input_data,
+  (input logic [aw-1:0] input_data,
    input logic clock, reset, Next, Done,
    output logic [10:0] display_out,
    output logic [3:0] currState,
-   output logic [aw-1:0] next_state_out, tape_addr_out,
    output logic Compute_done);
 
   // control points

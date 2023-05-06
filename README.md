@@ -1,17 +1,17 @@
 # Turing Machine
 Zhiying Meng 18-224/624 Spring 2023 Final Tapeout Project
 ## Overview
-This chip takes in a Turing Machine style state transition table and displays the computation process.
+This chip takes in a Turing Machine style state transition table and initial tape values, then displays the computation process. Only support tape with values 1 and 0.
 ## Inputs/Outputs
 Inputs:
-- 4 switches used for input data (state transition table + initial tape value)
+- 6 switches used for input data (number of states + state transition table + tape start address + initial tape values)
 - 3 buttons for controlling the computation process
 
 Outputs:
 - 11 LEDs for displaying the tape values
 - 1 LED for indicating "Halt" or reach end of memory
 
-![](media/IO.png)
+![](media/IO.jpg)
 ## How it Works
 The chip initially stores all the inputs into a 4$\times$64 memory. It takes the bit at the tape head and look for the corresponding actions in the state transition table (default state is 1).
 
@@ -20,8 +20,8 @@ For instance, in the above example, the first bit in the tape would be 1, so it 
 After it has processed all the values on the tape, it will either go to "Halt" state where the tape stops moving, or it will reach the end of the tape and stops.
 
 The diagram below is the RTL design to achieve this function.
-![](media/Datapath.png)
-![](media/FSM.png)
+![](media/Datapath.jpg)
+![](media/FSM.jpg)
 ## Design Testing / Bringup
 When testing the chip, input a valid Turing Machine state transition table and a initial tape value using the switches. Press the "Next" button to indicate the input can be taken, and press the "Done" button to indicate the end of the inputs.
 
@@ -42,10 +42,6 @@ With the example provided before, the expected outputs from the LEDs are as belo
 00011111110
 compute done
 ## Media
-(optionally include any photos or videos of your design in action)
-## (anything else)
-If there is anything else you would like to document about your project
-such as background information, design space exploration, future ideas,
-verification details, references, etc etc. please add it here. This
-template is meant to be a guideline, not an exact format that you're
-required to follow.
+Testing using FPGA:
+![](media/FPGA1.jpg)
+![](media/FPGA2.jpg)

@@ -5,10 +5,11 @@ module TuringMachine_test();
   logic clock, reset, Next, Done, Compute_done;
   logic [10:0] display;
   logic [3:0] currState;
-  logic display_in, tape_reg_out, data_reg_out;
+  logic tape_reg_out, data_reg_out;
+  logic [1:0] direction_out;
   logic [5:0] next_state_out, tape_addr_out;
 
-  TuringMachine #(6, 64) dut (.display_out(display), .*);
+  TuringMachine #(4, 64) dut (.display_out(display), .*);
 
   initial begin
     clock = 1'b0;

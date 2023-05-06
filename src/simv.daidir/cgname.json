@@ -5,17 +5,17 @@
         "module",
         1
     ],
-    "my_chip": [
-        "my_chip",
-        "P0xrA",
-        "module",
-        9
-    ],
     "DFlipFlop": [
         "DFlipFlop",
         "NafP4",
         "module",
         7
+    ],
+    "my_chip": [
+        "my_chip",
+        "P0xrA",
+        "module",
+        9
     ],
     "...MASTER...": [
         "SIM",
