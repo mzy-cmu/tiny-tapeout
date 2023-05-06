@@ -1,14 +1,15 @@
 `default_nettype none
 
 module TuringMachine
- #(parameter dw = 4, // size of each word
+ #(parameter dw = 6, // size of each word
              w = 64, // number of words
              aw = $clog2(w))
   (input logic [dw-1:0] input_data,
    input logic clock, reset, Next, Done,
    output logic [10:0] display_out,
    output logic [3:0] currState,
-   output logic display_in, tape_reg_out, data_reg_out,
+   output logic tape_reg_out, data_reg_out,
+   output logic [1:0] direction_out,
    output logic [aw-1:0] next_state_out, tape_addr_out,
    output logic Compute_done);
 
@@ -112,7 +113,7 @@ module FSM (
     Init = 1'b0;
     NextState_en = 1'b0; StateAddr_ld = 1'b0; StateAddr_en = 1'b0;
     InputAddr_en = 1'b0; TapeAddr_ld = 1'b0; TapeAddr_en = 1'b0;
-    Addr_sel = 2'b00; Write_en = 1'b0; Read_en = 1'b0;
+    Addr_sel = 2'b00; Write_en = 1'b0; Read_en = 1'b1;
     ReadInput = 1'b0; Data_sel = 2'b00;
     PrevTape_en = 1'b0; TapeReg_en = 1'b0; DataReg_en = 1'b0; Direction_en = 1'b0;
     Display_en = 1'b0; Display_rewrite = 1'b0;

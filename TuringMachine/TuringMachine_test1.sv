@@ -1,14 +1,14 @@
 `default_nettype none
 
 module TuringMachine_test();
-  logic [3:0] input_data;
+  logic [5:0] input_data;
   logic clock, reset, Next, Done, Compute_done;
   logic [10:0] display;
   logic [3:0] currState;
   logic display_in, tape_reg_out, data_reg_out;
   logic [5:0] next_state_out, tape_addr_out;
 
-  TuringMachine #(4, 64) dut (.display_out(display), .*);
+  TuringMachine #(6, 64) dut (.display_out(display), .*);
 
   initial begin
     clock = 1'b0;
@@ -48,7 +48,7 @@ module TuringMachine_test();
     @(posedge clock);
     @(posedge clock);
 
-    input_data <= 0;
+    input_data <= 1;
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
@@ -70,6 +70,50 @@ module TuringMachine_test();
     @(posedge clock);
     @(posedge clock);
     
+    input_data <= 1;
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    Next <= 1'b1;
+    @(posedge clock);
+    @(posedge clock);
+    Next <= 1'b0;
+    @(posedge clock);
+    @(posedge clock);
+
+    input_data <= 0;
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    Next <= 1'b1;
+    @(posedge clock);
+    @(posedge clock);
+    Next <= 1'b0;
+    @(posedge clock);
+    @(posedge clock);
+
+    input_data <= 3;
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    Next <= 1'b1;
+    @(posedge clock);
+    @(posedge clock);
+    Next <= 1'b0;
+    @(posedge clock);
+    @(posedge clock);
+
+    input_data <= 1;
+    @(posedge clock);
+    @(posedge clock);
+    @(posedge clock);
+    Next <= 1'b1;
+    @(posedge clock);
+    @(posedge clock);
+    Next <= 1'b0;
+    @(posedge clock);
+    @(posedge clock);
+
     input_data <= 0;
     @(posedge clock);
     @(posedge clock);
@@ -103,17 +147,6 @@ module TuringMachine_test();
     @(posedge clock);
     @(posedge clock);
 
-    input_data <= 0;
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    Next <= 1'b1;
-    @(posedge clock);
-    @(posedge clock);
-    Next <= 1'b0;
-    @(posedge clock);
-    @(posedge clock);
-
     input_data <= 1;
     @(posedge clock);
     @(posedge clock);
@@ -125,29 +158,7 @@ module TuringMachine_test();
     @(posedge clock);
     @(posedge clock);
 
-    input_data <= 1;
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    Next <= 1'b1;
-    @(posedge clock);
-    @(posedge clock);
-    Next <= 1'b0;
-    @(posedge clock);
-    @(posedge clock);
-
-    input_data <= 1;
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    Next <= 1'b1;
-    @(posedge clock);
-    @(posedge clock);
-    Next <= 1'b0;
-    @(posedge clock);
-    @(posedge clock);
-
-    input_data <= 1;
+    input_data <= 2;
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
@@ -191,18 +202,7 @@ module TuringMachine_test();
     @(posedge clock);
     @(posedge clock);
 
-    input_data <= 3;
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    Next <= 1'b1;
-    @(posedge clock);
-    @(posedge clock);
-    Next <= 1'b0;
-    @(posedge clock);
-    @(posedge clock);
-
-    input_data <= 0;
+    input_data <= 1;
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
@@ -235,18 +235,14 @@ module TuringMachine_test();
     @(posedge clock);
     @(posedge clock);
 
-    input_data <= 0;
+    Done <= 1'b1;
     @(posedge clock);
     @(posedge clock);
-    @(posedge clock);
-    Next <= 1'b1;
-    @(posedge clock);
-    @(posedge clock);
-    Next <= 1'b0;
+    Done <= 1'b0;
     @(posedge clock);
     @(posedge clock);
 
-    input_data <= 0;
+    input_data <= 32;
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
@@ -256,70 +252,22 @@ module TuringMachine_test();
     Next <= 1'b0;
     @(posedge clock);
     @(posedge clock);
-
-    input_data <= 0;
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
-    Next <= 1'b1;
-    @(posedge clock);
-    @(posedge clock);
-    Next <= 1'b0;
-    @(posedge clock);
-    @(posedge clock);
-
-    input_data <= 0;
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
-    Next <= 1'b1;
-    @(posedge clock);
-    @(posedge clock);
-    Next <= 1'b0;
-    @(posedge clock);
-    @(posedge clock);
-
-    input_data <= 1;
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
-    Next <= 1'b1;
-    @(posedge clock);
-    @(posedge clock);
-    Next <= 1'b0;
-    @(posedge clock);
-    @(posedge clock);
-
-    input_data <= 0;
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
-    Next <= 1'b1;
-    @(posedge clock);
-    @(posedge clock);
-    Next <= 1'b0;
-    @(posedge clock);
-    @(posedge clock);
-
-    input_data <= 0;
     @(posedge clock);
     @(posedge clock);
     @(posedge clock);
-    Next <= 1'b1;
     @(posedge clock);
-    @(posedge clock);
-    Next <= 1'b0;
-    @(posedge clock);
-    @(posedge clock);
-
-    input_data <= 0;
-    @(posedge clock);
-    @(posedge clock);
-    @(posedge clock);
-    Next <= 1'b1;
-    @(posedge clock);
-    @(posedge clock);
-    Next <= 1'b0;
     @(posedge clock);
     @(posedge clock);
 

@@ -6,13 +6,13 @@ synopsys::env hasTB
 trigger_hier_stack_context_switch 0
 synUtils::setDVEInitPhase 1
 synopsys::dump -type VPD -file /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/inter.vpd -locking
-synopsys::dump -autoflush on -fid VPD6
-set ::dve_fid VPD6
+synopsys::dump -autoflush on -fid VPD1
+set ::dve_fid VPD1
 synUtils::setDVEInitPhase 0
 ucliCore::getToolPID
-synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpkX2U0Y
-synUtils::sendTool -active {_icl_start_rpc -version "T-2022.06_Full64" -sync_file /tmp/vcs_dve_rpc.zhiyingm.76243}
-synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.zhiyingm.76243}
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpAVduuY
+synUtils::sendTool -active {_icl_start_rpc -version "T-2022.06_Full64" -sync_file /tmp/vcs_dve_rpc.zhiyingm.182084}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.zhiyingm.182084}
 config endofsim noexit
 config onfail enable all
 config syscaddplainmembers
@@ -21,7 +21,7 @@ config syscaddstructtypes
 synopsys::listing -disable
 # Begin_DVE_Session_Save_Info
 # DVE restart session
-# Saved on Fri May 5 14:49:54 2023
+# Saved on Fri May 5 21:13:08 2023
 # Designs open: 1
 #   Sim: /afs/andrew.cmu.edu/usr1/zhiyingm/private/18224/tiny-tapeout/TuringMachine/simv
 # Toplevel windows open: 2
@@ -65,9 +65,9 @@ set Wave.1 Wave.1
 # Global: Signal Time Shift
 # Global: Signal Compare
 # Global: Signal Groups
-synopsys::dump -add {TuringMachine_test.dut} -scope "." -depth 1 -fid VPD6
-set _session_group_6 Group1
-set Group1 "$_session_group_6"
+synopsys::dump -add {TuringMachine_test.dut} -scope "." -depth 1 -fid VPD1
+set _session_group_2 Group1
+set Group1 "$_session_group_2"
 # Global: Highlighting
 # Global: Stack
 # Post database loading setting...
@@ -77,10 +77,7 @@ set Group1 "$_session_group_6"
 foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
 # DVE View/pane content session:
 # Hier 'Hier.1'
-catch {gui_list_expand -id ${Hier.1} TuringMachine_test}
-catch {gui_list_select -id ${Hier.1} {TuringMachine_test.dut}}
 # Data 'Data.1'
-catch { gui_list_select -id ${Data.1} {TuringMachine_test.dut.tape_reg_out TuringMachine_test.dut.Next TuringMachine_test.dut.ReadInput TuringMachine_test.dut.Halt TuringMachine_test.dut.currState TuringMachine_test.dut.next_state_in TuringMachine_test.dut.Display_rewrite TuringMachine_test.dut.input_data TuringMachine_test.dut.direction_in TuringMachine_test.dut.prev_tape_in TuringMachine_test.dut.input_addr_out TuringMachine_test.dut.Display_en TuringMachine_test.dut.Write_en TuringMachine_test.dut.Data_eq TuringMachine_test.dut.clock TuringMachine_test.dut.display_out TuringMachine_test.dut.reset TuringMachine_test.dut.prev_tape_out TuringMachine_test.dut.direction_out TuringMachine_test.dut.Tape_start TuringMachine_test.dut.StateAddr_en TuringMachine_test.dut.memory_addr TuringMachine_test.dut.TapeReg_en TuringMachine_test.dut.Compute_done TuringMachine_test.dut.read_data TuringMachine_test.dut.next_state_prep TuringMachine_test.dut.Read_en TuringMachine_test.dut.StateAddr_ld TuringMachine_test.dut.tape_reg_in TuringMachine_test.dut.dw TuringMachine_test.dut.Data_sel TuringMachine_test.dut.Left TuringMachine_test.dut.tape_addr_out TuringMachine_test.dut.w TuringMachine_test.dut.Memory_end TuringMachine_test.dut.Direction_en TuringMachine_test.dut.Addr_sel TuringMachine_test.dut.state_addr_in TuringMachine_test.dut.TapeAddr_en TuringMachine_test.dut.Done TuringMachine_test.dut.prev_tape_addr TuringMachine_test.dut.state_addr_out TuringMachine_test.dut.DataReg_en TuringMachine_test.dut.TapeAddr_ld TuringMachine_test.dut.Init TuringMachine_test.dut.tape_in TuringMachine_test.dut.tape_min_addr_in TuringMachine_test.dut.tape_min_addr_out TuringMachine_test.dut.Tape_end TuringMachine_test.dut.data_reg_in TuringMachine_test.dut.next_state_out TuringMachine_test.dut.NextState_en TuringMachine_test.dut.PrevTape_en TuringMachine_test.dut.data_reg_out TuringMachine_test.dut.InputAddr_en TuringMachine_test.dut.write_data TuringMachine_test.dut.tape_init_addr TuringMachine_test.dut.display_in TuringMachine_test.dut.aw }}
 # Source 'Source.1'
 # View 'Wave.1'
 set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
@@ -98,3 +95,8 @@ set ucliGUI::state
 set ucliGUI::state
 set ucliGUI::state
 set ucliGUI::state
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

@@ -56,13 +56,14 @@ module m_design (
         .PLLOUTCORE(clk)
     );
     
-    logic [3:0] input_data;
+    logic [5:0] input_data;
     logic clock, reset, Next, Done;
     logic [10:0] display_out;
     logic Compute_done;
 
     logic [3:0] currState;
-    logic display_in, tape_reg_out, data_reg_out;
+    logic tape_reg_out, data_reg_out;
+    logic [1:0] direction_out;
     logic [5:0] next_state_out, tape_addr_out;
 
     // Synchronizer sync0 (.async(btn[2]), .sync(clock), .clock(clk));
@@ -72,20 +73,25 @@ module m_design (
     Synchronizer sync4 (.async(sw[1]), .sync(input_data[1]), .clock(clk));
     Synchronizer sync5 (.async(sw[2]), .sync(input_data[2]), .clock(clk));
     Synchronizer sync6 (.async(sw[3]), .sync(input_data[3]), .clock(clk));
+    Synchronizer sync7 (.async(sw[4]), .sync(input_data[4]), .clock(clk));
+    Synchronizer sync8 (.async(sw[5]), .sync(input_data[5]), .clock(clk));
     
     TuringMachine TM (.*);
 
     assign clock = clk;
     assign reset = ~reset_n;
     // assign input_data = sw[3:0];
-    assign led[10:0] = (~reset_n) ? 'b0 : display_out;
-    assign led[11] = (~reset_n) ? 'b0 : Compute_done;
+    assign led[10:0] = display_out;
+    assign led[11] = Compute_done;
 
     hex_to_sevenseg hex(.hexdigit(currState), .seg(display));
     assign display_sel = 4'b1110;
 
-    assign base_led = (~reset_n) ? 'b0 : {display_in, tape_reg_out, data_reg_out};
-    assign led[23:18] = (~reset_n) ? 'b0 : tape_addr_out;
+    assign base_led[0] = tape_reg_out;
+    assign base_led[1] = data_reg_out;
+    assign base_led[4:3] = direction_out;
+    assign base_led[7:5] = next_state_out;
+    assign led[23:18] = tape_addr_out;
 
     // assign led[15] = clock;
     assign led[14] = Done;
