@@ -1,0 +1,18 @@
+
+State Machine - |ChipInterface|TuringMachine:TM|FSM:fsm|currState
+Name currState.STOP currState.READ_STATE currState.READ_DIRECTION currState.REWRITE_TAPE currState.READ_DATA currState.READ_TAPE currState.FILL_TAPE2 currState.WRITE_TAPE currState.WAIT2 currState.FILL_TAPE1 currState.TAPE_ADDR currState.WRITE_STATE currState.WAIT1 currState.STATE_NUM currState.START 
+currState.START 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+currState.STATE_NUM 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+currState.WAIT1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+currState.WRITE_STATE 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+currState.TAPE_ADDR 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+currState.FILL_TAPE1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+currState.WAIT2 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+currState.WRITE_TAPE 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+currState.FILL_TAPE2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+currState.READ_TAPE 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+currState.READ_DATA 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+currState.REWRITE_TAPE 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+currState.READ_DIRECTION 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+currState.READ_STATE 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+currState.STOP 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

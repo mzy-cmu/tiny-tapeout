@@ -4,7 +4,7 @@ module TuringMachine_test();
   logic [5:0] input_data;
   logic clock, reset, Next, Done, Compute_done;
   logic [10:0] display;
-  logic [3:0] currState;
+  logic [3:0] state;
   logic tape_reg_out, data_reg_out;
   logic [1:0] direction_out;
   logic [5:0] next_state_out, tape_addr_out;

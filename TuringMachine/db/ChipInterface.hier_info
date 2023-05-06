@@ -1,0 +1,939 @@
+|ChipInterface
+CLOCK_50 => Synchronizer:sync1.clock
+CLOCK_50 => Synchronizer:sync2.clock
+CLOCK_50 => Synchronizer:sync3.clock
+CLOCK_50 => Synchronizer:sync4.clock
+CLOCK_50 => Synchronizer:sync5.clock
+CLOCK_50 => Synchronizer:sync6.clock
+CLOCK_50 => Synchronizer:sync7.clock
+CLOCK_50 => Synchronizer:sync8.clock
+CLOCK_50 => TuringMachine:TM.clock
+KEY[0] => Synchronizer:sync1.async
+KEY[1] => Synchronizer:sync2.async
+KEY[2] => TuringMachine:TM.reset
+KEY[3] => ~NO_FANOUT~
+SW[0] => Synchronizer:sync3.async
+SW[1] => Synchronizer:sync4.async
+SW[2] => Synchronizer:sync5.async
+SW[3] => Synchronizer:sync6.async
+SW[4] => Synchronizer:sync7.async
+SW[5] => Synchronizer:sync8.async
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+SW[10] => ~NO_FANOUT~
+SW[11] => ~NO_FANOUT~
+SW[12] => ~NO_FANOUT~
+SW[13] => ~NO_FANOUT~
+SW[14] => ~NO_FANOUT~
+SW[15] => ~NO_FANOUT~
+SW[16] => ~NO_FANOUT~
+SW[17] => ~NO_FANOUT~
+HEX0[0] <= hex_to_sevenseg:hex.seg
+HEX0[1] <= hex_to_sevenseg:hex.seg
+HEX0[2] <= hex_to_sevenseg:hex.seg
+HEX0[3] <= hex_to_sevenseg:hex.seg
+HEX0[4] <= hex_to_sevenseg:hex.seg
+HEX0[5] <= hex_to_sevenseg:hex.seg
+HEX0[6] <= hex_to_sevenseg:hex.seg
+HEX1[0] <= <GND>
+HEX1[1] <= <GND>
+HEX1[2] <= <GND>
+HEX1[3] <= <GND>
+HEX1[4] <= <GND>
+HEX1[5] <= <GND>
+HEX1[6] <= <GND>
+HEX2[0] <= <GND>
+HEX2[1] <= <GND>
+HEX2[2] <= <GND>
+HEX2[3] <= <GND>
+HEX2[4] <= <GND>
+HEX2[5] <= <GND>
+HEX2[6] <= <GND>
+HEX3[0] <= <GND>
+HEX3[1] <= <GND>
+HEX3[2] <= <GND>
+HEX3[3] <= <GND>
+HEX3[4] <= <GND>
+HEX3[5] <= <GND>
+HEX3[6] <= <GND>
+HEX4[0] <= <GND>
+HEX4[1] <= <GND>
+HEX4[2] <= <GND>
+HEX4[3] <= <GND>
+HEX4[4] <= <GND>
+HEX4[5] <= <GND>
+HEX4[6] <= <GND>
+HEX5[0] <= <GND>
+HEX5[1] <= <GND>
+HEX5[2] <= <GND>
+HEX5[3] <= <GND>
+HEX5[4] <= <GND>
+HEX5[5] <= <GND>
+HEX5[6] <= <GND>
+HEX6[0] <= <GND>
+HEX6[1] <= <GND>
+HEX6[2] <= <GND>
+HEX6[3] <= <GND>
+HEX6[4] <= <GND>
+HEX6[5] <= <GND>
+HEX6[6] <= <GND>
+HEX7[0] <= <GND>
+HEX7[1] <= <GND>
+HEX7[2] <= <GND>
+HEX7[3] <= <GND>
+HEX7[4] <= <GND>
+HEX7[5] <= <GND>
+HEX7[6] <= <GND>
+LEDR[0] <= TuringMachine:TM.display_out[0]
+LEDR[1] <= TuringMachine:TM.display_out[1]
+LEDR[2] <= TuringMachine:TM.display_out[2]
+LEDR[3] <= TuringMachine:TM.display_out[3]
+LEDR[4] <= TuringMachine:TM.display_out[4]
+LEDR[5] <= TuringMachine:TM.display_out[5]
+LEDR[6] <= TuringMachine:TM.display_out[6]
+LEDR[7] <= TuringMachine:TM.display_out[7]
+LEDR[8] <= TuringMachine:TM.display_out[8]
+LEDR[9] <= TuringMachine:TM.display_out[9]
+LEDR[10] <= TuringMachine:TM.display_out[10]
+LEDR[11] <= TuringMachine:TM.Compute_done
+LEDR[12] <= TuringMachine:TM.tape_addr_out[0]
+LEDR[13] <= TuringMachine:TM.tape_addr_out[1]
+LEDR[14] <= TuringMachine:TM.tape_addr_out[2]
+LEDR[15] <= TuringMachine:TM.tape_addr_out[3]
+LEDR[16] <= TuringMachine:TM.tape_addr_out[4]
+LEDR[17] <= TuringMachine:TM.tape_addr_out[5]
+LEDG[0] <= TuringMachine:TM.tape_reg_out
+LEDG[1] <= TuringMachine:TM.data_reg_out
+LEDG[2] <= <GND>
+LEDG[3] <= TuringMachine:TM.direction_out[0]
+LEDG[4] <= TuringMachine:TM.direction_out[1]
+LEDG[5] <= TuringMachine:TM.next_state_out[0]
+LEDG[6] <= TuringMachine:TM.next_state_out[1]
+LEDG[7] <= TuringMachine:TM.next_state_out[2]
+
+
+|ChipInterface|Synchronizer:sync1
+async => async1.DATAIN
+clock => sync~reg0.CLK
+clock => async1.CLK
+sync <= sync~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|Synchronizer:sync2
+async => async1.DATAIN
+clock => sync~reg0.CLK
+clock => async1.CLK
+sync <= sync~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|Synchronizer:sync3
+async => async1.DATAIN
+clock => sync~reg0.CLK
+clock => async1.CLK
+sync <= sync~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|Synchronizer:sync4
+async => async1.DATAIN
+clock => sync~reg0.CLK
+clock => async1.CLK
+sync <= sync~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|Synchronizer:sync5
+async => async1.DATAIN
+clock => sync~reg0.CLK
+clock => async1.CLK
+sync <= sync~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|Synchronizer:sync6
+async => async1.DATAIN
+clock => sync~reg0.CLK
+clock => async1.CLK
+sync <= sync~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|Synchronizer:sync7
+async => async1.DATAIN
+clock => sync~reg0.CLK
+clock => async1.CLK
+sync <= sync~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|Synchronizer:sync8
+async => async1.DATAIN
+clock => sync~reg0.CLK
+clock => async1.CLK
+sync <= sync~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|TuringMachine:TM
+input_data[0] => input_data[0].IN1
+input_data[1] => input_data[1].IN1
+input_data[2] => input_data[2].IN1
+input_data[3] => input_data[3].IN1
+input_data[4] => input_data[4].IN1
+input_data[5] => input_data[5].IN1
+clock => Counter:input_addr.clock
+clock => Register:next_state.clock
+clock => Counter:state_addr.clock
+clock => Counter:tape_addr.clock
+clock => Register:tape_addr_init.clock
+clock => Register:tape_addr_min.clock
+clock => Memory_synth:memory.clock
+clock => Register:tape_reg.clock
+clock => Register:prev_tape_reg.clock
+clock => ShiftRegister_SIPO_wRewrite:display_reg.clock
+clock => Register:data_reg.clock
+clock => Register:direction_reg.clock
+clock => FSM:fsm.clock
+reset => FSM:fsm.reset
+Next => FSM:fsm.Next
+Done => FSM:fsm.Done
+display_out[0] <= ShiftRegister_SIPO_wRewrite:display_reg.Q[0]
+display_out[1] <= display_out[1].DB_MAX_OUTPUT_PORT_TYPE
+display_out[2] <= ShiftRegister_SIPO_wRewrite:display_reg.Q[2]
+display_out[3] <= ShiftRegister_SIPO_wRewrite:display_reg.Q[3]
+display_out[4] <= ShiftRegister_SIPO_wRewrite:display_reg.Q[4]
+display_out[5] <= ShiftRegister_SIPO_wRewrite:display_reg.Q[5]
+display_out[6] <= ShiftRegister_SIPO_wRewrite:display_reg.Q[6]
+display_out[7] <= ShiftRegister_SIPO_wRewrite:display_reg.Q[7]
+display_out[8] <= ShiftRegister_SIPO_wRewrite:display_reg.Q[8]
+display_out[9] <= ShiftRegister_SIPO_wRewrite:display_reg.Q[9]
+display_out[10] <= ShiftRegister_SIPO_wRewrite:display_reg.Q[10]
+state[0] <= FSM:fsm.state[0]
+state[1] <= FSM:fsm.state[1]
+state[2] <= FSM:fsm.state[2]
+state[3] <= FSM:fsm.state[3]
+tape_reg_out <= tape_reg_out.DB_MAX_OUTPUT_PORT_TYPE
+data_reg_out <= data_reg_out.DB_MAX_OUTPUT_PORT_TYPE
+direction_out[0] <= Left.DB_MAX_OUTPUT_PORT_TYPE
+direction_out[1] <= Register:direction_reg.Q[1]
+next_state_out[0] <= Register:next_state.Q[0]
+next_state_out[1] <= Register:next_state.Q[1]
+next_state_out[2] <= Register:next_state.Q[2]
+next_state_out[3] <= Register:next_state.Q[3]
+next_state_out[4] <= Register:next_state.Q[4]
+next_state_out[5] <= Register:next_state.Q[5]
+tape_addr_out[0] <= tape_addr_out[0].DB_MAX_OUTPUT_PORT_TYPE
+tape_addr_out[1] <= tape_addr_out[1].DB_MAX_OUTPUT_PORT_TYPE
+tape_addr_out[2] <= tape_addr_out[2].DB_MAX_OUTPUT_PORT_TYPE
+tape_addr_out[3] <= tape_addr_out[3].DB_MAX_OUTPUT_PORT_TYPE
+tape_addr_out[4] <= tape_addr_out[4].DB_MAX_OUTPUT_PORT_TYPE
+tape_addr_out[5] <= tape_addr_out[5].DB_MAX_OUTPUT_PORT_TYPE
+Compute_done <= Compute_done.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|TuringMachine:TM|Mux2to1:mux_input_calculate
+I0[0] => Y.DATAA
+I0[1] => Y.DATAA
+I0[2] => Y.DATAA
+I0[3] => Y.DATAA
+I1[0] => Y.DATAB
+I1[1] => Y.DATAB
+I1[2] => Y.DATAB
+I1[3] => Y.DATAB
+S => Y.OUTPUTSELECT
+S => Y.OUTPUTSELECT
+S => Y.OUTPUTSELECT
+S => Y.OUTPUTSELECT
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|TuringMachine:TM|Counter:input_addr
+en => always0.IN0
+en => always0.IN0
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+up => always0.IN1
+up => always0.IN1
+clock => Q[0]~reg0.CLK
+clock => Q[1]~reg0.CLK
+clock => Q[2]~reg0.CLK
+clock => Q[3]~reg0.CLK
+clock => Q[4]~reg0.CLK
+clock => Q[5]~reg0.CLK
+D[0] => Q.DATAB
+D[1] => Q.DATAB
+D[2] => Q.DATAB
+D[3] => Q.DATAB
+D[4] => Q.DATAB
+D[5] => Q.DATAB
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|TuringMachine:TM|Mux2to1:mux_next_state
+I0[0] => Y.DATAA
+I0[1] => Y.DATAA
+I0[2] => Y.DATAA
+I0[3] => Y.DATAA
+I0[4] => Y.DATAA
+I0[5] => Y.DATAA
+I1[0] => Y.DATAB
+I1[1] => Y.DATAB
+I1[2] => Y.DATAB
+I1[3] => Y.DATAB
+I1[4] => Y.DATAB
+I1[5] => Y.DATAB
+S => Y.OUTPUTSELECT
+S => Y.OUTPUTSELECT
+S => Y.OUTPUTSELECT
+S => Y.OUTPUTSELECT
+S => Y.OUTPUTSELECT
+S => Y.OUTPUTSELECT
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|TuringMachine:TM|Register:next_state
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clock => Q[0]~reg0.CLK
+clock => Q[1]~reg0.CLK
+clock => Q[2]~reg0.CLK
+clock => Q[3]~reg0.CLK
+clock => Q[4]~reg0.CLK
+clock => Q[5]~reg0.CLK
+D[0] => Q.DATAB
+D[1] => Q.DATAB
+D[2] => Q.DATAB
+D[3] => Q.DATAB
+D[4] => Q.DATAB
+D[5] => Q.DATAB
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|TuringMachine:TM|Counter:state_addr
+en => always0.IN0
+en => always0.IN0
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+up => always0.IN1
+up => always0.IN1
+clock => Q[0]~reg0.CLK
+clock => Q[1]~reg0.CLK
+clock => Q[2]~reg0.CLK
+clock => Q[3]~reg0.CLK
+clock => Q[4]~reg0.CLK
+clock => Q[5]~reg0.CLK
+D[0] => Q.DATAB
+D[1] => Q.DATAB
+D[2] => Q.DATAB
+D[3] => Q.DATAB
+D[4] => Q.DATAB
+D[5] => Q.DATAB
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|TuringMachine:TM|Counter:tape_addr
+en => always0.IN0
+en => always0.IN0
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+up => always0.IN1
+up => always0.IN1
+clock => Q[0]~reg0.CLK
+clock => Q[1]~reg0.CLK
+clock => Q[2]~reg0.CLK
+clock => Q[3]~reg0.CLK
+clock => Q[4]~reg0.CLK
+clock => Q[5]~reg0.CLK
+D[0] => Q.DATAB
+D[1] => Q.DATAB
+D[2] => Q.DATAB
+D[3] => Q.DATAB
+D[4] => Q.DATAB
+D[5] => Q.DATAB
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|TuringMachine:TM|Register:tape_addr_init
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clock => Q[0]~reg0.CLK
+clock => Q[1]~reg0.CLK
+clock => Q[2]~reg0.CLK
+clock => Q[3]~reg0.CLK
+clock => Q[4]~reg0.CLK
+clock => Q[5]~reg0.CLK
+D[0] => Q.DATAB
+D[1] => Q.DATAB
+D[2] => Q.DATAB
+D[3] => Q.DATAB
+D[4] => Q.DATAB
+D[5] => Q.DATAB
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|TuringMachine:TM|Register:tape_addr_min
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clock => Q[0]~reg0.CLK
+clock => Q[1]~reg0.CLK
+clock => Q[2]~reg0.CLK
+clock => Q[3]~reg0.CLK
+clock => Q[4]~reg0.CLK
+clock => Q[5]~reg0.CLK
+D[0] => Q.DATAB
+D[1] => Q.DATAB
+D[2] => Q.DATAB
+D[3] => Q.DATAB
+D[4] => Q.DATAB
+D[5] => Q.DATAB
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|TuringMachine:TM|Mux4to1:mux_state_tape_addr
+I0[0] => Y.DATAA
+I0[1] => Y.DATAA
+I0[2] => Y.DATAA
+I0[3] => Y.DATAA
+I0[4] => Y.DATAA
+I0[5] => Y.DATAA
+I1[0] => Y.DATAB
+I1[1] => Y.DATAB
+I1[2] => Y.DATAB
+I1[3] => Y.DATAB
+I1[4] => Y.DATAB
+I1[5] => Y.DATAB
+I2[0] => Y.DATAA
+I2[1] => Y.DATAA
+I2[2] => Y.DATAA
+I2[3] => Y.DATAA
+I2[4] => Y.DATAA
+I2[5] => Y.DATAA
+I3[0] => Y.DATAB
+I3[1] => Y.DATAB
+I3[2] => Y.DATAB
+I3[3] => Y.DATAB
+I3[4] => Y.DATAB
+I3[5] => Y.DATAB
+S[0] => Y.OUTPUTSELECT
+S[0] => Y.OUTPUTSELECT
+S[0] => Y.OUTPUTSELECT
+S[0] => Y.OUTPUTSELECT
+S[0] => Y.OUTPUTSELECT
+S[0] => Y.OUTPUTSELECT
+S[0] => Y.OUTPUTSELECT
+S[0] => Y.OUTPUTSELECT
+S[0] => Y.OUTPUTSELECT
+S[0] => Y.OUTPUTSELECT
+S[0] => Y.OUTPUTSELECT
+S[0] => Y.OUTPUTSELECT
+S[1] => Y.OUTPUTSELECT
+S[1] => Y.OUTPUTSELECT
+S[1] => Y.OUTPUTSELECT
+S[1] => Y.OUTPUTSELECT
+S[1] => Y.OUTPUTSELECT
+S[1] => Y.OUTPUTSELECT
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|TuringMachine:TM|Memory_synth:memory
+re => data_out.OUTPUTSELECT
+re => data_out.OUTPUTSELECT
+re => data_out.OUTPUTSELECT
+re => data_out.OUTPUTSELECT
+we => M.we_a.DATAIN
+we => M.WE
+clock => M.we_a.CLK
+clock => M.waddr_a[5].CLK
+clock => M.waddr_a[4].CLK
+clock => M.waddr_a[3].CLK
+clock => M.waddr_a[2].CLK
+clock => M.waddr_a[1].CLK
+clock => M.waddr_a[0].CLK
+clock => M.data_a[3].CLK
+clock => M.data_a[2].CLK
+clock => M.data_a[1].CLK
+clock => M.data_a[0].CLK
+clock => M.CLK0
+addr[0] => M.waddr_a[0].DATAIN
+addr[0] => M.WADDR
+addr[0] => M.RADDR
+addr[1] => M.waddr_a[1].DATAIN
+addr[1] => M.WADDR1
+addr[1] => M.RADDR1
+addr[2] => M.waddr_a[2].DATAIN
+addr[2] => M.WADDR2
+addr[2] => M.RADDR2
+addr[3] => M.waddr_a[3].DATAIN
+addr[3] => M.WADDR3
+addr[3] => M.RADDR3
+addr[4] => M.waddr_a[4].DATAIN
+addr[4] => M.WADDR4
+addr[4] => M.RADDR4
+addr[5] => M.waddr_a[5].DATAIN
+addr[5] => M.WADDR5
+addr[5] => M.RADDR5
+data_in[0] => M.data_a[0].DATAIN
+data_in[0] => M.DATAIN
+data_in[1] => M.data_a[1].DATAIN
+data_in[1] => M.DATAIN1
+data_in[2] => M.data_a[2].DATAIN
+data_in[2] => M.DATAIN2
+data_in[3] => M.data_a[3].DATAIN
+data_in[3] => M.DATAIN3
+data_out[0] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|TuringMachine:TM|Demux1to4:demux
+I[0] => Y3.DATAB
+I[0] => Y2.DATAB
+I[0] => Y1.DATAB
+I[0] => Y0.DATAB
+I[1] => Y3.DATAB
+I[1] => Y2.DATAB
+I[1] => Y1.DATAB
+I[1] => Y0.DATAB
+I[2] => Y3.DATAB
+I[2] => Y2.DATAB
+I[2] => Y1.DATAB
+I[2] => Y0.DATAB
+I[3] => Y3.DATAB
+I[3] => Y2.DATAB
+I[3] => Y1.DATAB
+I[3] => Y0.DATAB
+S[0] => Decoder0.IN1
+S[1] => Decoder0.IN0
+Y0[0] <= Y0.DB_MAX_OUTPUT_PORT_TYPE
+Y0[1] <= Y0.DB_MAX_OUTPUT_PORT_TYPE
+Y0[2] <= Y0.DB_MAX_OUTPUT_PORT_TYPE
+Y0[3] <= Y0.DB_MAX_OUTPUT_PORT_TYPE
+Y1[0] <= Y1.DB_MAX_OUTPUT_PORT_TYPE
+Y1[1] <= Y1.DB_MAX_OUTPUT_PORT_TYPE
+Y1[2] <= Y1.DB_MAX_OUTPUT_PORT_TYPE
+Y1[3] <= Y1.DB_MAX_OUTPUT_PORT_TYPE
+Y2[0] <= Y2.DB_MAX_OUTPUT_PORT_TYPE
+Y2[1] <= Y2.DB_MAX_OUTPUT_PORT_TYPE
+Y2[2] <= Y2.DB_MAX_OUTPUT_PORT_TYPE
+Y2[3] <= Y2.DB_MAX_OUTPUT_PORT_TYPE
+Y3[0] <= Y3.DB_MAX_OUTPUT_PORT_TYPE
+Y3[1] <= Y3.DB_MAX_OUTPUT_PORT_TYPE
+Y3[2] <= Y3.DB_MAX_OUTPUT_PORT_TYPE
+Y3[3] <= Y3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|TuringMachine:TM|Mux2to1:mux_tape_reg
+I0[0] => Y.DATAA
+I1[0] => Y.DATAB
+S => Y.OUTPUTSELECT
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|TuringMachine:TM|Register:tape_reg
+en => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clock => Q[0]~reg0.CLK
+D[0] => Q.DATAB
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|TuringMachine:TM|Mux2to1:mux_prev_tape
+I0[0] => Y.DATAA
+I1[0] => Y.DATAB
+S => Y.OUTPUTSELECT
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|TuringMachine:TM|Register:prev_tape_reg
+en => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clock => Q[0]~reg0.CLK
+D[0] => Q.DATAB
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|TuringMachine:TM|Mux2to1:mux_display
+I0[0] => Y.DATAA
+I0[1] => Y.DATAA
+I0[2] => Y.DATAA
+I0[3] => Y.DATAA
+I0[4] => Y.DATAA
+I0[5] => Y.DATAA
+I1[0] => Y.DATAB
+I1[1] => Y.DATAB
+I1[2] => Y.DATAB
+I1[3] => Y.DATAB
+I1[4] => Y.DATAB
+I1[5] => Y.DATAB
+S => Y.OUTPUTSELECT
+S => Y.OUTPUTSELECT
+S => Y.OUTPUTSELECT
+S => Y.OUTPUTSELECT
+S => Y.OUTPUTSELECT
+S => Y.OUTPUTSELECT
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|TuringMachine:TM|ShiftRegister_SIPO_wRewrite:display_reg
+en => always0.IN0
+en => always0.IN0
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+serial => Q.DATAB
+serial => Q.DATAB
+left => always0.IN1
+left => always0.IN1
+rewrite => Q.OUTPUTSELECT
+rewrite => Q.OUTPUTSELECT
+rewrite => Q.OUTPUTSELECT
+rewrite => Q.OUTPUTSELECT
+rewrite => Q.OUTPUTSELECT
+rewrite => Q.OUTPUTSELECT
+rewrite => Q.OUTPUTSELECT
+rewrite => Q.OUTPUTSELECT
+rewrite => Q.OUTPUTSELECT
+rewrite => Q.OUTPUTSELECT
+rewrite => Q.OUTPUTSELECT
+clock => Q[0]~reg0.CLK
+clock => Q[1]~reg0.CLK
+clock => Q[2]~reg0.CLK
+clock => Q[3]~reg0.CLK
+clock => Q[4]~reg0.CLK
+clock => Q[5]~reg0.CLK
+clock => Q[6]~reg0.CLK
+clock => Q[7]~reg0.CLK
+clock => Q[8]~reg0.CLK
+clock => Q[9]~reg0.CLK
+clock => Q[10]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[8] <= Q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[9] <= Q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[10] <= Q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|TuringMachine:TM|Register:data_reg
+en => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clock => Q[0]~reg0.CLK
+D[0] => Q.DATAB
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|TuringMachine:TM|Register:direction_reg
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+en => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clear => Q.OUTPUTSELECT
+clock => Q[0]~reg0.CLK
+clock => Q[1]~reg0.CLK
+clock => Q[2]~reg0.CLK
+clock => Q[3]~reg0.CLK
+clock => Q[4]~reg0.CLK
+clock => Q[5]~reg0.CLK
+D[0] => Q.DATAB
+D[1] => Q.DATAB
+D[2] => Q.DATAB
+D[3] => Q.DATAB
+D[4] => Q.DATAB
+D[5] => Q.DATAB
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|TuringMachine:TM|FSM:fsm
+clock => currState~1.DATAIN
+reset => currState~3.DATAIN
+Next => nextState.OUTPUTSELECT
+Next => nextState.OUTPUTSELECT
+Next => StateAddr_en.OUTPUTSELECT
+Next => Write_en.OUTPUTSELECT
+Next => Selector0.IN2
+Next => Selector2.IN1
+Next => Selector4.IN3
+Next => Selector6.IN1
+Next => Selector10.IN4
+Next => Selector14.IN5
+Next => Selector15.IN4
+Next => Selector16.IN5
+Next => Selector17.IN6
+Next => TapeAddr_ld.DATAB
+Next => Selector13.IN1
+Next => Selector14.IN6
+Next => Selector15.IN5
+Next => Selector16.IN6
+Next => Selector17.IN7
+Next => TapeAddr_en.OUTPUTSELECT
+Next => Selector19.IN1
+Next => Selector12.IN2
+Next => nextState.START.DATAB
+Next => Selector1.IN3
+Next => Selector1.IN4
+Next => Selector3.IN3
+Next => nextState.IN0
+Next => Selector5.IN4
+Next => Selector9.IN3
+Next => nextState.READ_STATE.DATAB
+Done => nextState.DATAA
+Done => nextState.DATAA
+Data_eq => StateAddr_en.DATAB
+Data_eq => Write_en.DATAB
+Halt => TapeAddr_en.DATAB
+Halt => Display_en.DATAB
+Left => PrevTape_en.DATAB
+Left => Addr_sel.DATAB
+Tape_start => nextState.IN1
+Tape_start => Selector14.IN1
+Tape_start => Selector15.IN1
+Tape_start => Selector16.IN1
+Tape_start => Selector17.IN2
+Memory_end => Selector8.IN3
+Memory_end => Selector18.IN3
+Memory_end => Selector19.IN4
+Memory_end => Selector20.IN5
+Memory_end => Selector21.IN3
+Memory_end => Selector15.IN2
+Memory_end => Selector14.IN2
+Memory_end => Selector16.IN2
+Memory_end => Selector7.IN3
+Tape_end => Selector11.IN3
+Tape_end => Addr_sel.OUTPUTSELECT
+Tape_end => PrevTape_en.OUTPUTSELECT
+Tape_end => Selector18.IN1
+Tape_end => Selector19.IN2
+Tape_end => Selector20.IN3
+Tape_end => Selector21.IN1
+Tape_end => Selector8.IN2
+Init <= Init.DB_MAX_OUTPUT_PORT_TYPE
+NextState_en <= Selector12.DB_MAX_OUTPUT_PORT_TYPE
+InputAddr_en <= Selector15.DB_MAX_OUTPUT_PORT_TYPE
+StateAddr_ld <= Selector18.DB_MAX_OUTPUT_PORT_TYPE
+StateAddr_en <= Selector22.DB_MAX_OUTPUT_PORT_TYPE
+TapeAddr_ld <= TapeAddr_ld.DB_MAX_OUTPUT_PORT_TYPE
+TapeAddr_en <= TapeAddr_en.DB_MAX_OUTPUT_PORT_TYPE
+Write_en <= Selector14.DB_MAX_OUTPUT_PORT_TYPE
+Read_en <= <VCC>
+ReadInput <= Selector13.DB_MAX_OUTPUT_PORT_TYPE
+PrevTape_en <= PrevTape_en.DB_MAX_OUTPUT_PORT_TYPE
+TapeReg_en <= Selector21.DB_MAX_OUTPUT_PORT_TYPE
+DataReg_en <= DataReg_en.DB_MAX_OUTPUT_PORT_TYPE
+Direction_en <= Selector23.DB_MAX_OUTPUT_PORT_TYPE
+Display_en <= Display_en.DB_MAX_OUTPUT_PORT_TYPE
+Display_rewrite <= Display_rewrite.DB_MAX_OUTPUT_PORT_TYPE
+Addr_sel[0] <= Selector17.DB_MAX_OUTPUT_PORT_TYPE
+Addr_sel[1] <= Selector16.DB_MAX_OUTPUT_PORT_TYPE
+Data_sel[0] <= Selector20.DB_MAX_OUTPUT_PORT_TYPE
+Data_sel[1] <= Selector19.DB_MAX_OUTPUT_PORT_TYPE
+state[0] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+state[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+state[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+state[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ChipInterface|hex_to_sevenseg:hex
+hexdigit[0] => Equal0.IN3
+hexdigit[0] => Equal1.IN3
+hexdigit[0] => Equal2.IN2
+hexdigit[0] => Equal3.IN3
+hexdigit[0] => Equal4.IN2
+hexdigit[0] => Equal5.IN3
+hexdigit[0] => Equal6.IN1
+hexdigit[0] => Equal7.IN3
+hexdigit[0] => Equal8.IN2
+hexdigit[0] => Equal9.IN3
+hexdigit[0] => Equal10.IN1
+hexdigit[0] => Equal11.IN3
+hexdigit[0] => Equal12.IN1
+hexdigit[0] => Equal13.IN3
+hexdigit[0] => Equal14.IN0
+hexdigit[0] => Equal15.IN3
+hexdigit[1] => Equal0.IN2
+hexdigit[1] => Equal1.IN2
+hexdigit[1] => Equal2.IN3
+hexdigit[1] => Equal3.IN2
+hexdigit[1] => Equal4.IN1
+hexdigit[1] => Equal5.IN1
+hexdigit[1] => Equal6.IN3
+hexdigit[1] => Equal7.IN2
+hexdigit[1] => Equal8.IN1
+hexdigit[1] => Equal9.IN1
+hexdigit[1] => Equal10.IN3
+hexdigit[1] => Equal11.IN2
+hexdigit[1] => Equal12.IN0
+hexdigit[1] => Equal13.IN0
+hexdigit[1] => Equal14.IN3
+hexdigit[1] => Equal15.IN2
+hexdigit[2] => Equal0.IN1
+hexdigit[2] => Equal1.IN1
+hexdigit[2] => Equal2.IN1
+hexdigit[2] => Equal3.IN1
+hexdigit[2] => Equal4.IN3
+hexdigit[2] => Equal5.IN2
+hexdigit[2] => Equal6.IN2
+hexdigit[2] => Equal7.IN1
+hexdigit[2] => Equal8.IN0
+hexdigit[2] => Equal9.IN0
+hexdigit[2] => Equal10.IN0
+hexdigit[2] => Equal11.IN0
+hexdigit[2] => Equal12.IN3
+hexdigit[2] => Equal13.IN2
+hexdigit[2] => Equal14.IN2
+hexdigit[2] => Equal15.IN1
+hexdigit[3] => Equal0.IN0
+hexdigit[3] => Equal1.IN0
+hexdigit[3] => Equal2.IN0
+hexdigit[3] => Equal3.IN0
+hexdigit[3] => Equal4.IN0
+hexdigit[3] => Equal5.IN0
+hexdigit[3] => Equal6.IN0
+hexdigit[3] => Equal7.IN0
+hexdigit[3] => Equal8.IN3
+hexdigit[3] => Equal9.IN2
+hexdigit[3] => Equal10.IN2
+hexdigit[3] => Equal11.IN1
+hexdigit[3] => Equal12.IN2
+hexdigit[3] => Equal13.IN1
+hexdigit[3] => Equal14.IN1
+hexdigit[3] => Equal15.IN0
+seg[0] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[7] <= <VCC>
+
+

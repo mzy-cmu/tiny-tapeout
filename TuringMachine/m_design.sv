@@ -61,7 +61,7 @@ module m_design (
     logic [10:0] display_out;
     logic Compute_done;
 
-    logic [3:0] currState;
+    logic [3:0] state;
     logic tape_reg_out, data_reg_out;
     logic [1:0] direction_out;
     logic [5:0] next_state_out, tape_addr_out;
@@ -84,7 +84,7 @@ module m_design (
     assign led[10:0] = display_out;
     assign led[11] = Compute_done;
 
-    hex_to_sevenseg hex(.hexdigit(currState), .seg(display));
+    hex_to_sevenseg hex(.hexdigit(state), .seg(display));
     assign display_sel = 4'b1110;
 
     assign base_led[0] = tape_reg_out;

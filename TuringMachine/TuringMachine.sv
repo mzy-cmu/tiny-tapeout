@@ -7,7 +7,7 @@ module TuringMachine
   (input logic [aw-1:0] input_data,
    input logic clock, reset, Next, Done,
    output logic [10:0] display_out,
-   output logic [3:0] currState,
+   output logic [3:0] state,
    output logic tape_reg_out, data_reg_out,
    output logic [1:0] direction_out,
    output logic [aw-1:0] next_state_out, tape_addr_out,
@@ -22,11 +22,15 @@ module TuringMachine
   logic Data_eq, Halt, Left, Tape_start, Memory_end, Tape_end;
 
   // connecting wires
-  logic [aw-1:0] input_addr_out, memory_addr, next_state_prep, next_state_in, next_state_out, state_addr_in, state_addr_out,
-                 tape_addr_out, tape_min_addr_in, tape_min_addr_out, tape_init_addr, prev_tape_addr;
+  // logic [aw-1:0] input_addr_out, memory_addr, next_state_prep, next_state_in, next_state_out, state_addr_in, state_addr_out,
+  //                tape_addr_out, tape_min_addr_in, tape_min_addr_out, tape_init_addr, prev_tape_addr;
   logic [dw-1:0] write_data, read_data;
-  logic [1:0] direction_in, direction_out;
-  logic tape_in, tape_reg_in, tape_reg_out, prev_tape_in, prev_tape_out, data_reg_in, data_reg_out, display_in;
+  // logic [1:0] direction_in, direction_out;
+  // logic tape_in, tape_reg_in, tape_reg_out, prev_tape_in, prev_tape_out, data_reg_in, data_reg_out, display_in;
+  logic [aw-1:0] input_addr_out, memory_addr, next_state_prep, next_state_in, state_addr_in, state_addr_out,
+                 tape_min_addr_in, tape_min_addr_out, tape_init_addr, prev_tape_addr;
+  logic [1:0] direction_in;
+  logic tape_in, tape_reg_in, prev_tape_in, prev_tape_out, data_reg_in, display_in;
   
   // datapath modules & connections
   Mux2to1 #(dw) mux_input_calculate (.I0(data_reg_out), .I1(input_data), .S(ReadInput), .Y(write_data));
@@ -83,10 +87,11 @@ module FSM (
   output logic Init, NextState_en, InputAddr_en, StateAddr_ld, StateAddr_en, TapeAddr_ld, TapeAddr_en, Write_en, Read_en, ReadInput, 
                PrevTape_en, TapeReg_en, DataReg_en, Direction_en, Display_en, Display_rewrite,
   output logic [1:0] Addr_sel, Data_sel,
-  output logic [3:0] currState);
+  output logic [3:0] state);
 
   enum logic [3:0] {START, STATE_NUM, WAIT1, WRITE_STATE, TAPE_ADDR, FILL_TAPE1, WAIT2, WRITE_TAPE, FILL_TAPE2, READ_TAPE, READ_DATA, REWRITE_TAPE, READ_DIRECTION, READ_STATE, STOP} currState, nextState;
-
+  assign state = currState;
+  
   // next state logic
   always_comb
     case (currState)
@@ -95,7 +100,7 @@ module FSM (
       WAIT1: nextState = Next ? WRITE_STATE : (Done ? TAPE_ADDR : WAIT1);
       WRITE_STATE: nextState = (~Next) ? WAIT1 : WRITE_STATE;
       TAPE_ADDR: nextState = Next ? FILL_TAPE1 : TAPE_ADDR;
-      FILL_TAPE1: nextState = Tape_start ? WAIT2 : FILL_TAPE1;
+      FILL_TAPE1: nextState = ((~Next) & Tape_start) ? WAIT2 : FILL_TAPE1;
       WAIT2: nextState = Next ? WRITE_TAPE : (Done ? FILL_TAPE2 : WAIT2);
       WRITE_TAPE: nextState = (~Next) ? WAIT2 : WRITE_TAPE;
       FILL_TAPE2: nextState = Memory_end ? READ_TAPE : FILL_TAPE2;
@@ -119,7 +124,7 @@ module FSM (
     Display_en = 1'b0; Display_rewrite = 1'b0;
     case (currState)
       START:
-        if (Next) begin
+        begin
           Init = 1'b1;
           NextState_en = 1'b1;
         end

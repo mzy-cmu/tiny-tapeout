@@ -7,7 +7,6 @@ module TuringMachine
   (input logic [aw-1:0] input_data,
    input logic clock, reset, Next, Done,
    output logic [10:0] display_out,
-   output logic [3:0] currState,
    output logic Compute_done);
 
   // control points
@@ -79,11 +78,10 @@ module FSM (
   input logic Data_eq, Halt, Left, Tape_start, Memory_end, Tape_end,
   output logic Init, NextState_en, InputAddr_en, StateAddr_ld, StateAddr_en, TapeAddr_ld, TapeAddr_en, Write_en, Read_en, ReadInput, 
                PrevTape_en, TapeReg_en, DataReg_en, Direction_en, Display_en, Display_rewrite,
-  output logic [1:0] Addr_sel, Data_sel,
-  output logic [3:0] currState);
+  output logic [1:0] Addr_sel, Data_sel);
 
   enum logic [3:0] {START, STATE_NUM, WAIT1, WRITE_STATE, TAPE_ADDR, FILL_TAPE1, WAIT2, WRITE_TAPE, FILL_TAPE2, READ_TAPE, READ_DATA, REWRITE_TAPE, READ_DIRECTION, READ_STATE, STOP} currState, nextState;
-
+  
   // next state logic
   always_comb
     case (currState)
@@ -92,7 +90,7 @@ module FSM (
       WAIT1: nextState = Next ? WRITE_STATE : (Done ? TAPE_ADDR : WAIT1);
       WRITE_STATE: nextState = (~Next) ? WAIT1 : WRITE_STATE;
       TAPE_ADDR: nextState = Next ? FILL_TAPE1 : TAPE_ADDR;
-      FILL_TAPE1: nextState = Tape_start ? WAIT2 : FILL_TAPE1;
+      FILL_TAPE1: nextState = ((~Next) & Tape_start) ? WAIT2 : FILL_TAPE1;
       WAIT2: nextState = Next ? WRITE_TAPE : (Done ? FILL_TAPE2 : WAIT2);
       WRITE_TAPE: nextState = (~Next) ? WAIT2 : WRITE_TAPE;
       FILL_TAPE2: nextState = Memory_end ? READ_TAPE : FILL_TAPE2;
@@ -116,7 +114,7 @@ module FSM (
     Display_en = 1'b0; Display_rewrite = 1'b0;
     case (currState)
       START:
-        if (Next) begin
+        begin
           Init = 1'b1;
           NextState_en = 1'b1;
         end

@@ -1,6 +1,11 @@
 0 
-25
+32
++cli+4
++itf+/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/vcsdp.tab
 +lint=all
++memcbk
++vcsd
++vpi
 -Mamsrun=
 -Masflags=
 -Mcc=gcc
@@ -18,11 +23,13 @@
 -Mvcsaceobjs=
 -Mxcflags= -pipe -fPIC -I/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/include
 -Mxllcflags=
+-Xcbug=0x1
+-debug=3
 -gen_obj
 -picarchive
 -sverilog
 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/bin/vcs1
-TuringMachine_test1.sv
+TuringMachine_test2.sv
 TuringMachine.sv
 library.sv
 65
@@ -30,10 +37,10 @@ no_proxy=localhost,127.0.0.1,.cmu.edu,.cmu.local
 https_proxy=http://proximus.ece.cmu.edu:3128/
 http_proxy=http://proximus.ece.cmu.edu:3128/
 ftp_proxy=http://proximus.ece.cmu.edu:3128/
-XDG_SESSION_ID=11642
+XDG_SESSION_ID=11749
 XDG_RUNTIME_DIR=/run/user/2678383
 XDG_DATA_DIRS=/afs/andrew.cmu.edu/usr1/zhiyingm/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
-VSCODE_IPC_HOOK_CLI=/run/user/2678383/vscode-ipc-e876766d-6460-4bab-9b7d-53a31e894106.sock
+VSCODE_IPC_HOOK_CLI=/run/user/2678383/vscode-ipc-9fa5ac8b-3a15-4c76-8652-f43cfd97a0df.sock
 VSCODE_GIT_IPC_HANDLE=/run/user/2678383/vscode-git-957a4152a1.sock
 VSCODE_GIT_ASKPASS_NODE=/afs/andrew.cmu.edu/usr1/zhiyingm/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/node
 VSCODE_GIT_ASKPASS_MAIN=/afs/andrew.cmu.edu/usr1/zhiyingm/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/extensions/git/dist/askpass-main.js
@@ -56,8 +63,8 @@ TERM_PROGRAM_VERSION=1.77.3
 TERM_PROGRAM=vscode
 SYN_DIR=/syn/T-2022.03-SP2
 SYNOPSYS_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation
-SSH_CONNECTION=128.2.13.135 59554 172.19.136.193 22
-SSH_CLIENT=128.2.13.135 59554 22
+SSH_CONNECTION=128.2.13.154 33470 172.19.136.193 22
+SSH_CLIENT=128.2.13.154 33470 22
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
 SNPS_VCS_CLANG_PATH=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/clang
 SNPS_INTERNAL_VCS_LINUX_OS=linux
@@ -93,14 +100,15 @@ BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`_}
 AKLOG=/usr/bin/aklog
 0
 0
-3
+4
 1683256533 library.sv
-1683342225 TuringMachine.sv
-1683342312 TuringMachine_test1.sv
+1683395656 TuringMachine.sv
+1683396688 TuringMachine_test2.sv
+1654052745 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/vcsdp.tab
 4
 1654054205 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvirsim.so
 1654053585 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
 1654053489 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libsnpsmalloc.so
 1654053565 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvfs.so
-1683342315 simv.daidir
+1683396697 simv.daidir
 -1 partitionlib
